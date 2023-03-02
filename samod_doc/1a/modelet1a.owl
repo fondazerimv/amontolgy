@@ -1,15 +1,18 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/manuele/ontologies/2023/2/1/untitled-ontology-41"
+     xml:base="http://www.semanticweb.org/am00ontology"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/manuele/ontologies/2023/2/1/untitled-ontology-41">
+     ontologyIRI="http://www.semanticweb.org/am00ontology"
+     versionIRI="http://www.semanticweb.org/am00ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/am00ontology"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="am00" IRI="http://www.semanticweb.org/am00ontology#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
         <Class IRI="#Agent"/>
@@ -126,10 +129,13 @@
         <ObjectProperty IRI="#isAssociatedTo"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isContainedInPlace"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#modifies"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#particpatesIn"/>
+        <ObjectProperty IRI="#participatesIn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#refersTo"/>
@@ -139,6 +145,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#endsIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#happensIn"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasBusinessName"/>
@@ -151,6 +160,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#isActiveTo"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#ArtDealer"/>
@@ -286,6 +298,10 @@
         <Class IRI="#Destruction"/>
     </DisjointClasses>
     <DisjointClasses>
+        <Class IRI="#Organization"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
         <Class IRI="#OrganizationChange"/>
         <Class IRI="#Restoration"/>
     </DisjointClasses>
@@ -330,7 +346,7 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#particpatesIn"/>
+        <ObjectProperty IRI="#participatesIn"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -378,11 +394,15 @@
         <Class IRI="#Organization"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isContainedInPlace"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#modifies"/>
         <Class IRI="#Restoration"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#particpatesIn"/>
+        <ObjectProperty IRI="#participatesIn"/>
         <Class IRI="#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -434,31 +454,21 @@
         <Class IRI="#Organization"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#isContainedInPlace"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#modifies"/>
         <Class IRI="#Object"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#particpatesIn"/>
+        <ObjectProperty IRI="#participatesIn"/>
         <Class IRI="#Event"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#refersTo"/>
         <Class IRI="#CommercialVenture"/>
     </ObjectPropertyRange>
-    <DisjointObjectProperties>
-        <ObjectProperty IRI="#bringsIntoExistence"/>
-        <ObjectProperty IRI="#ceasesExistenceOf"/>
-        <ObjectProperty IRI="#hasEducationIn"/>
-        <ObjectProperty IRI="#hasPlace"/>
-        <ObjectProperty IRI="#hasPreviousOrganization"/>
-        <ObjectProperty IRI="#hasPurchaser"/>
-        <ObjectProperty IRI="#hasResultingOrganization"/>
-        <ObjectProperty IRI="#hasSeat"/>
-        <ObjectProperty IRI="#isAssociatedTo"/>
-        <ObjectProperty IRI="#modifies"/>
-        <ObjectProperty IRI="#particpatesIn"/>
-        <ObjectProperty IRI="#refersTo"/>
-    </DisjointObjectProperties>
     <SubDataPropertyOf>
         <DataProperty IRI="#beginsIn"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
@@ -489,6 +499,10 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#endsIn"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#happensIn"/>
         <Class IRI="#Event"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -512,33 +526,41 @@
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#endsIn"/>
-        <Datatype abbreviatedIRI="xsd:dateTime"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasBusinessName"/>
-        <Datatype abbreviatedIRI="rdfs:Literal"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasName"/>
-        <Datatype abbreviatedIRI="rdfs:Literal"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#isActiveFrom"/>
-        <Datatype abbreviatedIRI="xsd:dateTime"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#isActiveTo"/>
-        <Datatype abbreviatedIRI="xsd:dateTime"/>
-    </DataPropertyRange>
-    <DisjointDataProperties>
         <DataProperty IRI="#beginsIn"/>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#endsIn"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#endsIn"/>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#happensIn"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#happensIn"/>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#hasBusinessName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#isActiveFrom"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#isActiveTo"/>
-    </DisjointDataProperties>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
 </Ontology>
 
 
