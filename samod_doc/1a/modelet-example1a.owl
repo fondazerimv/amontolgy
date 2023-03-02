@@ -456,49 +456,13 @@
         <Class IRI="#Modification"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="#Agent"/>
-        <Class IRI="#CommercialVenture"/>
-        <Class IRI="#Event"/>
-        <Class IRI="#Location"/>
-        <Class IRI="#Object"/>
-        <Class IRI="#Seat"/>
-        <Class IRI="#Subject"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#ArtDealerCompany"/>
-        <Class IRI="#Laboratory"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#ArtDealerCompany"/>
-        <Class IRI="#PrivateCollectionist"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#AuctionHouse"/>
         <Class IRI="#CommercialManagementCompany"/>
         <Class IRI="#PurchaseCompany"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#BeginningOfExistence"/>
-        <Class IRI="#EndOfExistence"/>
-        <Class IRI="#Modification"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Birth"/>
-        <Class IRI="#Creation"/>
-        <Class IRI="#Foundation"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Cessation"/>
-        <Class IRI="#Death"/>
-        <Class IRI="#Destruction"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class IRI="#Organization"/>
         <Class IRI="#Person"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#OrganizationChange"/>
-        <Class IRI="#Restoration"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#AuctionHouse"/>
