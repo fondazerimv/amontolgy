@@ -330,11 +330,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPlace"/>
-        <Class IRI="#Event"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasPlace"/>
-        <Class IRI="#Seat"/>
+        <ObjectUnionOf>
+            <Class IRI="#Event"/>
+            <Class IRI="#Seat"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPreviousOrganization"/>
@@ -374,19 +373,17 @@
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#bringsIntoExistence"/>
-        <Class IRI="#Agent"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#bringsIntoExistence"/>
-        <Class IRI="#Object"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#ceasesExistenceOf"/>
-        <Class IRI="#Agent"/>
+        <ObjectUnionOf>
+            <Class IRI="#Agent"/>
+            <Class IRI="#Object"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#ceasesExistenceOf"/>
-        <Class IRI="#Object"/>
+        <ObjectUnionOf>
+            <Class IRI="#Agent"/>
+            <Class IRI="#Object"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasEducationIn"/>
@@ -486,27 +483,24 @@
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#beginsIn"/>
-        <Datatype abbreviatedIRI="xsd:dateTime"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#beginsIn"/>
-        <Datatype abbreviatedIRI="xsd:gYear"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#endsIn"/>
-        <Datatype abbreviatedIRI="xsd:dateTime"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#endsIn"/>
-        <Datatype abbreviatedIRI="xsd:gYear"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#happensIn"/>
-        <Datatype abbreviatedIRI="xsd:dateTime"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#happensIn"/>
-        <Datatype abbreviatedIRI="xsd:gYear"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasBusinessName"/>
@@ -518,11 +512,17 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#isActiveFrom"/>
-        <Datatype abbreviatedIRI="xsd:dateTime"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#isActiveTo"/>
-        <Datatype abbreviatedIRI="xsd:dateTime"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
     </DataPropertyRange>
 </Ontology>
 
