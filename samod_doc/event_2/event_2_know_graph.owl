@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/am00/events/attribute_assignment">
+    <Prefix name="" IRI="http://www.semanticweb.org/am00/events/attribute_assignment"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -42,6 +43,9 @@
         <ObjectProperty IRI="#disputes"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasCurrentOwner"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasProposedPrice"/>
     </Declaration>
     <Declaration>
@@ -79,6 +83,45 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isValidFrom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isValidTo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#a_PT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#a_SB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#a_SB_deposizione"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#a_SB_san_rocco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#a_deposizione"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#a_domenichino"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#a_guido_reni"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#a_notifica_guido_reni"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#a_previous_deposizione"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#a_repubblica_italiana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#a_san_rocco"/>
     </Declaration>
     <Declaration>
         <Datatype abbreviatedIRI="xsd:gYear"/>
@@ -106,6 +149,130 @@
         <Class IRI="#Expertise"/>
         <Class IRI="#ValueProposition"/>
     </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#a_PT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#a_SB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Expertise"/>
+        <NamedIndividual IRI="#a_SB_deposizione"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Expertise"/>
+        <NamedIndividual IRI="#a_SB_san_rocco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Object"/>
+        <NamedIndividual IRI="#a_deposizione"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#a_domenichino"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#a_guido_reni"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LegalNotice"/>
+        <NamedIndividual IRI="#a_notifica_guido_reni"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Expertise"/>
+        <NamedIndividual IRI="#a_previous_deposizione"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#a_repubblica_italiana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Object"/>
+        <NamedIndividual IRI="#a_san_rocco"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#disputes"/>
+        <NamedIndividual IRI="#a_SB_deposizione"/>
+        <NamedIndividual IRI="#a_previous_deposizione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCarriedOutBy"/>
+        <NamedIndividual IRI="#a_SB_deposizione"/>
+        <NamedIndividual IRI="#a_SB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFocusedOn"/>
+        <NamedIndividual IRI="#a_SB_deposizione"/>
+        <NamedIndividual IRI="#a_deposizione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#recognizesAsAuthor"/>
+        <NamedIndividual IRI="#a_SB_deposizione"/>
+        <NamedIndividual IRI="#a_domenichino"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCarriedOutBy"/>
+        <NamedIndividual IRI="#a_SB_san_rocco"/>
+        <NamedIndividual IRI="#a_SB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFocusedOn"/>
+        <NamedIndividual IRI="#a_SB_san_rocco"/>
+        <NamedIndividual IRI="#a_san_rocco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isRequestedBy"/>
+        <NamedIndividual IRI="#a_SB_san_rocco"/>
+        <NamedIndividual IRI="#a_PT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#recognizesAsAuthor"/>
+        <NamedIndividual IRI="#a_SB_san_rocco"/>
+        <NamedIndividual IRI="#a_guido_reni"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasValidityOn"/>
+        <NamedIndividual IRI="#a_notifica_guido_reni"/>
+        <NamedIndividual IRI="#a_san_rocco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFocusedOn"/>
+        <NamedIndividual IRI="#a_previous_deposizione"/>
+        <NamedIndividual IRI="#a_deposizione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#recognizesAsAuthor"/>
+        <NamedIndividual IRI="#a_previous_deposizione"/>
+        <NamedIndividual IRI="#a_guido_reni"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#imposes"/>
+        <NamedIndividual IRI="#a_repubblica_italiana"/>
+        <NamedIndividual IRI="#a_notifica_guido_reni"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCurrentOwner"/>
+        <NamedIndividual IRI="#a_san_rocco"/>
+        <NamedIndividual IRI="#a_PT"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#a_SB_deposizione"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">2005</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#a_SB_san_rocco"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">2001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isValidFrom"/>
+        <NamedIndividual IRI="#a_notifica_guido_reni"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">2008</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#cites"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -161,6 +328,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#disputes"/>
         <Class IRI="#AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCurrentOwner"/>
+        <Class IRI="#Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProposedPrice"/>
@@ -211,6 +382,10 @@
         <Class IRI="#AttributeAssignment"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCurrentOwner"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasProposedPrice"/>
         <Class IRI="#Price"/>
     </ObjectPropertyRange>
@@ -274,6 +449,14 @@
         <DataProperty IRI="#hasValue"/>
         <Class IRI="#Price"/>
     </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isValidFrom"/>
+        <Class IRI="#LegalNotice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isValidTo"/>
+        <Class IRI="#LegalNotice"/>
+    </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#describesConservationStatusAs"/>
         <Datatype abbreviatedIRI="xsd:string"/>
@@ -285,6 +468,14 @@
     <DataPropertyRange>
         <DataProperty IRI="#hasValue"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isValidFrom"/>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isValidTo"/>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
     </DataPropertyRange>
 </Ontology>
 

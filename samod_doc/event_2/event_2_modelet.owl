@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/am00/events/attribute_assignment">
+    <Prefix name="" IRI="http://www.semanticweb.org/am00/events/attribute_assignment"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -42,6 +43,9 @@
         <ObjectProperty IRI="#disputes"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasCurrentOwner"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasProposedPrice"/>
     </Declaration>
     <Declaration>
@@ -79,6 +83,12 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isValidFrom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isValidTo"/>
     </Declaration>
     <Declaration>
         <Datatype abbreviatedIRI="xsd:gYear"/>
@@ -115,6 +125,10 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCurrentOwner"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasProposedPrice"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -161,6 +175,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#disputes"/>
         <Class IRI="#AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCurrentOwner"/>
+        <Class IRI="#Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProposedPrice"/>
@@ -211,6 +229,10 @@
         <Class IRI="#AttributeAssignment"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCurrentOwner"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasProposedPrice"/>
         <Class IRI="#Price"/>
     </ObjectPropertyRange>
@@ -274,6 +296,14 @@
         <DataProperty IRI="#hasValue"/>
         <Class IRI="#Price"/>
     </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isValidFrom"/>
+        <Class IRI="#LegalNotice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isValidTo"/>
+        <Class IRI="#LegalNotice"/>
+    </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#describesConservationStatusAs"/>
         <Datatype abbreviatedIRI="xsd:string"/>
@@ -285,6 +315,14 @@
     <DataPropertyRange>
         <DataProperty IRI="#hasValue"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isValidFrom"/>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isValidTo"/>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
     </DataPropertyRange>
 </Ontology>
 
