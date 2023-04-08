@@ -1,18 +1,18 @@
-## Scenario
+## Domande di competenza?
 
-**Le tipologie di transazione nel mercato dell'arte**
-
-Un agente può avere la proprietà e la custodia di un bene (non corrispondono) o di un insieme di beni. 
-
-L’attività principale di un agente sono le transazioni, che comprendono l'acquisto (un agente vende un bene in cambio di una somma di denaro, può cambiare possesso, custodia o entrambi), il prestito (un agente presta un bene in cambio di una somma di denaro o gratuitamente, cambia solo custodia), la donazione (un agente cede un bene a titolo gratuito, cambia sia il possesso, sia la custodia). 
-
-Il bene è definito lotto e può essere un’opera singola o un gruppo di opere (a volte anche un’intera collezione). La transazione è individuata da almeno due soggetti: uno che cede il possesso e una che l’acquista. Una transazione può avere anche un intermediario.
-
-## Esempi
-
-1) L'antiquario QC compra nel 1978 l’opera “Sacra Conversazione” dal collezionista privato ST per la somma di 10.000€
-2) In occasione della mostra “Neoclassicismo” (1980), l'antiquario PP presta una terracotta di Canova al Museo Civico di Milano.
-3) Alla morte di TC (1980), gli eredi donarono la propria collezione al museo civico di Firenze. 
-4) Il museo “Museo Civico di Belle Arti” di Roma acquista dall’antiquario RE di Firenze il dipinto “Nascita di Bacco” di Giulio Romano, su suggerimento dello studioso TD
+| No. | Domanda                                                                                                 | Formato della risposta                 | Risultato atteso                                        | SPARQL                                                                                                                                                                                                                                                                                                                           |
+|-----|---------------------------------------------------------------------------------------------------------|----------------------------------------|---------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1.  | In che anno QC ha comprato l’opera “Sacra Conversazione”?                                               | Anno                                   | 1978                                                    | ``` SELECT ?year  WHERE { ?purchase am00:hasReceiver am00:ex1_QC. ?purchase am00:hasDate ?year. } ```                                                                                                                                                                                                                            |
+| 2.  | Qual è la clientela dell’antiquario QC?                                                                 | Nomi dei clienti                       | QC                                                      | ``` SELECT ?agent  WHERE { ?purchase am00:hasSurrender am00:ex1_ST. ?purchase am00:hasReceiver ?agent. } ```                                                                                                                                                                                                                     |
+| 3.  | Che provenienza (ultimo possessore) avevano le opere in mostra a “Neoclassicismo”?                      | Opere e ultimo possessore              | Terracotta di Canova, PP                                | ``` SELECT ?object ?former_owner  WHERE { ?transaction am00:hasPurpose am00:ex2_exhibition_neoclassicismo. ?transaction (am00:transfersCustodyOf \| am00:transfersPropertyOf) / am00:consistsOf ?object. ?transaction am00:hasSurrender ?former_owner }  ```                                                                     |
+| 4.  | Chi furono gli agenti che presero parte nell’acquisto del dipinto “Nasciata di Bacco” di Giulio Romano? | Nomi dei vari agenti, divisi per ruolo | Museo Abc, acquirente; TD, intermediario; RE, venditore | ``` SELECT DISTINCT ?surrender ?receiver ?intermediary  WHERE { ?transaction (am00:transfersCustodyOf \| am00:transfersPropertyOf) / am00:consistsOf am00:ex4_nascita_bacco_gromano. ?transaction am00:hasSurrender ?surrender. ?transaction am00:hasReceiver ?receiver. ?transaction am00:hasIntermediary ?intermediary. }  ``` |                                                                                            |
 
 
+Dalle query in SPARQL sono stati omessi i seguenti prefissi:
+```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX am00: <http://www.semanticweb.org/am00/events/transaction#>
+```
