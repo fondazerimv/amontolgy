@@ -9,8 +9,8 @@ Il bene può essere soggetto di notifica (solitamente non viene ritirata, ma pu�
 # Esempi
 
 1. Nel 2001 L’antiquario PT chiama lo studioso di riferimento SB per fargli studiare un dipinto del ‘600 (“San Rocco”). Costui attribuisce l’opera a Guido Reni.
-2. SB studia una “Deposizione” attribuita a Guido Reni: dopo alcune ricerche la attribuisce invece a Domenichino.
-3. !! L’antiquario SZ compra un’opera di Belbello da Pavia  nel 1980 per un valore 15.000€ perché è in buono stato di conservazione. L’opera è citata dal catalogo “Le opere di Belbello da Pavia”.
-4. !! Sulla base dell’analisi sull’opera di Belbello da Pavia a cura dello studioso ML, incaricato da SZ, si scopra che l’opera è stata posseduta dal dal Conte GdG. SZ la mette in vendita nel 1990 al costo di 35.000€ e a 30.ooo€ nel 1991.
+2. Nel 2005 SB studia una “Deposizione” attribuita a Guido Reni: dopo alcune ricerche la attribuisce invece a Domenichino.
+3. !! L’antiquario SZ compra un’opera di Tiziano nel 1980 per un valore 15.000€ perché è in buono stato di conservazione. L’opera è citata dal catalogo “Le opere di Tiziano”.
+4. !! Sulla base dell’analisi sull’opera di Tiziano a cura dello studioso ML, incaricato da SZ, si scopra che l’opera è stata posseduta dal dal Conte GdG. SZ la mette in vendita nel 1990 al costo di 35.000€ e a 30.ooo€ nel 1991.
 5. L’opera “San Rocco” di Guido Reni  viene notificata nel 2008 dallo Stato italiano.
 
