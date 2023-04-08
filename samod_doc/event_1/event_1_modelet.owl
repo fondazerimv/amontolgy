@@ -57,6 +57,9 @@
         <ObjectProperty IRI="#hasPrice"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasPurpose"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasReceiver"/>
     </Declaration>
     <Declaration>
@@ -163,6 +166,10 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPurpose"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasReceiver"/>
         <Class IRI="#Transaction"/>
     </ObjectPropertyDomain>
@@ -203,6 +210,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPrice"/>
         <Class IRI="#Price"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPurpose"/>
+        <Class IRI="#Event"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasReceiver"/>
