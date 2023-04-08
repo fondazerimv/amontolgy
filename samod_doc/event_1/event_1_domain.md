@@ -10,7 +10,7 @@ Il bene è definito lotto e può essere un’opera singola o un gruppo di opere 
 
 ## Esempi
 
-1) L'antiquario QC compra nel 1978 l’opera “Sacra Conversazione” dal collezionista privato ST per la somma di 10.000€
+1) L'antiquario QC compra nel 1978 l’opera “Sacra Conversazione” dal collezionista privato ST per una somma pari a 10.000€
 2) In occasione della mostra “Neoclassicismo” (1980), l'antiquario PP presta una terracotta di Canova al Museo Civico di Milano.
 3) Alla morte di TC (1980), gli eredi donarono la propria collezione al museo civico di Firenze. 
 4) Il museo “Museo Civico di Belle Arti” di Roma acquista dall’antiquario RE di Firenze il dipinto “Nascita di Bacco” di Giulio Romano, su suggerimento dello studioso TD
