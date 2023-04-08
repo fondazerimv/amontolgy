@@ -4,7 +4,7 @@
 
 Un agente può avere la proprietà e la custodia di un bene (non corrispondono) o di un insieme di beni. 
 
-L’attività principale di un agente sono le transazioni, che comprendono l'acquisto (un agente vende un bene in cambio di una somma di denaro, può cambiare possesso, custodia o entrambi), il prestito (un agente presta un bene in cambio di una somma di denaro o gratuitamente, cambia solo custodia), la donazione (un agente cede un bene a titolo gratuito, cambia sia il possesso, sia la custodia). 
+L’attività principale di un agente sono le transazioni, che comprendono l'acquisto (un agente vende un bene in cambio di una somma di denaro, cambiandone il possesso, la custodia o entrambi), il prestito (un agente presta un bene in cambio di una somma di denaro o gratuitamente, il che cambia solo la custodia), la donazione (un agente cede un bene a titolo gratuito: in questo caso cambia sia il possesso, sia la custodia). 
 
 Il bene è definito lotto e può essere un’opera singola o un gruppo di opere (a volte anche un’intera collezione). La transazione è individuata da almeno due soggetti: uno che cede il possesso e una che l’acquista. Una transazione può avere anche un intermediario.
 
