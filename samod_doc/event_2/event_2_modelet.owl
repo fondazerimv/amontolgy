@@ -76,6 +76,9 @@
         <ObjectProperty IRI="#recognizesAsFormerOwner"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#reliesOn"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#describesConservationStatusAs"/>
     </Declaration>
     <Declaration>
@@ -168,6 +171,10 @@
         <ObjectProperty IRI="#recognizesAsFormerOwner"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#reliesOn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#cites"/>
         <Class IRI="#Expertise"/>
@@ -220,6 +227,10 @@
         <ObjectProperty IRI="#recognizesAsFormerOwner"/>
         <Class IRI="#Expertise"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#reliesOn"/>
+        <Class IRI="#AttributeAssignment"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#cites"/>
         <Class IRI="#Object"/>
@@ -271,6 +282,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#recognizesAsFormerOwner"/>
         <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#reliesOn"/>
+        <Class IRI="#AttributeAssignment"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#describesConservationStatusAs"/>

@@ -76,6 +76,9 @@
         <ObjectProperty IRI="#recognizesAsFormerOwner"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#reliesOn"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#describesConservationStatusAs"/>
     </Declaration>
     <Declaration>
@@ -122,6 +125,45 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#a_san_rocco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b_ML"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b_SZ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b_catalog_tintoretto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b_conte_F"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b_price_tintoretto_80"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b_price_tintoretto_90"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b_price_tintoretto_91"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b_tintoretto_canvas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b_tintoretto_expertise_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b_tintoretto_expertise_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_80"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_90"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_91"/>
     </Declaration>
     <Declaration>
         <Datatype abbreviatedIRI="xsd:gYear"/>
@@ -193,6 +235,58 @@
         <Class IRI="#Object"/>
         <NamedIndividual IRI="#a_san_rocco"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#b_ML"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#b_SZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Object"/>
+        <NamedIndividual IRI="#b_catalog_tintoretto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#b_conte_F"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Price"/>
+        <NamedIndividual IRI="#b_price_tintoretto_80"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Price"/>
+        <NamedIndividual IRI="#b_price_tintoretto_90"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Price"/>
+        <NamedIndividual IRI="#b_price_tintoretto_91"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Object"/>
+        <NamedIndividual IRI="#b_tintoretto_canvas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Expertise"/>
+        <NamedIndividual IRI="#b_tintoretto_expertise_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Expertise"/>
+        <NamedIndividual IRI="#b_tintoretto_expertise_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ValueProposition"/>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_80"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ValueProposition"/>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_90"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ValueProposition"/>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_91"/>
+    </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#disputes"/>
         <NamedIndividual IRI="#a_SB_deposizione"/>
@@ -258,6 +352,96 @@
         <NamedIndividual IRI="#a_san_rocco"/>
         <NamedIndividual IRI="#a_PT"/>
     </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cites"/>
+        <NamedIndividual IRI="#b_tintoretto_expertise_1"/>
+        <NamedIndividual IRI="#b_catalog_tintoretto"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFocusedOn"/>
+        <NamedIndividual IRI="#b_tintoretto_expertise_1"/>
+        <NamedIndividual IRI="#b_tintoretto_canvas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCarriedOutBy"/>
+        <NamedIndividual IRI="#b_tintoretto_expertise_2"/>
+        <NamedIndividual IRI="#b_ML"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFocusedOn"/>
+        <NamedIndividual IRI="#b_tintoretto_expertise_2"/>
+        <NamedIndividual IRI="#b_tintoretto_canvas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isRequestedBy"/>
+        <NamedIndividual IRI="#b_tintoretto_expertise_2"/>
+        <NamedIndividual IRI="#b_SZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#recognizesAsFormerOwner"/>
+        <NamedIndividual IRI="#b_tintoretto_expertise_2"/>
+        <NamedIndividual IRI="#b_conte_F"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasProposedPrice"/>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_80"/>
+        <NamedIndividual IRI="#b_price_tintoretto_80"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCarriedOutBy"/>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_80"/>
+        <NamedIndividual IRI="#b_SZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFocusedOn"/>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_80"/>
+        <NamedIndividual IRI="#b_tintoretto_canvas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reliesOn"/>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_80"/>
+        <NamedIndividual IRI="#b_tintoretto_expertise_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasProposedPrice"/>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_90"/>
+        <NamedIndividual IRI="#b_price_tintoretto_90"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCarriedOutBy"/>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_90"/>
+        <NamedIndividual IRI="#b_SZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFocusedOn"/>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_90"/>
+        <NamedIndividual IRI="#b_tintoretto_canvas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#reliesOn"/>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_90"/>
+        <NamedIndividual IRI="#b_tintoretto_expertise_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#disputes"/>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_91"/>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_90"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasProposedPrice"/>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_91"/>
+        <NamedIndividual IRI="#b_price_tintoretto_91"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCarriedOutBy"/>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_91"/>
+        <NamedIndividual IRI="#b_SZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFocusedOn"/>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_91"/>
+        <NamedIndividual IRI="#b_tintoretto_canvas"/>
+    </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDate"/>
         <NamedIndividual IRI="#a_SB_deposizione"/>
@@ -272,6 +456,41 @@
         <DataProperty IRI="#isValidFrom"/>
         <NamedIndividual IRI="#a_notifica_guido_reni"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">2008</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#b_price_tintoretto_80"/>
+        <Literal>15000€</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#b_price_tintoretto_90"/>
+        <Literal>35000€</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#b_price_tintoretto_91"/>
+        <Literal>30000€</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#describesConservationStatusAs"/>
+        <NamedIndividual IRI="#b_tintoretto_expertise_1"/>
+        <Literal>good</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_80"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1980</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_90"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1990</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#b_valueprop_tintoretto_91"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1991</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#cites"/>
@@ -373,6 +592,10 @@
         <ObjectProperty IRI="#recognizesAsFormerOwner"/>
         <Class IRI="#Expertise"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#reliesOn"/>
+        <Class IRI="#AttributeAssignment"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#cites"/>
         <Class IRI="#Object"/>
@@ -424,6 +647,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#recognizesAsFormerOwner"/>
         <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#reliesOn"/>
+        <Class IRI="#AttributeAssignment"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#describesConservationStatusAs"/>
