@@ -1,4 +1,4 @@
-## Motivating scenario
+## Scenario
 
 **Le tipologie di transazione nel mercato dell'arte**
 
