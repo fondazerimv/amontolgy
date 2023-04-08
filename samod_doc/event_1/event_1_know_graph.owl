@@ -100,6 +100,57 @@
         <NamedIndividual IRI="#ex1_sacraconversazione"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ex2_PP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex2_exhibition_neoclassicismo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex2_loan_canova"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex2_lot_canova"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex2_museo_civico_mi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex2_terracotta_canova"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex3_collection_TC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex3_gift_collection_TC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex3_heirs_TC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex3_lot_gift"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex3_museo_civico_fi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex4_RE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex4_TD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex4_acquisto_romano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex4_lot_nascita_bacco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex4_museo_civico_ro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex4_nascita_bacco_gromano"/>
+    </Declaration>
+    <Declaration>
         <Datatype abbreviatedIRI="xsd:gYear"/>
     </Declaration>
     <SubClassOf>
@@ -156,6 +207,74 @@
         <Class IRI="#Object"/>
         <NamedIndividual IRI="#ex1_sacraconversazione"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#ex2_PP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#ex2_exhibition_neoclassicismo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Loan"/>
+        <NamedIndividual IRI="#ex2_loan_canova"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lot"/>
+        <NamedIndividual IRI="#ex2_lot_canova"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#ex2_museo_civico_mi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Object"/>
+        <NamedIndividual IRI="#ex2_terracotta_canova"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CuratedHolding"/>
+        <NamedIndividual IRI="#ex3_collection_TC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gift"/>
+        <NamedIndividual IRI="#ex3_gift_collection_TC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#ex3_heirs_TC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lot"/>
+        <NamedIndividual IRI="#ex3_lot_gift"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#ex3_museo_civico_fi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#ex4_RE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#ex4_TD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Purchase"/>
+        <NamedIndividual IRI="#ex4_acquisto_romano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lot"/>
+        <NamedIndividual IRI="#ex4_lot_nascita_bacco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#ex4_museo_civico_ro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Object"/>
+        <NamedIndividual IRI="#ex4_nascita_bacco_gromano"/>
+    </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#consistsOf"/>
         <NamedIndividual IRI="#ex1_lot_sacraconversazione"/>
@@ -186,6 +305,86 @@
         <NamedIndividual IRI="#ex1_purchase_sacraconversazione_QC"/>
         <NamedIndividual IRI="#ex1_lot_sacraconversazione"/>
     </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPurpose"/>
+        <NamedIndividual IRI="#ex2_loan_canova"/>
+        <NamedIndividual IRI="#ex2_exhibition_neoclassicismo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReceiver"/>
+        <NamedIndividual IRI="#ex2_loan_canova"/>
+        <NamedIndividual IRI="#ex2_museo_civico_mi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSurrender"/>
+        <NamedIndividual IRI="#ex2_loan_canova"/>
+        <NamedIndividual IRI="#ex2_PP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#transfersCustodyOf"/>
+        <NamedIndividual IRI="#ex2_loan_canova"/>
+        <NamedIndividual IRI="#ex2_lot_canova"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#consistsOf"/>
+        <NamedIndividual IRI="#ex2_lot_canova"/>
+        <NamedIndividual IRI="#ex2_terracotta_canova"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReceiver"/>
+        <NamedIndividual IRI="#ex3_gift_collection_TC"/>
+        <NamedIndividual IRI="#ex3_museo_civico_fi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSurrender"/>
+        <NamedIndividual IRI="#ex3_gift_collection_TC"/>
+        <NamedIndividual IRI="#ex3_heirs_TC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#transfersCustodyOf"/>
+        <NamedIndividual IRI="#ex3_gift_collection_TC"/>
+        <NamedIndividual IRI="#ex3_lot_gift"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#transfersPropertyOf"/>
+        <NamedIndividual IRI="#ex3_gift_collection_TC"/>
+        <NamedIndividual IRI="#ex3_lot_gift"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#consistsOf"/>
+        <NamedIndividual IRI="#ex3_lot_gift"/>
+        <NamedIndividual IRI="#ex3_collection_TC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIntermediary"/>
+        <NamedIndividual IRI="#ex4_acquisto_romano"/>
+        <NamedIndividual IRI="#ex4_TD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReceiver"/>
+        <NamedIndividual IRI="#ex4_acquisto_romano"/>
+        <NamedIndividual IRI="#ex4_museo_civico_ro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSurrender"/>
+        <NamedIndividual IRI="#ex4_acquisto_romano"/>
+        <NamedIndividual IRI="#ex4_RE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#transfersCustodyOf"/>
+        <NamedIndividual IRI="#ex4_acquisto_romano"/>
+        <NamedIndividual IRI="#ex4_lot_nascita_bacco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#transfersPropertyOf"/>
+        <NamedIndividual IRI="#ex4_acquisto_romano"/>
+        <NamedIndividual IRI="#ex4_lot_nascita_bacco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#consistsOf"/>
+        <NamedIndividual IRI="#ex4_lot_nascita_bacco"/>
+        <NamedIndividual IRI="#ex4_nascita_bacco_gromano"/>
+    </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasValue"/>
         <NamedIndividual IRI="#ex1_price_sacraconversazione_QC"/>
@@ -195,6 +394,11 @@
         <DataProperty IRI="#hasDate"/>
         <NamedIndividual IRI="#ex1_purchase_sacraconversazione_QC"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1978</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#ex3_gift_collection_TC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1980</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#consistsOf"/>
