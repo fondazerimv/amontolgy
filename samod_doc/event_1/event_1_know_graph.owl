@@ -82,6 +82,24 @@
         <DataProperty IRI="#hasValue"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ex1_QC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_ST"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_lot_sacraconversazione"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_price_sacraconversazione_QC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_purchase_sacraconversazione_QC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_sacraconversazione"/>
+    </Declaration>
+    <Declaration>
         <Datatype abbreviatedIRI="xsd:gYear"/>
     </Declaration>
     <SubClassOf>
@@ -114,6 +132,70 @@
         <Class IRI="#Loan"/>
         <Class IRI="#Purchase"/>
     </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#ex1_QC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#ex1_ST"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lot"/>
+        <NamedIndividual IRI="#ex1_lot_sacraconversazione"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Price"/>
+        <NamedIndividual IRI="#ex1_price_sacraconversazione_QC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Purchase"/>
+        <NamedIndividual IRI="#ex1_purchase_sacraconversazione_QC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Object"/>
+        <NamedIndividual IRI="#ex1_sacraconversazione"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#consistsOf"/>
+        <NamedIndividual IRI="#ex1_lot_sacraconversazione"/>
+        <NamedIndividual IRI="#ex1_sacraconversazione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPrice"/>
+        <NamedIndividual IRI="#ex1_purchase_sacraconversazione_QC"/>
+        <NamedIndividual IRI="#ex1_price_sacraconversazione_QC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasReceiver"/>
+        <NamedIndividual IRI="#ex1_purchase_sacraconversazione_QC"/>
+        <NamedIndividual IRI="#ex1_QC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSurrender"/>
+        <NamedIndividual IRI="#ex1_purchase_sacraconversazione_QC"/>
+        <NamedIndividual IRI="#ex1_ST"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#transfersCustodyOf"/>
+        <NamedIndividual IRI="#ex1_purchase_sacraconversazione_QC"/>
+        <NamedIndividual IRI="#ex1_lot_sacraconversazione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#transfersPropertyOf"/>
+        <NamedIndividual IRI="#ex1_purchase_sacraconversazione_QC"/>
+        <NamedIndividual IRI="#ex1_lot_sacraconversazione"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#ex1_price_sacraconversazione_QC"/>
+        <Literal>10000€</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasDate"/>
+        <NamedIndividual IRI="#ex1_purchase_sacraconversazione_QC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1978</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#consistsOf"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
