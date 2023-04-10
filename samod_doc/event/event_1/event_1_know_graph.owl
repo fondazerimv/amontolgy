@@ -50,7 +50,7 @@
         <ObjectProperty IRI="http://www.semanticweb.org/am00/events#consistsOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#containedIn"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#isContainedIn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasIntermediary"/>
@@ -406,7 +406,7 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#containedIn"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#isContainedIn"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -446,7 +446,7 @@
         <Class IRI="http://www.semanticweb.org/am00/events#Lot"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#containedIn"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#isContainedIn"/>
         <Class IRI="http://www.semanticweb.org/am00/events#Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -495,7 +495,7 @@
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#containedIn"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#isContainedIn"/>
         <Class IRI="http://www.semanticweb.org/am00/events#CuratedHolding"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>

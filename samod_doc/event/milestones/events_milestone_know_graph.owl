@@ -63,7 +63,7 @@
         <ObjectProperty IRI="#consistsOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#containedIn"/>
+        <ObjectProperty IRI="#isContainedIn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#disputes"/>
@@ -864,7 +864,7 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#containedIn"/>
+        <ObjectProperty IRI="#isContainedIn"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -948,7 +948,7 @@
         <Class IRI="#Lot"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#containedIn"/>
+        <ObjectProperty IRI="#isContainedIn"/>
         <Class IRI="#Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -1049,7 +1049,7 @@
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#containedIn"/>
+        <ObjectProperty IRI="#isContainedIn"/>
         <Class IRI="#CuratedHolding"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>

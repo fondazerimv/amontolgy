@@ -13,7 +13,7 @@
   <key attr.name="description" attr.type="string" for="edge" id="d9"/>
   <key for="edge" id="d10" yfiles.type="edgegraphics"/>
   <graph edgedefault="directed" id="G">
-    <data key="d0"/>
+    <data key="d0" xml:space="preserve"/>
     <node id="n0">
       <data key="d6">
         <y:ShapeNode>
@@ -31,7 +31,7 @@
           <y:Geometry height="44.0" width="160.96822102864604" x="422.6741282135769" y="346.0"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="139.6015625" x="10.683329264322992" xml:space="preserve" y="10.578125">BibliographicItem</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="139.6015625" x="10.68332926432305" xml:space="preserve" y="10.578125">BibliographicItem</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -163,8 +163,19 @@
           <y:Geometry height="44.0" width="160.96822102864604" x="-279.7358040642978" y="452.95597330228514"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="61.53125" x="49.71848551432302" xml:space="preserve" y="10.578125">Archive</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="105.9453125" x="27.51145426432302" xml:space="preserve" y="10.578125">PhotoArchive</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
+    </node>
+    <node id="n14">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="43.0" width="126.0949682107173" x="-109.31207554504732" y="-52.46887159533071"/>
+          <y:Fill color="#CCFFCC" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="82.3203125" x="21.88732785535865" xml:space="preserve" y="10.078125">xsd:string</y:NodeLabel>
+          <y:Shape type="parallelogram"/>
         </y:ShapeNode>
       </data>
     </node>
@@ -388,6 +399,17 @@
           <y:LineStyle color="#000080" type="line" width="1.0"/>
           <y:Arrows source="circle" target="delta"/>
           <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000080" verticalTextPosition="bottom" visible="true" width="139.9921875" x="45.02838408179366" xml:space="preserve" y="-11.421871092660865">hasCurrentOwner<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e18" source="n9" target="n14">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="-61.12789352291034" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#008000" type="line" width="1.0"/>
+          <y:Arrows source="transparent_circle" target="white_delta"/>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#008000" verticalTextPosition="bottom" visible="true" width="80.21875" x="-40.10937522264766" xml:space="preserve" y="-102.35598601289709">hasExtent<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
