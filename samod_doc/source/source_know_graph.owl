@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/am00/sources">
+    <Prefix name="" IRI="http://www.semanticweb.org/am00/sources"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -37,6 +38,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#CuratedHolding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Letter"/>
@@ -77,6 +81,42 @@
     <Declaration>
         <DataProperty IRI="#hasExtent"/>
     </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_archive_GT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_fond_SZ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex2_FG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex2_KG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex2_KG_an_art_collectionist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex2_KG_website"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex2_archive_KG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex2_art_institute"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex2_autobiography_my_life_manuscript"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex2_letter_SZ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex2_receipt_KG1950"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex2_vendita_predella"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#AccountRegister"/>
         <Class IRI="#ArchivalItem"/>
@@ -141,6 +181,11 @@
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Agent"/>
+        <Class IRI="#Event"/>
+        <Class IRI="#Thing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Agent"/>
         <Class IRI="#Thing"/>
     </DisjointClasses>
     <DisjointClasses>
@@ -157,6 +202,120 @@
         <Class IRI="#CuratedHolding"/>
         <Class IRI="#Object"/>
     </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Archive"/>
+        <NamedIndividual IRI="#ex1_archive_GT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#ex1_fond_SZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#ex2_FG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#ex2_KG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BibliographicItem"/>
+        <NamedIndividual IRI="#ex2_KG_an_art_collectionist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Object"/>
+        <NamedIndividual IRI="#ex2_KG_website"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Archive"/>
+        <NamedIndividual IRI="#ex2_archive_KG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Agent"/>
+        <NamedIndividual IRI="#ex2_art_institute"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BibliographicItem"/>
+        <NamedIndividual IRI="#ex2_autobiography_my_life_manuscript"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Letter"/>
+        <NamedIndividual IRI="#ex2_letter_SZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Receipt"/>
+        <NamedIndividual IRI="#ex2_receipt_KG1950"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#ex2_vendita_predella"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCurrentOwner"/>
+        <NamedIndividual IRI="#ex1_archive_GT"/>
+        <NamedIndividual IRI="#ex1_fond_SZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSecundarySourceFor"/>
+        <NamedIndividual IRI="#ex2_KG_an_art_collectionist"/>
+        <NamedIndividual IRI="#ex2_KG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSecundarySourceFor"/>
+        <NamedIndividual IRI="#ex2_KG_website"/>
+        <NamedIndividual IRI="#ex2_KG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCurrentOwner"/>
+        <NamedIndividual IRI="#ex2_archive_KG"/>
+        <NamedIndividual IRI="#ex2_art_institute"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPrimarySourceFor"/>
+        <NamedIndividual IRI="#ex2_archive_KG"/>
+        <NamedIndividual IRI="#ex2_KG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCurrentOwner"/>
+        <NamedIndividual IRI="#ex2_autobiography_my_life_manuscript"/>
+        <NamedIndividual IRI="#ex2_FG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPrimarySourceFor"/>
+        <NamedIndividual IRI="#ex2_autobiography_my_life_manuscript"/>
+        <NamedIndividual IRI="#ex2_KG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#ex2_letter_SZ"/>
+        <NamedIndividual IRI="#ex2_archive_KG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPrimarySourceFor"/>
+        <NamedIndividual IRI="#ex2_letter_SZ"/>
+        <NamedIndividual IRI="#ex2_KG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <NamedIndividual IRI="#ex2_receipt_KG1950"/>
+        <NamedIndividual IRI="#ex2_archive_KG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPrimarySourceFor"/>
+        <NamedIndividual IRI="#ex2_receipt_KG1950"/>
+        <NamedIndividual IRI="#ex2_KG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPrimarySourceFor"/>
+        <NamedIndividual IRI="#ex2_receipt_KG1950"/>
+        <NamedIndividual IRI="#ex2_vendita_predella"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasExtent"/>
+        <NamedIndividual IRI="#ex1_archive_GT"/>
+        <Literal>600, Photos
+300, Letters (1940 - 1990)</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasCurrentOwner"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -219,15 +378,24 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isPrimarySourceFor"/>
-        <Class IRI="#Agent"/>
+        <ObjectUnionOf>
+            <Class IRI="#Agent"/>
+            <Class IRI="#Event"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isSecundarySourceFor"/>
-        <Class IRI="#Agent"/>
+        <ObjectUnionOf>
+            <Class IRI="#Agent"/>
+            <Class IRI="#Event"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isSourceFor"/>
-        <Class IRI="#Agent"/>
+        <ObjectUnionOf>
+            <Class IRI="#Agent"/>
+            <Class IRI="#Event"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="#hasExtent"/>
