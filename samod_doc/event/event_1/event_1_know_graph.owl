@@ -1,0 +1,557 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/am00/events/transaction"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/am00/events/transaction">
+    <Prefix name="" IRI="http://www.semanticweb.org/am00/events/transaction"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.semanticweb.org/am00/events/attribute_assignment</Import>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/am00/events#CuratedHolding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/am00/events#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/am00/events#Gift"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/am00/events#Loan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/am00/events#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/am00/events#Lot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/am00/events#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/am00/events#Price"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/am00/events#Purchase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/am00/events#Transaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#consistsOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#containedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasIntermediary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasPurpose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasReceiver"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasSurrender"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#takesPlaceIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#transfersCustodyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#transfersPropertyOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#hasDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_QC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_ST"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_lot_sacraconversazione"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_price_sacraconversazione_QC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_purchase_sacraconversazione_QC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_sacraconversazione"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_PP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_exhibition_neoclassicismo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_loan_canova"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_lot_canova"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_museo_civico_mi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_terracotta_canova"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex3_collection_TC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex3_gift_collection_TC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex3_heirs_TC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex3_lot_gift"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex3_museo_civico_fi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_RE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_TD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_acquisto_romano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_lot_nascita_bacco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_museo_civico_ro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_nascita_bacco_gromano"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/am00/events#Gift"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/am00/events#Loan"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/am00/events#Purchase"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/am00/events#Transaction"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Event"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#CuratedHolding"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Event"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Location"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Lot"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Object"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Price"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/am00/events#Gift"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Loan"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Purchase"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_QC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_ST"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Lot"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_lot_sacraconversazione"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Price"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_price_sacraconversazione_QC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Purchase"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_purchase_sacraconversazione_QC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Object"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_sacraconversazione"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_PP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Event"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_exhibition_neoclassicismo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Loan"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_loan_canova"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Lot"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_lot_canova"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_museo_civico_mi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Object"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_terracotta_canova"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#CuratedHolding"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex3_collection_TC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Gift"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex3_gift_collection_TC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex3_heirs_TC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Lot"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex3_lot_gift"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex3_museo_civico_fi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_RE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_TD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Purchase"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_acquisto_romano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Lot"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_lot_nascita_bacco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_museo_civico_ro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/am00/events#Object"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_nascita_bacco_gromano"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#consistsOf"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_lot_sacraconversazione"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_sacraconversazione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasPrice"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_purchase_sacraconversazione_QC"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_price_sacraconversazione_QC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasReceiver"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_purchase_sacraconversazione_QC"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_QC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasSurrender"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_purchase_sacraconversazione_QC"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_ST"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#transfersCustodyOf"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_purchase_sacraconversazione_QC"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_lot_sacraconversazione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#transfersPropertyOf"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_purchase_sacraconversazione_QC"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_lot_sacraconversazione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasPurpose"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_loan_canova"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_exhibition_neoclassicismo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasReceiver"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_loan_canova"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_museo_civico_mi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasSurrender"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_loan_canova"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_PP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#transfersCustodyOf"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_loan_canova"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_lot_canova"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#consistsOf"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_lot_canova"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex2_terracotta_canova"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasReceiver"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex3_gift_collection_TC"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex3_museo_civico_fi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasSurrender"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex3_gift_collection_TC"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex3_heirs_TC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#transfersCustodyOf"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex3_gift_collection_TC"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex3_lot_gift"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#transfersPropertyOf"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex3_gift_collection_TC"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex3_lot_gift"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#consistsOf"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex3_lot_gift"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex3_collection_TC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasIntermediary"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_acquisto_romano"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_TD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasReceiver"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_acquisto_romano"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_museo_civico_ro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasSurrender"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_acquisto_romano"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_RE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#transfersCustodyOf"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_acquisto_romano"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_lot_nascita_bacco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#transfersPropertyOf"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_acquisto_romano"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_lot_nascita_bacco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#consistsOf"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_lot_nascita_bacco"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex4_nascita_bacco_gromano"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#hasValue"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_price_sacraconversazione_QC"/>
+        <Literal>10000€</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#hasDate"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex1_purchase_sacraconversazione_QC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1978</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#hasDate"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/am00/events#ex3_gift_collection_TC"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1980</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#consistsOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#containedIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasIntermediary"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasPrice"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasPurpose"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasReceiver"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasSurrender"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#takesPlaceIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#transfersCustodyOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#transfersPropertyOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#consistsOf"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Lot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#containedIn"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasIntermediary"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasPrice"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/am00/events#Loan"/>
+            <Class IRI="http://www.semanticweb.org/am00/events#Purchase"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasPurpose"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasReceiver"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasSurrender"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#takesPlaceIn"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#transfersCustodyOf"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#transfersPropertyOf"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/am00/events#Gift"/>
+            <Class IRI="http://www.semanticweb.org/am00/events#Purchase"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#consistsOf"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/am00/events#CuratedHolding"/>
+            <Class IRI="http://www.semanticweb.org/am00/events#Object"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#containedIn"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#CuratedHolding"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasIntermediary"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasPrice"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Price"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasPurpose"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasReceiver"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasSurrender"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#takesPlaceIn"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#transfersCustodyOf"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Lot"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#transfersPropertyOf"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Lot"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#hasDate"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#hasValue"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Price"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#hasDate"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#hasValue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

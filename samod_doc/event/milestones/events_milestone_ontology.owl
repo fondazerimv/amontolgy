@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/am00/events/attribute_assignment"
+     xml:base="http://www.semanticweb.org/am00/events"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/am00/events/attribute_assignment">
-    <Prefix name="" IRI="http://www.semanticweb.org/am00/events/attribute_assignment"/>
+     ontologyIRI="http://www.semanticweb.org/am00/events">
+    <Prefix name="" IRI="http://www.semanticweb.org/am00/events"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -19,13 +19,28 @@
         <Class IRI="#AttributeAssignment"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#CuratedHolding"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Event"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Expertise"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Gift"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#LegalNotice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Loan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lot"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Object"/>
@@ -34,10 +49,22 @@
         <Class IRI="#Price"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Purchase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transaction"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ValueProposition"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#cites"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consistsOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containedIn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#disputes"/>
@@ -46,10 +73,22 @@
         <ObjectProperty IRI="#hasCurrentOwner"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasIntermediary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrice"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasProposedPrice"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasPurpose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasReceiver"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSurrender"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasValidityOn"/>
@@ -77,6 +116,15 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#reliesOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#takesPlaceIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#transfersCustodyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#transfersPropertyOf"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#describesConservationStatusAs"/>
@@ -96,6 +144,18 @@
     <Declaration>
         <Datatype abbreviatedIRI="xsd:gYear"/>
     </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Agent"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Event"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Object"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Price"/>
+    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#AttributeAssignment"/>
         <Class IRI="#Event"/>
@@ -105,9 +165,34 @@
         <Class IRI="#AttributeAssignment"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Gift"/>
+        <Class IRI="#Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Loan"/>
+        <Class IRI="#Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Purchase"/>
+        <Class IRI="#Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transaction"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ValueProposition"/>
         <Class IRI="#AttributeAssignment"/>
     </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Agent"/>
+        <Class IRI="#CuratedHolding"/>
+        <Class IRI="#Event"/>
+        <Class IRI="#Location"/>
+        <Class IRI="#Lot"/>
+        <Class IRI="#Object"/>
+        <Class IRI="#Price"/>
+    </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Agent"/>
         <Class IRI="#Event"/>
@@ -119,8 +204,24 @@
         <Class IRI="#Expertise"/>
         <Class IRI="#ValueProposition"/>
     </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Gift"/>
+        <Class IRI="#Loan"/>
+        <Class IRI="#Purchase"/>
+    </DisjointClasses>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#hasPurpose"/>
+    </EquivalentObjectProperties>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#cites"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#consistsOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#containedIn"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -132,11 +233,27 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasIntermediary"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPrice"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasProposedPrice"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasPurpose"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasReceiver"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSurrender"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -175,9 +292,29 @@
         <ObjectProperty IRI="#reliesOn"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#takesPlaceIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#transfersCustodyOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#transfersPropertyOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#cites"/>
         <Class IRI="#Expertise"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#consistsOf"/>
+        <Class IRI="#Lot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#containedIn"/>
+        <Class IRI="#Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#disputes"/>
@@ -186,6 +323,17 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasCurrentOwner"/>
         <Class IRI="#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIntermediary"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrice"/>
+        <ObjectUnionOf>
+            <Class IRI="#Loan"/>
+            <Class IRI="#Purchase"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProposedPrice"/>
@@ -196,6 +344,14 @@
         <Class IRI="#Event"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasReceiver"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSurrender"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasValidityOn"/>
         <Class IRI="#LegalNotice"/>
     </ObjectPropertyDomain>
@@ -231,9 +387,35 @@
         <ObjectProperty IRI="#reliesOn"/>
         <Class IRI="#AttributeAssignment"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#takesPlaceIn"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#transfersCustodyOf"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#transfersPropertyOf"/>
+        <ObjectUnionOf>
+            <Class IRI="#Gift"/>
+            <Class IRI="#Purchase"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#cites"/>
         <Class IRI="#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#consistsOf"/>
+        <ObjectUnionOf>
+            <Class IRI="#CuratedHolding"/>
+            <Class IRI="#Object"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containedIn"/>
+        <Class IRI="#CuratedHolding"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#disputes"/>
@@ -244,12 +426,28 @@
         <Class IRI="#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIntermediary"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrice"/>
+        <Class IRI="#Price"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasProposedPrice"/>
         <Class IRI="#Price"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPurpose"/>
         <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasReceiver"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSurrender"/>
+        <Class IRI="#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasValidityOn"/>
@@ -287,6 +485,24 @@
         <ObjectProperty IRI="#reliesOn"/>
         <Class IRI="#AttributeAssignment"/>
     </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#takesPlaceIn"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#transfersCustodyOf"/>
+        <Class IRI="#Lot"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#transfersPropertyOf"/>
+        <Class IRI="#Lot"/>
+    </ObjectPropertyRange>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#hasDate"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#hasValue"/>
+    </EquivalentDataProperties>
     <SubDataPropertyOf>
         <DataProperty IRI="#describesConservationStatusAs"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
@@ -325,7 +541,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasDate"/>
-        <Datatype abbreviatedIRI="xsd:gYear"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasValue"/>
