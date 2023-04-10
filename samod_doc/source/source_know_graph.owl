@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/am00/sources"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/am00/sources">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AccountRegister"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArchivalItem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Archive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArtCollection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArtWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BibliographicItem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Catalog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CuratedHolding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Letter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Library"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Photo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhotoArchive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Receipt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCurrentOwner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isContainedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPrimarySourceFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSecundarySourceFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSourceFor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasExtent"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AccountRegister"/>
+        <Class IRI="#ArchivalItem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArchivalItem"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Archive"/>
+        <Class IRI="#CuratedHolding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArtCollection"/>
+        <Class IRI="#CuratedHolding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ArtWork"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BibliographicItem"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Catalog"/>
+        <Class IRI="#BibliographicItem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CuratedHolding"/>
+        <Class IRI="#Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Letter"/>
+        <Class IRI="#ArchivalItem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Library"/>
+        <Class IRI="#CuratedHolding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Object"/>
+        <Class IRI="#Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Photo"/>
+        <Class IRI="#ArchivalItem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhotoArchive"/>
+        <Class IRI="#Archive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Receipt"/>
+        <Class IRI="#ArchivalItem"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AccountRegister"/>
+        <Class IRI="#Letter"/>
+        <Class IRI="#Photo"/>
+        <Class IRI="#Receipt"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Agent"/>
+        <Class IRI="#Thing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ArchivalItem"/>
+        <Class IRI="#ArtWork"/>
+        <Class IRI="#BibliographicItem"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Archive"/>
+        <Class IRI="#ArtCollection"/>
+        <Class IRI="#Library"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CuratedHolding"/>
+        <Class IRI="#Object"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCurrentOwner"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPrimarySourceFor"/>
+        <ObjectProperty IRI="#isSourceFor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSecundarySourceFor"/>
+        <ObjectProperty IRI="#isSourceFor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSourceFor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCurrentOwner"/>
+        <Class IRI="#Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <Class IRI="#Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPrimarySourceFor"/>
+        <ObjectUnionOf>
+            <Class IRI="#Archive"/>
+            <Class IRI="#Library"/>
+            <Class IRI="#Object"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSecundarySourceFor"/>
+        <ObjectUnionOf>
+            <Class IRI="#Archive"/>
+            <Class IRI="#Library"/>
+            <Class IRI="#Object"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSourceFor"/>
+        <ObjectUnionOf>
+            <Class IRI="#Archive"/>
+            <Class IRI="#Library"/>
+            <Class IRI="#Object"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCurrentOwner"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <Class IRI="#CuratedHolding"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPrimarySourceFor"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSecundarySourceFor"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSourceFor"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasExtent"/>
+        <Class IRI="#CuratedHolding"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasExtent"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
