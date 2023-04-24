@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/am00/agents/overview"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/am00/agents/overview">
+    <Prefix name="" IRI="http://www.semanticweb.org/am00/agents/overview"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArtDealerCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AuctionHouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManagingDirector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEducationIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCoveredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRoleIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BaroqueSculpture"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mannerism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_AuctionHouse_Antichità"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_ManagingDirector"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_SR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex2_ArtGallery_BeauxArts"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex2_MF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex2_ManagingDirector"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex3_BV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex3_ManagingDirector"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex3_Organization_UniversoMostre"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ArtDealerCompany"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AuctionHouse"/>
+        <Class IRI="#ArtDealerCompany"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManagingDirector"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organization"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Agent"/>
+        <Class IRI="#Role"/>
+        <Class IRI="#Subject"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Organization"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Subject"/>
+        <NamedIndividual IRI="#BaroqueSculpture"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Subject"/>
+        <NamedIndividual IRI="#Mannerism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AuctionHouse"/>
+        <NamedIndividual IRI="#ex1_AuctionHouse_Antichità"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ManagingDirector"/>
+        <NamedIndividual IRI="#ex1_ManagingDirector"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#ex1_SR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ArtDealerCompany"/>
+        <NamedIndividual IRI="#ex2_ArtGallery_BeauxArts"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#ex2_MF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ManagingDirector"/>
+        <NamedIndividual IRI="#ex2_ManagingDirector"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#ex3_BV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ManagingDirector"/>
+        <NamedIndividual IRI="#ex3_ManagingDirector"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organization"/>
+        <NamedIndividual IRI="#ex3_Organization_UniversoMostre"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isRoleIn"/>
+        <NamedIndividual IRI="#ex1_ManagingDirector"/>
+        <NamedIndividual IRI="#ex1_AuctionHouse_Antichità"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEducationIn"/>
+        <NamedIndividual IRI="#ex1_SR"/>
+        <NamedIndividual IRI="#Mannerism"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#ex1_SR"/>
+        <NamedIndividual IRI="#ex1_ManagingDirector"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEducationIn"/>
+        <NamedIndividual IRI="#ex2_MF"/>
+        <NamedIndividual IRI="#BaroqueSculpture"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#ex2_MF"/>
+        <NamedIndividual IRI="#ex2_ManagingDirector"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isRoleIn"/>
+        <NamedIndividual IRI="#ex2_ManagingDirector"/>
+        <NamedIndividual IRI="#ex2_ArtGallery_BeauxArts"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRole"/>
+        <NamedIndividual IRI="#ex3_BV"/>
+        <NamedIndividual IRI="#ex3_ManagingDirector"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isRoleIn"/>
+        <NamedIndividual IRI="#ex3_ManagingDirector"/>
+        <NamedIndividual IRI="#ex3_Organization_UniversoMostre"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasEducationIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRole"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCoveredBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRoleIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRole"/>
+        <ObjectProperty IRI="#isCoveredBy"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEducationIn"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRole"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCoveredBy"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRoleIn"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEducationIn"/>
+        <Class IRI="#Subject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRole"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCoveredBy"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRoleIn"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
