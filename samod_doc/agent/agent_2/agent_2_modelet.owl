@@ -85,10 +85,16 @@
         <NamedIndividual IRI="#Firenze_ViaDeiFossi"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Milano"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Roma"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Roma_PiazzaDelleErbe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Roma_PiazzaNavona"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ex1_ArtiDUrbe"/>
@@ -125,6 +131,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ex2_FoundationBranch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex2_SeatArtiMercato"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ex2_SeatBranch"/>
@@ -191,11 +200,19 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Milano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
         <NamedIndividual IRI="#Roma"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Location"/>
         <NamedIndividual IRI="#Roma_PiazzaDelleErbe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#Roma_PiazzaNavona"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#ArtDealerCompany"/>
@@ -251,6 +268,10 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Seat"/>
+        <NamedIndividual IRI="#ex2_SeatArtiMercato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Seat"/>
         <NamedIndividual IRI="#ex2_SeatBranch"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -285,6 +306,11 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isContainedInPlace"/>
         <NamedIndividual IRI="#Roma_PiazzaDelleErbe"/>
+        <NamedIndividual IRI="#Roma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isContainedInPlace"/>
+        <NamedIndividual IRI="#Roma_PiazzaNavona"/>
         <NamedIndividual IRI="#Roma"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -325,17 +351,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#ex1_SeatArtiDUrbe"/>
-        <NamedIndividual IRI="#Roma"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isLocatedIn"/>
-        <NamedIndividual IRI="#ex1_SeatArtiDUrbe"/>
         <NamedIndividual IRI="#Roma_PiazzaDelleErbe"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
         <NamedIndividual IRI="#ex1_SeatLab"/>
-        <NamedIndividual IRI="#Roma"/>
+        <NamedIndividual IRI="#Roma_PiazzaNavona"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isCarriedOutBy"/>
@@ -351,6 +372,11 @@
         <ObjectProperty IRI="#isCarriedOutBy"/>
         <NamedIndividual IRI="#ex1_VentureFamT"/>
         <NamedIndividual IRI="#ex1_ST"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSeat"/>
+        <NamedIndividual IRI="#ex2_ArtiMercato"/>
+        <NamedIndividual IRI="#ex2_SeatArtiMercato"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasSeat"/>
@@ -371,6 +397,11 @@
         <ObjectProperty IRI="#hasFoundedOrganization"/>
         <NamedIndividual IRI="#ex2_FoundationBranch"/>
         <NamedIndividual IRI="#ex2_Branch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#ex2_SeatArtiMercato"/>
+        <NamedIndividual IRI="#Milano"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isLocatedIn"/>
@@ -418,6 +449,11 @@
         <NamedIndividual IRI="#Roma"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#ex1_ArtiDUrbe"/>
+        <Literal>Arti d&apos;Urbe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#hasDate"/>
         <NamedIndividual IRI="#ex1_FoundationArtiDUrbe"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1949</Literal>
@@ -438,6 +474,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1956</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#ex2_ArtiMercato"/>
+        <Literal>Artimercato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#hasDate"/>
         <NamedIndividual IRI="#ex2_FoundationBranch"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1977</Literal>
@@ -446,6 +487,11 @@
         <DataProperty IRI="#isActiveFrom"/>
         <NamedIndividual IRI="#ex2_SeatBranch"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1977</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#ex3_ArtiLibere"/>
+        <Literal>Arti libere</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasDate"/>
