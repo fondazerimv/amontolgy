@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/am00/agents/multiple_organizations">
+    <Prefix name="" IRI="http://www.semanticweb.org/am00/agents/multiple_organizations"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -51,22 +52,25 @@
         <ObjectProperty IRI="#isBranchOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isInPlace"/>
+        <ObjectProperty IRI="#isCarriedOutBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isContainedInPlace"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLocatedIn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isSecundaryActivityOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#particpatesIn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#takesPlaceIn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#undertakes"/>
+        <ObjectProperty IRI="#participatesIn"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#isActiveFrom"/>
@@ -125,7 +129,15 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isInPlace"/>
+        <ObjectProperty IRI="#isCarriedOutBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isContainedInPlace"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isLocatedIn"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -133,15 +145,7 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#particpatesIn"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#takesPlaceIn"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#undertakes"/>
+        <ObjectProperty IRI="#participatesIn"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
@@ -157,7 +161,15 @@
         <Class IRI="#Branch"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isInPlace"/>
+        <ObjectProperty IRI="#isCarriedOutBy"/>
+        <Class IRI="#FamiliarVenture"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isContainedInPlace"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLocatedIn"/>
         <Class IRI="#Seat"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -165,15 +177,7 @@
         <Class IRI="#Organization"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#particpatesIn"/>
-        <Class IRI="#Agent"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#takesPlaceIn"/>
-        <Class IRI="#Foundation"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#undertakes"/>
+        <ObjectProperty IRI="#participatesIn"/>
         <Class IRI="#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
@@ -189,7 +193,15 @@
         <Class IRI="#Organization"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isInPlace"/>
+        <ObjectProperty IRI="#isCarriedOutBy"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isContainedInPlace"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLocatedIn"/>
         <Class IRI="#Location"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -197,20 +209,16 @@
         <Class IRI="#Organization"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#particpatesIn"/>
+        <ObjectProperty IRI="#participatesIn"/>
         <Class IRI="#Foundation"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#takesPlaceIn"/>
-        <Class IRI="#Location"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#undertakes"/>
-        <Class IRI="#FamiliarVenture"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="#hasDate"/>
         <Class IRI="#Foundation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="#Agent"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#isActiveFrom"/>
@@ -226,6 +234,10 @@
             <Datatype abbreviatedIRI="xsd:dateTime"/>
             <Datatype abbreviatedIRI="xsd:gYear"/>
         </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#isActiveFrom"/>
