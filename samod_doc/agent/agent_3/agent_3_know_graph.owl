@@ -51,7 +51,7 @@
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasPurchasedOrganization"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasReceiver"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasCompanyPurchaser"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasResultingOrganization"/>
@@ -60,7 +60,7 @@
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasSeat"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasSurrender"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasCompanySeller"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#isCarriedOutBy"/>
@@ -293,12 +293,12 @@
         <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex2_AuctionHouse"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasReceiver"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasCompanyPurchaser"/>
         <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex2_PurchaseAuctionHouse"/>
         <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex2_MB"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasSurrender"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasCompanySeller"/>
         <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex2_PurchaseAuctionHouse"/>
         <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex2_SD"/>
     </ObjectPropertyAssertion>
@@ -409,7 +409,7 @@
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasClosedOrganization"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasReceiver"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasCompanyPurchaser"/>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasParticipant"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -421,7 +421,7 @@
         <ObjectProperty IRI="topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasSurrender"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasCompanySeller"/>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasParticipant"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -461,7 +461,7 @@
         <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#CompanyPurchase"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasReceiver"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasCompanyPurchaser"/>
         <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#CompanyPurchase"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -473,7 +473,7 @@
         <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Organization"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasSurrender"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasCompanySeller"/>
         <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#CompanyPurchase"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -513,7 +513,7 @@
         <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Organization"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasReceiver"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasCompanyPurchaser"/>
         <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -525,7 +525,7 @@
         <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Seat"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasSurrender"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasCompanySeller"/>
         <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>

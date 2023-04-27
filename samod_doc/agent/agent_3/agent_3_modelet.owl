@@ -42,6 +42,12 @@
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasClosedOrganization"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasCompanyPurchaser"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasCompanySeller"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasOriginalOrganization"/>
     </Declaration>
     <Declaration>
@@ -51,16 +57,10 @@
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasPurchasedOrganization"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasReceiver"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasResultingOrganization"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasSeat"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasSurrender"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#isCarriedOutBy"/>
@@ -88,63 +88,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#isActiveTo"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#Firenze"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#Firenze_PiazzaDuomo"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#Firenze_ViaDeiFossi"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#Paris"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#Paris_ChampsElysées"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex1_CessationTesori"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex1_GalleriaTesori"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex1_RT"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex1_SeatGalleriaTesori"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex2_AuctionHouse"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex2_MB"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex2_PurchaseAuctionHouse"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex2_SD"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_ArtiFiorentine"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_ArtsDeParis"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_ChangeByLZ"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_LZ"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_SeatArtiFiorentine"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_SeatArtsDeParis"/>
     </Declaration>
     <Declaration>
         <Datatype abbreviatedIRI="xsd:gYear"/>
@@ -176,224 +119,16 @@
         <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#CompanyModification"/>
         <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#CompanyPurchase"/>
     </DisjointClasses>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Location"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#Firenze"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Location"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#Firenze_PiazzaDuomo"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Location"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#Firenze_ViaDeiFossi"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Location"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#Paris"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Location"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#Paris_ChampsElysées"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#CessationOfActivity"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex1_CessationTesori"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Organization"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex1_GalleriaTesori"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Agent"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex1_RT"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Seat"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex1_SeatGalleriaTesori"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Organization"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex2_AuctionHouse"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Agent"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex2_MB"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#CompanyPurchase"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex2_PurchaseAuctionHouse"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Agent"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex2_SD"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Organization"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_ArtiFiorentine"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Organization"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_ArtsDeParis"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#CompanyModification"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_ChangeByLZ"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Agent"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_LZ"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Seat"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_SeatArtiFiorentine"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Seat"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_SeatArtsDeParis"/>
-    </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#isContainedInPlace"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#Firenze_PiazzaDuomo"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#Firenze"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#isContainedInPlace"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#Firenze_ViaDeiFossi"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#Firenze"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#isContainedInPlace"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#Paris_ChampsElysées"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#Paris"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasClosedOrganization"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex1_CessationTesori"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex1_GalleriaTesori"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasParticipant"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex1_CessationTesori"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex1_RT"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasSeat"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex1_GalleriaTesori"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex1_SeatGalleriaTesori"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#isLocatedIn"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex1_SeatGalleriaTesori"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#Firenze_PiazzaDuomo"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasPurchasedOrganization"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex2_PurchaseAuctionHouse"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex2_AuctionHouse"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasReceiver"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex2_PurchaseAuctionHouse"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex2_MB"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasSurrender"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex2_PurchaseAuctionHouse"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex2_SD"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasSeat"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_ArtiFiorentine"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_SeatArtiFiorentine"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasSeat"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_ArtsDeParis"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_SeatArtsDeParis"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasOriginalOrganization"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_ChangeByLZ"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_ArtiFiorentine"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasParticipant"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_ChangeByLZ"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_LZ"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasResultingOrganization"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_ChangeByLZ"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_ArtsDeParis"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#isLocatedIn"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_SeatArtiFiorentine"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#Firenze_ViaDeiFossi"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#isLocatedIn"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_SeatArtsDeParis"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#Paris_ChampsElysées"/>
-    </ObjectPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasDate"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex1_CessationTesori"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1910</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasName"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex1_GalleriaTesori"/>
-        <Literal>Galleria d&apos;Arte Tesori</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#isActiveFrom"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex1_SeatGalleriaTesori"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1870</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#isActiveTo"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex1_SeatGalleriaTesori"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1910</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasDate"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex2_PurchaseAuctionHouse"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1915</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasName"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_ArtiFiorentine"/>
-        <Literal>Arti fiorentine</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasName"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_ArtsDeParis"/>
-        <Literal>Les Arts de Paris</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasDate"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_ChangeByLZ"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1920</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#isActiveFrom"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_SeatArtiFiorentine"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1850</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#isActiveTo"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_SeatArtiFiorentine"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1920</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#isActiveFrom"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/am00/agents/companyevents#ex3_SeatArtsDeParis"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1920</Literal>
-    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasClosedOrganization"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasCompanyPurchaser"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasCompanySeller"/>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasParticipant"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -409,20 +144,12 @@
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasClosedOrganization"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasReceiver"/>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasParticipant"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasResultingOrganization"/>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasParticipant"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasSeat"/>
         <ObjectProperty IRI="topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasSurrender"/>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasParticipant"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#isCarriedOutBy"/>
@@ -449,6 +176,14 @@
         <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#CessationOfActivity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasCompanyPurchaser"/>
+        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#CompanyPurchase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasCompanySeller"/>
+        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#CompanyPurchase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasOriginalOrganization"/>
         <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#CompanyModification"/>
     </ObjectPropertyDomain>
@@ -461,20 +196,12 @@
         <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#CompanyPurchase"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasReceiver"/>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#CompanyPurchase"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasResultingOrganization"/>
         <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#CompanyModification"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasSeat"/>
         <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Organization"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasSurrender"/>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#CompanyPurchase"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#isCarriedOutBy"/>
@@ -501,6 +228,14 @@
         <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Organization"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasCompanyPurchaser"/>
+        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasCompanySeller"/>
+        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasOriginalOrganization"/>
         <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Organization"/>
     </ObjectPropertyRange>
@@ -513,20 +248,12 @@
         <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Organization"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasReceiver"/>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Agent"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasResultingOrganization"/>
         <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Organization"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasSeat"/>
         <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Seat"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#hasSurrender"/>
-        <Class IRI="http://www.semanticweb.org/am00/agents/companyevents#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.semanticweb.org/am00/agents/companyevents#isCarriedOutBy"/>
