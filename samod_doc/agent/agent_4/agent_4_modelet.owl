@@ -155,14 +155,6 @@
         <Class IRI="#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#coversPost"/>
-        <Class IRI="#Role"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasPost"/>
-        <Class IRI="#Organization"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasRole"/>
         <Class IRI="#Person"/>
     </ObjectPropertyDomain>
@@ -177,10 +169,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isFunctionalTo"/>
         <Class IRI="#Collaboration"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isSatisfiedBy"/>
-        <Class IRI="#Post"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#providesServiceIn"/>
@@ -195,32 +183,12 @@
         <Class IRI="#Collaboration"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#coversPost"/>
-        <Class IRI="#Post"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasPost"/>
-        <Class IRI="#Post"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasRole"/>
-        <Class IRI="#Role"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#isEmployerForRole"/>
         <Class IRI="#Role"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isExpertIn"/>
         <Class IRI="#Domain"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isFunctionalTo"/>
-        <Class IRI="#Event"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isSatisfiedBy"/>
-        <Class IRI="#Collaboration"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#providesServiceIn"/>

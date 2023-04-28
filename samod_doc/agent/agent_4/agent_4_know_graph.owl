@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/am00/agents/professionals">
+    <Prefix name="" IRI="http://www.semanticweb.org/am00/agents/professionals"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -33,22 +34,10 @@
         <Class IRI="#Post"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Role"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#collaboratesIn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#coversPost"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasPost"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasRole"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isEmployerForRole"/>
+        <ObjectProperty IRI="#isCollaboratorIn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isExpertIn"/>
@@ -75,10 +64,88 @@
         <DataProperty IRI="#hasStartDate"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#AA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AQ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FZ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MZ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#antichitàFiorentine"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#artHistorianConsultant"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#baroqueSculpture"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_attribution"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex1_collaboration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex2_collaboration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex2_photoCampaign"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex3_catalogPreparation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex3_collaborationAB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex3_collaborationDD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex3_collaborationGO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex3_collaborationLA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex4_directorAQ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex4_directorFZ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ex4_directorMZ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#historyIllumination"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#managingDirector"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#manneristPainting"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#photographer"/>
@@ -100,34 +167,369 @@
         <Class IRI="#Domain"/>
         <Class IRI="#Event"/>
         <Class IRI="#Post"/>
-        <Class IRI="#Role"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Organization"/>
         <Class IRI="#Person"/>
     </DisjointClasses>
     <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#AA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#AB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#AQ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#DD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#FR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#FZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#GO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#GT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#LA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#MZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Organization"/>
+        <NamedIndividual IRI="#antichitàFiorentine"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Post"/>
         <NamedIndividual IRI="#artHistorianConsultant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Domain"/>
+        <NamedIndividual IRI="#baroqueSculpture"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#ex1_attribution"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Collaboration"/>
+        <NamedIndividual IRI="#ex1_collaboration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Collaboration"/>
+        <NamedIndividual IRI="#ex2_collaboration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#ex2_photoCampaign"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#ex3_catalogPreparation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Collaboration"/>
+        <NamedIndividual IRI="#ex3_collaborationAB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Collaboration"/>
+        <NamedIndividual IRI="#ex3_collaborationDD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Collaboration"/>
+        <NamedIndividual IRI="#ex3_collaborationGO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Collaboration"/>
+        <NamedIndividual IRI="#ex3_collaborationLA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Collaboration"/>
+        <NamedIndividual IRI="#ex4_directorAQ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Collaboration"/>
+        <NamedIndividual IRI="#ex4_directorFZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Collaboration"/>
+        <NamedIndividual IRI="#ex4_directorMZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Domain"/>
+        <NamedIndividual IRI="#historyIllumination"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Post"/>
         <NamedIndividual IRI="#managingDirector"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Domain"/>
+        <NamedIndividual IRI="#manneristPainting"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Post"/>
         <NamedIndividual IRI="#photographer"/>
     </ClassAssertion>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#coversPost"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#providesServiceIn"/>
+        <NamedIndividual IRI="#AA"/>
+        <NamedIndividual IRI="#ex2_collaboration"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isExpertIn"/>
+        <NamedIndividual IRI="#AB"/>
+        <NamedIndividual IRI="#historyIllumination"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#providesServiceIn"/>
+        <NamedIndividual IRI="#AB"/>
+        <NamedIndividual IRI="#ex1_collaboration"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#providesServiceIn"/>
+        <NamedIndividual IRI="#AB"/>
+        <NamedIndividual IRI="#ex3_collaborationAB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#providesServiceIn"/>
+        <NamedIndividual IRI="#AQ"/>
+        <NamedIndividual IRI="#ex4_directorAQ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#providesServiceIn"/>
+        <NamedIndividual IRI="#DD"/>
+        <NamedIndividual IRI="#ex3_collaborationDD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requestsServiceIn"/>
+        <NamedIndividual IRI="#FR"/>
+        <NamedIndividual IRI="#ex3_collaborationAB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requestsServiceIn"/>
+        <NamedIndividual IRI="#FR"/>
+        <NamedIndividual IRI="#ex3_collaborationDD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requestsServiceIn"/>
+        <NamedIndividual IRI="#FR"/>
+        <NamedIndividual IRI="#ex3_collaborationGO"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requestsServiceIn"/>
+        <NamedIndividual IRI="#FR"/>
+        <NamedIndividual IRI="#ex3_collaborationLA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#providesServiceIn"/>
+        <NamedIndividual IRI="#FZ"/>
+        <NamedIndividual IRI="#ex4_directorFZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isExpertIn"/>
+        <NamedIndividual IRI="#GO"/>
+        <NamedIndividual IRI="#baroqueSculpture"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#providesServiceIn"/>
+        <NamedIndividual IRI="#GO"/>
+        <NamedIndividual IRI="#ex3_collaborationGO"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requestsServiceIn"/>
+        <NamedIndividual IRI="#GT"/>
+        <NamedIndividual IRI="#ex1_collaboration"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requestsServiceIn"/>
+        <NamedIndividual IRI="#GT"/>
+        <NamedIndividual IRI="#ex2_collaboration"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isExpertIn"/>
+        <NamedIndividual IRI="#LA"/>
+        <NamedIndividual IRI="#manneristPainting"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#providesServiceIn"/>
+        <NamedIndividual IRI="#LA"/>
+        <NamedIndividual IRI="#ex3_collaborationLA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#providesServiceIn"/>
+        <NamedIndividual IRI="#MZ"/>
+        <NamedIndividual IRI="#ex4_directorMZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPost"/>
+        <NamedIndividual IRI="#antichitàFiorentine"/>
+        <NamedIndividual IRI="#managingDirector"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requestsServiceIn"/>
+        <NamedIndividual IRI="#antichitàFiorentine"/>
+        <NamedIndividual IRI="#ex4_directorAQ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requestsServiceIn"/>
+        <NamedIndividual IRI="#antichitàFiorentine"/>
+        <NamedIndividual IRI="#ex4_directorFZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requestsServiceIn"/>
+        <NamedIndividual IRI="#antichitàFiorentine"/>
+        <NamedIndividual IRI="#ex4_directorMZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSatisfiedBy"/>
+        <NamedIndividual IRI="#artHistorianConsultant"/>
+        <NamedIndividual IRI="#ex1_collaboration"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSatisfiedBy"/>
+        <NamedIndividual IRI="#artHistorianConsultant"/>
+        <NamedIndividual IRI="#ex3_collaborationAB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSatisfiedBy"/>
+        <NamedIndividual IRI="#artHistorianConsultant"/>
+        <NamedIndividual IRI="#ex3_collaborationGO"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSatisfiedBy"/>
+        <NamedIndividual IRI="#artHistorianConsultant"/>
+        <NamedIndividual IRI="#ex3_collaborationLA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFunctionalTo"/>
+        <NamedIndividual IRI="#ex1_collaboration"/>
+        <NamedIndividual IRI="#ex1_attribution"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFunctionalTo"/>
+        <NamedIndividual IRI="#ex2_collaboration"/>
+        <NamedIndividual IRI="#ex2_photoCampaign"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFunctionalTo"/>
+        <NamedIndividual IRI="#ex3_collaborationAB"/>
+        <NamedIndividual IRI="#ex3_catalogPreparation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFunctionalTo"/>
+        <NamedIndividual IRI="#ex3_collaborationDD"/>
+        <NamedIndividual IRI="#ex3_catalogPreparation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFunctionalTo"/>
+        <NamedIndividual IRI="#ex3_collaborationGO"/>
+        <NamedIndividual IRI="#ex3_catalogPreparation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFunctionalTo"/>
+        <NamedIndividual IRI="#ex3_collaborationLA"/>
+        <NamedIndividual IRI="#ex3_catalogPreparation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSatisfiedBy"/>
+        <NamedIndividual IRI="#managingDirector"/>
+        <NamedIndividual IRI="#ex4_directorAQ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSatisfiedBy"/>
+        <NamedIndividual IRI="#managingDirector"/>
+        <NamedIndividual IRI="#ex4_directorFZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSatisfiedBy"/>
+        <NamedIndividual IRI="#managingDirector"/>
+        <NamedIndividual IRI="#ex4_directorMZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSatisfiedBy"/>
+        <NamedIndividual IRI="#photographer"/>
+        <NamedIndividual IRI="#ex2_collaboration"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSatisfiedBy"/>
+        <NamedIndividual IRI="#photographer"/>
+        <NamedIndividual IRI="#ex3_collaborationDD"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#antichitàFiorentine"/>
+        <Literal>Antichità fiorentine</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEndDate"/>
+        <NamedIndividual IRI="#ex1_collaboration"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1982</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStartDate"/>
+        <NamedIndividual IRI="#ex1_collaboration"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1980</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEndDate"/>
+        <NamedIndividual IRI="#ex2_collaboration"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1985</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStartDate"/>
+        <NamedIndividual IRI="#ex2_collaboration"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1960</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEndDate"/>
+        <NamedIndividual IRI="#ex4_directorAQ"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1920</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStartDate"/>
+        <NamedIndividual IRI="#ex4_directorAQ"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1910</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEndDate"/>
+        <NamedIndividual IRI="#ex4_directorFZ"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1948</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStartDate"/>
+        <NamedIndividual IRI="#ex4_directorFZ"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1920</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEndDate"/>
+        <NamedIndividual IRI="#ex4_directorMZ"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1970</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStartDate"/>
+        <NamedIndividual IRI="#ex4_directorMZ"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1948</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasPost"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#isEmployerForRole"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -144,23 +546,19 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#providesServiceIn"/>
-        <ObjectProperty IRI="#collaboratesIn"/>
+        <ObjectProperty IRI="#isCollaboratorIn"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#requestsServiceIn"/>
-        <ObjectProperty IRI="#collaboratesIn"/>
+        <ObjectProperty IRI="#isCollaboratorIn"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#collaboratesIn"/>
-        <Class IRI="#Agent"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasRole"/>
-        <Class IRI="#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isEmployerForRole"/>
+        <ObjectProperty IRI="#hasPost"/>
         <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCollaboratorIn"/>
+        <Class IRI="#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isExpertIn"/>
@@ -171,6 +569,10 @@
         <Class IRI="#Collaboration"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSatisfiedBy"/>
+        <Class IRI="#Post"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#providesServiceIn"/>
         <Class IRI="#Agent"/>
     </ObjectPropertyDomain>
@@ -179,16 +581,24 @@
         <Class IRI="#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#collaboratesIn"/>
-        <Class IRI="#Collaboration"/>
+        <ObjectProperty IRI="#hasPost"/>
+        <Class IRI="#Post"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isEmployerForRole"/>
-        <Class IRI="#Role"/>
+        <ObjectProperty IRI="#isCollaboratorIn"/>
+        <Class IRI="#Collaboration"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isExpertIn"/>
         <Class IRI="#Domain"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFunctionalTo"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSatisfiedBy"/>
+        <Class IRI="#Collaboration"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#providesServiceIn"/>
@@ -204,10 +614,7 @@
     </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="#hasEndDate"/>
-        <ObjectUnionOf>
-            <Class IRI="#Collaboration"/>
-            <Class IRI="#Role"/>
-        </ObjectUnionOf>
+        <Class IRI="#Collaboration"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasName"/>
@@ -215,10 +622,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasStartDate"/>
-        <ObjectUnionOf>
-            <Class IRI="#Collaboration"/>
-            <Class IRI="#Role"/>
-        </ObjectUnionOf>
+        <Class IRI="#Collaboration"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#hasEndDate"/>
