@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/am00/agents/events_associations#"
      xml:base="http://www.semanticweb.org/am00/agents/events_associations"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
@@ -38,61 +38,61 @@
     
 
 
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#hasReferenceAssociation -->
+    <!-- http://www.semanticweb.org/am00/agents#hasReferenceAssociation -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/am00/agents/events_associations#hasReferenceAssociation">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/am00/agents#hasReferenceAssociation">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Membership"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Association"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/am00/agents#Membership"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/am00/agents#Association"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#joinsAsMember -->
+    <!-- http://www.semanticweb.org/am00/agents#joinsAsMember -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/am00/agents/events_associations#joinsAsMember">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/am00/agents#joinsAsMember">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Agent"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Membership"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/am00/agents#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/am00/agents#Membership"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#organizes -->
+    <!-- http://www.semanticweb.org/am00/agents#organizes -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/am00/agents/events_associations#organizes">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/am00/agents#organizes">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Agent"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/am00/agents#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/am00/agents#Event"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#participatesIn -->
+    <!-- http://www.semanticweb.org/am00/agents#participatesIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/am00/agents/events_associations#participatesIn">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Agent"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Event"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/am00/agents#participatesIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/am00/agents#Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/am00/agents#Event"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#recursAs -->
+    <!-- http://www.semanticweb.org/am00/agents#recursAs -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/am00/agents/events_associations#recursAs">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/am00/agents#recursAs">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Initiative"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/am00/agents#Initiative"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/am00/agents#Event"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#takesPlaceIn -->
+    <!-- http://www.semanticweb.org/am00/agents#takesPlaceIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/am00/agents/events_associations#takesPlaceIn">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/am00/agents#takesPlaceIn">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Event"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Location"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/am00/agents#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/am00/agents#Location"/>
     </owl:ObjectProperty>
     
 
@@ -108,11 +108,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#hasDate -->
+    <!-- http://www.semanticweb.org/am00/agents#hasDate -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/am00/agents/events_associations#hasDate">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/am00/agents#hasDate">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/am00/agents#Event"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:unionOf rdf:parseType="Collection">
@@ -125,15 +125,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#hasEndDate -->
+    <!-- http://www.semanticweb.org/am00/agents#hasEndDate -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/am00/agents/events_associations#hasEndDate">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/am00/agents#hasEndDate">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Event"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Membership"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents#Event"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents#Membership"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -149,16 +149,16 @@
     
 
 
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#hasName -->
+    <!-- http://www.semanticweb.org/am00/agents#hasName -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/am00/agents/events_associations#hasName">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/am00/agents#hasName">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Agent"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Event"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Initiative"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents#Agent"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents#Event"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents#Initiative"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -167,15 +167,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#hasStartDate -->
+    <!-- http://www.semanticweb.org/am00/agents#hasStartDate -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/am00/agents/events_associations#hasStartDate">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/am00/agents#hasStartDate">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Event"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Membership"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents#Event"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents#Membership"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -202,213 +202,65 @@
     
 
 
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#Agent -->
+    <!-- http://www.semanticweb.org/am00/agents#Agent -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Agent"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/am00/agents#Agent"/>
     
 
 
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#Association -->
+    <!-- http://www.semanticweb.org/am00/agents#Association -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Association">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Organization"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/am00/agents#Association">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/am00/agents#Organization"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#Event -->
+    <!-- http://www.semanticweb.org/am00/agents#Event -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Event"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/am00/agents#Event"/>
     
 
 
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#EventEdition -->
+    <!-- http://www.semanticweb.org/am00/agents#EventEdition -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/am00/agents/events_associations#EventEdition">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Event"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/am00/agents#EventEdition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/am00/agents#Event"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#Exhibition -->
+    <!-- http://www.semanticweb.org/am00/agents#Exhibition -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Exhibition">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Event"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/am00/agents#Exhibition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/am00/agents#Event"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#Initiative -->
+    <!-- http://www.semanticweb.org/am00/agents#Initiative -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Initiative"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/am00/agents#Initiative"/>
     
 
 
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#Location -->
+    <!-- http://www.semanticweb.org/am00/agents#Location -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Location"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/am00/agents#Location"/>
     
 
 
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#Membership -->
+    <!-- http://www.semanticweb.org/am00/agents#Membership -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Membership"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/am00/agents#Membership"/>
     
 
 
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#Organization -->
+    <!-- http://www.semanticweb.org/am00/agents#Organization -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Organization">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Agent"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/am00/agents#Organization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/am00/agents#Agent"/>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#AIT -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/am00/agents/events_associations#AIT">
-        <rdf:type rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Association"/>
-        <organizes rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#ex1_BIF"/>
-        <organizes rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#ex2_ArtiRomane82"/>
-        <organizes rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#ex2_ArtiRomane84"/>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antiquari Italiani</hasName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#Firenze -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Firenze">
-        <rdf:type rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Location"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#Roma -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Roma">
-        <rdf:type rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Location"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#ex1_BIF -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/am00/agents/events_associations#ex1_BIF">
-        <rdf:type rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Event"/>
-        <takesPlaceIn rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Firenze"/>
-        <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2010</hasDate>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BIF</hasName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#ex1_artiBelle -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/am00/agents/events_associations#ex1_artiBelle">
-        <rdf:type rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Organization"/>
-        <organizes rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#ex1_exhibition"/>
-        <participatesIn rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#ex1_BIF"/>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arti belle</hasName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#ex1_exhibition -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/am00/agents/events_associations#ex1_exhibition">
-        <rdf:type rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Exhibition"/>
-        <takesPlaceIn rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Roma"/>
-        <hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2009</hasEndDate>
-        <hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2008</hasStartDate>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#ex2_ArtiRomane -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/am00/agents/events_associations#ex2_ArtiRomane">
-        <rdf:type rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Initiative"/>
-        <recursAs rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#ex2_ArtiRomane82"/>
-        <recursAs rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#ex2_ArtiRomane84"/>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arti romane</hasName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#ex2_ArtiRomane82 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/am00/agents/events_associations#ex2_ArtiRomane82">
-        <rdf:type rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#EventEdition"/>
-        <takesPlaceIn rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Roma"/>
-        <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1982</hasDate>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arti romane - Edizione 1982</hasName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#ex2_ArtiRomane84 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/am00/agents/events_associations#ex2_ArtiRomane84">
-        <rdf:type rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#EventEdition"/>
-        <takesPlaceIn rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Roma"/>
-        <hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1984</hasDate>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arti romane - Edizione 1984</hasName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#ex2_SA -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/am00/agents/events_associations#ex2_SA">
-        <rdf:type rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Agent"/>
-        <joinsAsMember rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#ex2_membershipSA"/>
-        <participatesIn rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#ex2_ArtiRomane82"/>
-        <participatesIn rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#ex2_ArtiRomane84"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#ex2_membershipSA -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/am00/agents/events_associations#ex2_membershipSA">
-        <rdf:type rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Membership"/>
-        <hasReferenceAssociation rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#AIT"/>
-        <hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1985</hasEndDate>
-        <hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1970</hasStartDate>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#ex3_Art -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/am00/agents/events_associations#ex3_Art">
-        <rdf:type rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Organization"/>
-        <joinsAsMember rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#ex3_membershipArt"/>
-        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Art - Galleria d&apos;Arte</hasName>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/am00/agents/events_associations#ex3_membershipArt -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/am00/agents/events_associations#ex3_membershipArt">
-        <rdf:type rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#Membership"/>
-        <hasReferenceAssociation rdf:resource="http://www.semanticweb.org/am00/agents/events_associations#AIT"/>
-        <hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1988</hasEndDate>
-        <hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1977</hasStartDate>
-    </owl:NamedIndividual>
     
 
 
@@ -423,16 +275,16 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Agent"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Event"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Initiative"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Location"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents/events_associations#Membership"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents#Agent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents#Event"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents#Initiative"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents#Location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/am00/agents#Membership"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
 
