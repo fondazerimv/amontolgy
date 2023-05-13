@@ -1,156 +1,61 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/am00/agents"
+     xml:base="https://w3id.org/zeri/ontology/amo/agents"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/am00/agents">
+     ontologyIRI="https://w3id.org/zeri/ontology/amo/agents">
+    <Prefix name="" IRI="http://www.semanticweb.org/am00/agents"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <ObjectProperty IRI="#joinsAsMember"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Association"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#organizes"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasSeat"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isSatisfiedBy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Branch"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CessationOfActivity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#FamiliarVenture"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasStartDate"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#isActiveFrom"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isSecundaryActivityOf"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#managingDirector"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Post"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Location"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isCoveredBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isExpertIn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasOriginalOrganization"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#artHistorianConsultant"/>
-    </Declaration>
-    <Declaration>
-        <Datatype abbreviatedIRI="xsd:gYear"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasPost"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CompanyPurchase"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasName"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isCarriedOutBy"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#photographer"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasEducationIn"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Initiative"/>
+        <Class IRI="#CompanyModification"/>
     </Declaration>
     <Declaration>
         <Class IRI="#RestorationLaboratory"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CompanyModification"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Membership"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Seat"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Person"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isBranchOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasReferenceAssociation"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasEndDate"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isContainedInPlace"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Event"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Collaboration"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasResultingOrganization"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Exhibition"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#providesServiceIn"/>
+        <ObjectProperty IRI="#hasClosedOrganization"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#KnowledgeDomain"/>
+        <ObjectProperty IRI="#hasCompanySeller"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requestsServiceIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPurchasedOrganization"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#isActiveTo"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasCompanySeller"/>
+        <DataProperty IRI="#hasName"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#takesPlaceIn"/>
+        <Class IRI="#Person"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#recursAs"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isCollaboratorIn"/>
+        <ObjectProperty IRI="#hasResultingOrganization"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AuctionHouse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isContainedInPlace"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEndDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBranchOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#participatesIn"/>
@@ -159,43 +64,139 @@
         <ObjectProperty IRI="#hasFoundedOrganization"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#recursAs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExpertIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CessationOfActivity"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#EventEdition"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasParticipant"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isFunctionalTo"/>
+        <Class IRI="#KnowledgeDomain"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ArtDealerCompany"/>
+        <ObjectProperty IRI="#isFunctionalTo"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasCompanyPurchaser"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#requestsServiceIn"/>
+        <Class IRI="https://w3id.org/zeri/ontology/amo/events#Event"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasDate"/>
+        <Class IRI="#Collaboration"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasClosedOrganization"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isLocatedIn"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Organization"/>
+        <ObjectProperty IRI="#joinsAsMember"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Foundation"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasPurchasedOrganization"/>
+        <ObjectProperty IRI="#isLocatedIn"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Agent"/>
+        <DataProperty IRI="#hasDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSeat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organization"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isActiveFrom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStartDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSecundaryActivityOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Branch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#organizes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArtDealerCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Association"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FamiliarVenture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Post"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOriginalOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCoveredBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#managingDirector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCollaboratorIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCarriedOutBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSatisfiedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEducationIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/amo/events#takesPlaceIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPost"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#artHistorianConsultant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#providesServiceIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Initiative"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Membership"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompanyPurchase"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasReferenceAssociation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#photographer"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#ArtDealerCompany"/>
@@ -215,11 +216,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CessationOfActivity"/>
-        <Class IRI="#Event"/>
+        <Class IRI="https://w3id.org/zeri/ontology/amo/events#Event"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CompanyModification"/>
-        <Class IRI="#Event"/>
+        <Class IRI="https://w3id.org/zeri/ontology/amo/events#Event"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CompanyPurchase"/>
@@ -227,15 +228,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#EventEdition"/>
-        <Class IRI="#Event"/>
+        <Class IRI="https://w3id.org/zeri/ontology/amo/events#Event"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Exhibition"/>
-        <Class IRI="#Event"/>
+        <Class IRI="https://w3id.org/zeri/ontology/amo/events#Event"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Foundation"/>
-        <Class IRI="#Event"/>
+        <Class IRI="https://w3id.org/zeri/ontology/amo/events#Event"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Organization"/>
@@ -252,7 +253,6 @@
     <DisjointClasses>
         <Class IRI="#Agent"/>
         <Class IRI="#Collaboration"/>
-        <Class IRI="#Event"/>
         <Class IRI="#FamiliarVenture"/>
         <Class IRI="#Initiative"/>
         <Class IRI="#KnowledgeDomain"/>
@@ -260,6 +260,7 @@
         <Class IRI="#Membership"/>
         <Class IRI="#Post"/>
         <Class IRI="#Seat"/>
+        <Class IRI="https://w3id.org/zeri/ontology/amo/events#Event"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#AuctionHouse"/>
@@ -338,11 +339,11 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isBranchOf"/>
-        <ObjectProperty IRI="#isSecundaryActivityOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isBranchOf"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty IRI="#isSecundaryActivityOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isCarriedOutBy"/>
@@ -401,7 +402,7 @@
         <ObjectProperty IRI="#isCollaboratorIn"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#takesPlaceIn"/>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/amo/events#takesPlaceIn"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
@@ -434,7 +435,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasParticipant"/>
-        <Class IRI="#Event"/>
+        <Class IRI="https://w3id.org/zeri/ontology/amo/events#Event"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPost"/>
@@ -521,8 +522,8 @@
         <Class IRI="#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#takesPlaceIn"/>
-        <Class IRI="#Event"/>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/amo/events#takesPlaceIn"/>
+        <Class IRI="https://w3id.org/zeri/ontology/amo/events#Event"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasClosedOrganization"/>
@@ -598,7 +599,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isFunctionalTo"/>
-        <Class IRI="#Event"/>
+        <Class IRI="https://w3id.org/zeri/ontology/amo/events#Event"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isLocatedIn"/>
@@ -618,11 +619,11 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#organizes"/>
-        <Class IRI="#Event"/>
+        <Class IRI="https://w3id.org/zeri/ontology/amo/events#Event"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#participatesIn"/>
-        <Class IRI="#Event"/>
+        <Class IRI="https://w3id.org/zeri/ontology/amo/events#Event"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#providesServiceIn"/>
@@ -630,14 +631,14 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#recursAs"/>
-        <Class IRI="#Event"/>
+        <Class IRI="https://w3id.org/zeri/ontology/amo/events#Event"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#requestsServiceIn"/>
         <Class IRI="#Collaboration"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#takesPlaceIn"/>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/amo/events#takesPlaceIn"/>
         <Class IRI="#Location"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
@@ -658,30 +659,30 @@
     </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="#hasDate"/>
-        <Class IRI="#Event"/>
+        <Class IRI="https://w3id.org/zeri/ontology/amo/events#Event"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasEndDate"/>
         <ObjectUnionOf>
             <Class IRI="#Collaboration"/>
-            <Class IRI="#Event"/>
             <Class IRI="#Membership"/>
+            <Class IRI="https://w3id.org/zeri/ontology/amo/events#Event"/>
         </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasName"/>
         <ObjectUnionOf>
             <Class IRI="#Agent"/>
-            <Class IRI="#Event"/>
             <Class IRI="#Initiative"/>
+            <Class IRI="https://w3id.org/zeri/ontology/amo/events#Event"/>
         </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasStartDate"/>
         <ObjectUnionOf>
             <Class IRI="#Collaboration"/>
-            <Class IRI="#Event"/>
             <Class IRI="#Membership"/>
+            <Class IRI="https://w3id.org/zeri/ontology/amo/events#Event"/>
         </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -731,6 +732,16 @@
             <Datatype abbreviatedIRI="xsd:gYear"/>
         </DataUnionOf>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>https://w3id.org/zeri/ontology/amo/events#Event</IRI>
+        <IRI>https:://www.w3id.org/zeri/ontology/events</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/zeri/ontology/amo/events#takesPlaceIn</IRI>
+        <IRI>https:://www.w3id.org/zeri/ontology/events</IRI>
+    </AnnotationAssertion>
 </Ontology>
 
 
