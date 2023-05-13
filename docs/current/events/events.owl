@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://w3id.org/zeri/ontology/amo/events"
+     xml:base="https://www.w3id.org/zeri/ontology/amo/events"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://w3id.org/zeri/ontology/amo/events">
+     ontologyIRI="https://www.w3id.org/zeri/ontology/amo/events">
     <Prefix name="" IRI="https://w3id.org/zeri/ontology/amo/events"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -13,139 +13,139 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <ObjectProperty IRI="#hasPurpose"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Lot"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Loan"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isRequestedBy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Purchase"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Gift"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasProposedPrice"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#reliesOn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#recognizesAsAuthor"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#recognizesAsFormerOwner"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#isValidFrom"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Transaction"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#consistsOf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#LegalNotice"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/sources#Object"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#cites"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasIntermediary"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#disputes"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AttributeAssignment"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#imposes"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isFocusedOn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="https://w3id.org/zeri/ontology/amo/agents#takesPlaceIn"/>
-    </Declaration>
-    <Declaration>
-        <Datatype abbreviatedIRI="xsd:gYear"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#describesConservationStatusAs"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#isValidTo"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Agent"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasValue"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Location"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasReceiver"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#transfersPropertyOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="https://w3id.org/zeri/ontology/amo/sources#hasCurrentOwner"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/sources#CuratedHolding"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isCarriedOutBy"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ValueProposition"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasSurrender"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#transfersCustodyOf"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Expertise"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Price"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Event"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isConstrainedBy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="https://w3id.org/zeri/ontology/amo/sources#isContainedIn"/>
+        <ObjectProperty IRI="https://www.w3id.org/zeri/ontology/amo/sources#hasCurrentOwner"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasValidityOn"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://w3id.org/zeri/ontology/amo/agents#hasDate"/>
+        <Class IRI="#LegalNotice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#imposes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSurrender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Price"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cites"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://www.w3id.org/zeri/ontology/amo/sources#isContainedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCarriedOutBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConstrainedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#recognizesAsAuthor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ValueProposition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transaction"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#describesConservationStatusAs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasReceiver"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isValidFrom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Loan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isValidTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#disputes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIntermediary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://www.w3id.org/zeri/ontology/amo/agents#takesPlaceIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFocusedOn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AttributeAssignment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Expertise"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProposedPrice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRequestedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consistsOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#transfersCustodyOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gift"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#recognizesAsFormerOwner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Purchase"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://www.w3id.org/zeri/ontology/amo/agents#hasDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#reliesOn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/sources#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Agent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPurpose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#transfersPropertyOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/sources#CuratedHolding"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasPrice"/>
     </Declaration>
     <EquivalentClasses>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Agent"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Agent"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Event"/>
@@ -154,7 +154,7 @@
         <Class IRI="#Price"/>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/sources#Object"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/sources#Object"/>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#AttributeAssignment"/>
@@ -185,14 +185,14 @@
         <Class IRI="#AttributeAssignment"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Agent"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Location"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Agent"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Location"/>
         <Class IRI="#Event"/>
         <Class IRI="#LegalNotice"/>
         <Class IRI="#Lot"/>
         <Class IRI="#Price"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/sources#CuratedHolding"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/sources#Object"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/sources#CuratedHolding"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/sources#Object"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#AttributeAssignment"/>
@@ -211,7 +211,7 @@
         <ObjectProperty IRI="#hasPurpose"/>
     </EquivalentObjectProperties>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/zeri/ontology/amo/agents#takesPlaceIn"/>
+        <ObjectProperty IRI="https://www.w3id.org/zeri/ontology/amo/agents#takesPlaceIn"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -295,15 +295,15 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/zeri/ontology/amo/sources#hasCurrentOwner"/>
+        <ObjectProperty IRI="https://www.w3id.org/zeri/ontology/amo/sources#hasCurrentOwner"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://w3id.org/zeri/ontology/amo/sources#isContainedIn"/>
+        <ObjectProperty IRI="https://www.w3id.org/zeri/ontology/amo/sources#isContainedIn"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://w3id.org/zeri/ontology/amo/agents#takesPlaceIn"/>
+        <ObjectProperty IRI="https://www.w3id.org/zeri/ontology/amo/agents#takesPlaceIn"/>
         <Class IRI="#Event"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -351,7 +351,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#imposes"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Agent"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isCarriedOutBy"/>
@@ -393,26 +393,26 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://w3id.org/zeri/ontology/amo/sources#hasCurrentOwner"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/sources#Object"/>
+        <ObjectProperty IRI="https://www.w3id.org/zeri/ontology/amo/sources#hasCurrentOwner"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/sources#Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://w3id.org/zeri/ontology/amo/sources#isContainedIn"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/sources#Object"/>
+        <ObjectProperty IRI="https://www.w3id.org/zeri/ontology/amo/sources#isContainedIn"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/sources#Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/zeri/ontology/amo/agents#takesPlaceIn"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Location"/>
+        <ObjectProperty IRI="https://www.w3id.org/zeri/ontology/amo/agents#takesPlaceIn"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Location"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#cites"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/sources#Object"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/sources#Object"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#consistsOf"/>
         <ObjectUnionOf>
-            <Class IRI="https://w3id.org/zeri/ontology/amo/sources#CuratedHolding"/>
-            <Class IRI="https://w3id.org/zeri/ontology/amo/sources#Object"/>
+            <Class IRI="https://www.w3id.org/zeri/ontology/amo/sources#CuratedHolding"/>
+            <Class IRI="https://www.w3id.org/zeri/ontology/amo/sources#Object"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -421,7 +421,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasIntermediary"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Agent"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPrice"/>
@@ -437,15 +437,15 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasReceiver"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Agent"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasSurrender"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Agent"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasValidityOn"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/sources#Object"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/sources#Object"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#imposes"/>
@@ -453,7 +453,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isCarriedOutBy"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Agent"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isConstrainedBy"/>
@@ -461,19 +461,19 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isFocusedOn"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/sources#Object"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/sources#Object"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isRequestedBy"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Agent"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#recognizesAsAuthor"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Agent"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#recognizesAsFormerOwner"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Agent"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#reliesOn"/>
@@ -488,21 +488,21 @@
         <Class IRI="#Lot"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/zeri/ontology/amo/sources#hasCurrentOwner"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Agent"/>
+        <ObjectProperty IRI="https://www.w3id.org/zeri/ontology/amo/sources#hasCurrentOwner"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://w3id.org/zeri/ontology/amo/sources#isContainedIn"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/sources#CuratedHolding"/>
+        <ObjectProperty IRI="https://www.w3id.org/zeri/ontology/amo/sources#isContainedIn"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/sources#CuratedHolding"/>
     </ObjectPropertyRange>
     <EquivalentDataProperties>
-        <DataProperty IRI="https://w3id.org/zeri/ontology/amo/agents#hasDate"/>
+        <DataProperty IRI="https://www.w3id.org/zeri/ontology/amo/agents#hasDate"/>
     </EquivalentDataProperties>
     <EquivalentDataProperties>
         <DataProperty IRI="#hasValue"/>
     </EquivalentDataProperties>
     <SubDataPropertyOf>
-        <DataProperty IRI="https://w3id.org/zeri/ontology/amo/agents#hasDate"/>
+        <DataProperty IRI="https://www.w3id.org/zeri/ontology/amo/agents#hasDate"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -514,7 +514,7 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <DataPropertyDomain>
-        <DataProperty IRI="https://w3id.org/zeri/ontology/amo/agents#hasDate"/>
+        <DataProperty IRI="https://www.w3id.org/zeri/ontology/amo/agents#hasDate"/>
         <Class IRI="#Event"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -534,7 +534,7 @@
         <Class IRI="#LegalNotice"/>
     </DataPropertyDomain>
     <DataPropertyRange>
-        <DataProperty IRI="https://w3id.org/zeri/ontology/amo/agents#hasDate"/>
+        <DataProperty IRI="https://www.w3id.org/zeri/ontology/amo/agents#hasDate"/>
         <DataUnionOf>
             <Datatype abbreviatedIRI="xsd:dateTime"/>
             <Datatype abbreviatedIRI="xsd:gYear"/>
@@ -558,37 +558,37 @@
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>https://w3id.org/zeri/ontology/amo/agents#Agent</IRI>
+        <IRI>https://www.w3id.org/zeri/ontology/amo/agents#Agent</IRI>
         <IRI>https://www.w3id.org/zeri/ontology/amo/agents</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>https://w3id.org/zeri/ontology/amo/agents#Location</IRI>
+        <IRI>https://www.w3id.org/zeri/ontology/amo/agents#Location</IRI>
         <IRI>https://www.w3id.org/zeri/ontology/amo/agents</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>https://w3id.org/zeri/ontology/amo/agents#hasDate</IRI>
+        <IRI>https://www.w3id.org/zeri/ontology/amo/agents#hasDate</IRI>
         <IRI>https://www.w3id.org/zeri/ontology/amo/agents</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>https://w3id.org/zeri/ontology/amo/sources#CuratedHolding</IRI>
+        <IRI>https://www.w3id.org/zeri/ontology/amo/sources#CuratedHolding</IRI>
         <IRI>https://www.w3id.org/zeri/ontology/amo/sources</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>https://w3id.org/zeri/ontology/amo/sources#Object</IRI>
+        <IRI>https://www.w3id.org/zeri/ontology/amo/sources#Object</IRI>
         <IRI>https://www.w3id.org/zeri/ontology/amo/sources</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>https://w3id.org/zeri/ontology/amo/sources#hasCurrentOwner</IRI>
+        <IRI>https://www.w3id.org/zeri/ontology/amo/sources#hasCurrentOwner</IRI>
         <IRI>https://www.w3id.org/zeri/ontology/amo/sources</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>https://w3id.org/zeri/ontology/amo/sources#isContainedIn</IRI>
+        <IRI>https://www.w3id.org/zeri/ontology/amo/sources#isContainedIn</IRI>
         <IRI>https://www.w3id.org/zeri/ontology/amo/sources</IRI>
     </AnnotationAssertion>
 </Ontology>

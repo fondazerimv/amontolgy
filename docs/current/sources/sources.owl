@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://w3id.org/zeri/ontology/amo/sources"
+     xml:base="https://www.w3id.org/zeri/ontology/amo/sources"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://w3id.org/zeri/ontology/amo/sources">
+     ontologyIRI="https://www.w3id.org/zeri/ontology/amo/sources">
     <Prefix name="" IRI="https://w3id.org/zeri/ontology/amo/sources"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -13,73 +13,73 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Agent"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/events#Event"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCurrentOwner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Receipt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSourceFor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AccountRegister"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isContainedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPrimarySourceFor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArtCollection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArtWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Catalog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Archive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Letter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ArchivalItem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BibliographicItem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Photo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhotoArchive"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSecundarySourceFor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CuratedHolding"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasExtent"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Receipt"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasCurrentOwner"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Catalog"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#CuratedHolding"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ArtWork"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#AccountRegister"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isPrimarySourceFor"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isSourceFor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#BibliographicItem"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Photo"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Library"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#PhotoArchive"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Object"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/events#Event"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isSecundarySourceFor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Thing"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#isContainedIn"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ArtCollection"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Letter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#ArchivalItem"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Archive"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#AccountRegister"/>
@@ -138,15 +138,15 @@
         <Class IRI="#ArchivalItem"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Agent"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/events#Event"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Agent"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/events#Event"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Agent"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Agent"/>
         <Class IRI="#Thing"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/events#Event"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/events#Event"/>
         <Class IRI="#Thing"/>
     </DisjointClasses>
     <DisjointClasses>
@@ -223,7 +223,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCurrentOwner"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Agent"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isContainedIn"/>
@@ -231,17 +231,17 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isPrimarySourceFor"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Agent"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isSecundarySourceFor"/>
-        <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Agent"/>
+        <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isSourceFor"/>
         <ObjectUnionOf>
-            <Class IRI="https://w3id.org/zeri/ontology/amo/agents#Agent"/>
-            <Class IRI="https://w3id.org/zeri/ontology/amo/events#Event"/>
+            <Class IRI="https://www.w3id.org/zeri/ontology/amo/agents#Agent"/>
+            <Class IRI="https://www.w3id.org/zeri/ontology/amo/events#Event"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <DataPropertyDomain>
@@ -254,13 +254,13 @@
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>https://w3id.org/zeri/ontology/amo/agents#Agent</IRI>
-        <IRI>https:://www.w3id.org/zeri/ontology/agents</IRI>
+        <IRI>https://www.w3id.org/zeri/ontology/amo/agents#Agent</IRI>
+        <IRI>https://www.w3id.org/zeri/ontology/agents</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
-        <IRI>https://w3id.org/zeri/ontology/amo/events#Event</IRI>
-        <IRI>https:://www.w3id.org/zeri/ontology/events</IRI>
+        <IRI>https://www.w3id.org/zeri/ontology/amo/events#Event</IRI>
+        <IRI>https://www.w3id.org/zeri/ontology/events</IRI>
     </AnnotationAssertion>
 </Ontology>
 
