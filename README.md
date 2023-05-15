@@ -5,8 +5,8 @@ The following repository contains material concerning the Art Market Ontology (A
 AMO has been developed following [SAMOD](http://dx.doi.org/10.6084/m9.figshare.3189769), the Simplified Agile Methodology for Ontology Development.
 
 This repository contains the full documentation produced during the development of the ontology. In particular:
-- the development directory contains the material produced during SAMOD iterations, i.e. Motivating Scenario, a list of Informal Competency Questions,  a Graffoo diagram of the model in .png format (along with its .graphml file), a list of Formal Competency Questions, a TBox and a ABox;
-- the docs directory contains all the files related to the ontology and its versions in time;
+- the ```samod``` directory contains the material produced during SAMOD iterations, i.e. Motivating Scenario, a list of Informal Competency Questions,  a Graffoo diagram of the model in .png format (along with its .graphml file), a list of Formal Competency Questions, a TBox and a ABox;
+- the ```docs``` directory contains all the files related to the ontology and its versions in time;
 
 
 <img src="docs/current/amo/amo.png">
