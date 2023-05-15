@@ -14,3 +14,16 @@ This repository contains the full documentation produced during the development 
 ## Resources
 
 Draft of the alignment available at the following [Google Document](https://docs.google.com/document/d/1a5xt6RPwbrgx-sX4Zi5iYsC8NPONPft-SpdreQEzJew/edit?usp=sharing)
+
+## License
+
+Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
+
+This work is licensed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
