@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/am00/agents/multiple_organizations" uri="file:/Users/manuele/Desktop/Current%20Projects/Pubblication%20Proposals/Umanistica%20digitale%20Zeri/samod_doc/agent/agent_2/agent_2_know_graph.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1682755285127" name="duplicate:http://www.semanticweb.org/am00/agents/overview" uri="agent_1_modelet.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1682755285127" name="duplicate:http://www.semanticweb.org/am00/agents/overview" uri="agent_1_know_graph.owl"/>
+    </group>
+</catalog>
