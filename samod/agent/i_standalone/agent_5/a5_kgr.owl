@@ -1,0 +1,483 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/zamo/agent/5#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.w3.org/zamo/agent/5#">
+    <Prefix name="" IRI="http://www.w3.org/zamo/agent/5#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <NamedIndividual IRI="iii-art-gallery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="rome"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="takesPlaceIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasReferenceAssociation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-membership-SA"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasEndDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="organizes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Event"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ait-association"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="recursAs"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-exhibition-arti-belle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="promotes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasStartDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-SA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Association"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="participatesIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-arti-romane"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Location"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-membership-art"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Membership"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-bif"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-arti-belle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Exhibition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Organization"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-arti-romane-84"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="florence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EventEdition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="joinsAsMember"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Initiative"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-arti-romane-82"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Agent"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="Agent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Association"/>
+        <Class IRI="Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Event"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EventEdition"/>
+        <Class IRI="Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Exhibition"/>
+        <Class IRI="Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Initiative"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Location"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Membership"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Organization"/>
+        <Class IRI="Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Person"/>
+        <Class IRI="Agent"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="Agent"/>
+        <Class IRI="Event"/>
+        <Class IRI="Initiative"/>
+        <Class IRI="Location"/>
+        <Class IRI="Membership"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="EventEdition"/>
+        <Class IRI="Exhibition"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Organization"/>
+        <Class IRI="Person"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="Organization"/>
+        <NamedIndividual IRI="ait-association"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Location"/>
+        <NamedIndividual IRI="florence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Organization"/>
+        <NamedIndividual IRI="i-arti-belle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Event"/>
+        <NamedIndividual IRI="i-bif"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Exhibition"/>
+        <NamedIndividual IRI="i-exhibition-arti-belle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="ii-SA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Initiative"/>
+        <NamedIndividual IRI="ii-arti-romane"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="EventEdition"/>
+        <NamedIndividual IRI="ii-arti-romane-82"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="EventEdition"/>
+        <NamedIndividual IRI="ii-arti-romane-84"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Membership"/>
+        <NamedIndividual IRI="ii-membership-SA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Organization"/>
+        <NamedIndividual IRI="iii-art-gallery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Membership"/>
+        <NamedIndividual IRI="iii-membership-art"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Location"/>
+        <NamedIndividual IRI="rome"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="organizes"/>
+        <NamedIndividual IRI="ait-association"/>
+        <NamedIndividual IRI="i-bif"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="promotes"/>
+        <NamedIndividual IRI="ait-association"/>
+        <NamedIndividual IRI="ii-arti-romane"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="organizes"/>
+        <NamedIndividual IRI="i-arti-belle"/>
+        <NamedIndividual IRI="i-exhibition-arti-belle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="participatesIn"/>
+        <NamedIndividual IRI="i-arti-belle"/>
+        <NamedIndividual IRI="i-bif"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="takesPlaceIn"/>
+        <NamedIndividual IRI="i-bif"/>
+        <NamedIndividual IRI="florence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="takesPlaceIn"/>
+        <NamedIndividual IRI="i-exhibition-arti-belle"/>
+        <NamedIndividual IRI="rome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="joinsAsMember"/>
+        <NamedIndividual IRI="ii-SA"/>
+        <NamedIndividual IRI="ii-membership-SA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="recursAs"/>
+        <NamedIndividual IRI="ii-arti-romane"/>
+        <NamedIndividual IRI="ii-arti-romane-82"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="recursAs"/>
+        <NamedIndividual IRI="ii-arti-romane"/>
+        <NamedIndividual IRI="ii-arti-romane-84"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="takesPlaceIn"/>
+        <NamedIndividual IRI="ii-arti-romane-82"/>
+        <NamedIndividual IRI="rome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="takesPlaceIn"/>
+        <NamedIndividual IRI="ii-arti-romane-84"/>
+        <NamedIndividual IRI="rome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasReferenceAssociation"/>
+        <NamedIndividual IRI="ii-membership-SA"/>
+        <NamedIndividual IRI="ait-association"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="joinsAsMember"/>
+        <NamedIndividual IRI="iii-art-gallery"/>
+        <NamedIndividual IRI="iii-membership-art"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasReferenceAssociation"/>
+        <NamedIndividual IRI="iii-membership-art"/>
+        <NamedIndividual IRI="ait-association"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasName"/>
+        <NamedIndividual IRI="i-arti-belle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Arti belle</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasDate"/>
+        <NamedIndividual IRI="i-bif"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">2010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasName"/>
+        <NamedIndividual IRI="i-bif"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">BIF</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasEndDate"/>
+        <NamedIndividual IRI="i-exhibition-arti-belle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">2009</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasName"/>
+        <NamedIndividual IRI="i-exhibition-arti-belle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Exhibition of &apos;Arti Belle&apos;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasStartDate"/>
+        <NamedIndividual IRI="i-exhibition-arti-belle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">2008</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasName"/>
+        <NamedIndividual IRI="ii-arti-romane"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Arti romane</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasDate"/>
+        <NamedIndividual IRI="ii-arti-romane-82"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1982</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasDate"/>
+        <NamedIndividual IRI="ii-arti-romane-84"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1984</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasEndDate"/>
+        <NamedIndividual IRI="ii-membership-SA"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1985</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasStartDate"/>
+        <NamedIndividual IRI="ii-membership-SA"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1970</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasName"/>
+        <NamedIndividual IRI="iii-art-gallery"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Gallery Art</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasEndDate"/>
+        <NamedIndividual IRI="iii-membership-art"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1988</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasStartDate"/>
+        <NamedIndividual IRI="iii-membership-art"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1977</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasReferenceAssociation"/>
+        <Class IRI="Membership"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="joinsAsMember"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="organizes"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="participatesIn"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="promotes"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="recursAs"/>
+        <Class IRI="Initiative"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="takesPlaceIn"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasReferenceAssociation"/>
+        <Class IRI="Association"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="joinsAsMember"/>
+        <Class IRI="Membership"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="organizes"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="participatesIn"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="promotes"/>
+        <Class IRI="Initiative"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="recursAs"/>
+        <Class IRI="EventEdition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="takesPlaceIn"/>
+        <Class IRI="Location"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasEndDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasDate"/>
+        <Class IRI="Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasEndDate"/>
+        <ObjectUnionOf>
+            <Class IRI="Event"/>
+            <Class IRI="Membership"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasName"/>
+        <ObjectUnionOf>
+            <Class IRI="Agent"/>
+            <Class IRI="Event"/>
+            <Class IRI="Initiative"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasStartDate"/>
+        <ObjectUnionOf>
+            <Class IRI="Event"/>
+            <Class IRI="Membership"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="hasDate"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasEndDate"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasStartDate"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

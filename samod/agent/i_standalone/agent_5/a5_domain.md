@@ -7,6 +7,5 @@ A company may participate in several events (location, start date, end date) org
 ## Examples
 
 1) In 2008, the <i>Arti belle</i> gallery organized an exhibition (2008-2009) in Rome. It also participates in the BIF event in Florence, organized by the association AIT in 2010.
-2) The AIT Association regularly promotes the
-<i>Artiromane</i> fair. SA, which has been a member of AIT from 1970 to 1985, participated in this event in 1982 and 1984.
-3) The <i>Art</i> gallery is a member of the “AIT” organization from 1977 to 1988.
+2) The AIT Association regularly promotes the <i>Arti romane</i> fair. SA, which has been a member of AIT from 1970 to 1985, participated in this event in 1982 and 1984.
+3) The <i>Art</i> gallery is a member of the AIT organization from 1977 to 1988.
