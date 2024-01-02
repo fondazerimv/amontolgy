@@ -6,28 +6,38 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.w3.org/zamo/agent/3#">
+    <Prefix name="" IRI="http://www.w3.org/zamo/agent/3#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
+        <NamedIndividual IRI="ii-MB"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="isLocatedIn"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="hasName"/>
+        <NamedIndividual IRI="ii-auction-house"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="florence-piazza-duomo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-SD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-seat-fra"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="isActiveTo"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasSeat"/>
+        <NamedIndividual IRI="paris-champs-élysées"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasCompanySeller"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasCompanyPurchaser"/>
+        <NamedIndividual IRI="ii-purchase-auction-house"/>
     </Declaration>
     <Declaration>
         <Class IRI="Person"/>
@@ -36,16 +46,55 @@
         <Class IRI="Event"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasResultingOrganization"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="isActiveFrom"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasClosedOrganization"/>
+        <ObjectProperty IRI="hasParticipant"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasParticipant"/>
+        <Class IRI="CessationOfActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Location"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasOriginalOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="florence-via-dei-fossi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-LZ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="paris"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCompanySeller"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-seat-tesori"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSeat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCompanyPurchaser"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasResultingOrganization"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-arts-de-paris"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasClosedOrganization"/>
     </Declaration>
     <Declaration>
         <Class IRI="CompanyModification"/>
@@ -63,16 +112,25 @@
         <Class IRI="Seat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CessationOfActivity"/>
+        <NamedIndividual IRI="i-cessation-tesori"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-RT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-tesori"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-arti-fiorentine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="florence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-seat-ita"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="hasDate"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Location"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasOriginalOrganization"/>
     </Declaration>
     <Declaration>
         <Class IRI="Agent"/>
@@ -81,7 +139,7 @@
         <Class IRI="Organization"/>
     </Declaration>
     <Declaration>
-        <Datatype abbreviatedIRI="xsd:gYear"/>
+        <NamedIndividual IRI="iii-modification-arti-fiorentine"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="Agent"/>
@@ -133,6 +191,222 @@
         <Class IRI="Organization"/>
         <Class IRI="Person"/>
     </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="Location"/>
+        <NamedIndividual IRI="florence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Location"/>
+        <NamedIndividual IRI="florence-piazza-duomo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Location"/>
+        <NamedIndividual IRI="florence-via-dei-fossi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="i-RT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="CessationOfActivity"/>
+        <NamedIndividual IRI="i-cessation-tesori"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Seat"/>
+        <NamedIndividual IRI="i-seat-tesori"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Organization"/>
+        <NamedIndividual IRI="i-tesori"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="ii-MB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="ii-SD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Organization"/>
+        <NamedIndividual IRI="ii-auction-house"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="CompanyPurchase"/>
+        <NamedIndividual IRI="ii-purchase-auction-house"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="iii-LZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Organization"/>
+        <NamedIndividual IRI="iii-arti-fiorentine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Organization"/>
+        <NamedIndividual IRI="iii-arts-de-paris"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="CompanyModification"/>
+        <NamedIndividual IRI="iii-modification-arti-fiorentine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Seat"/>
+        <NamedIndividual IRI="iii-seat-fra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Seat"/>
+        <NamedIndividual IRI="iii-seat-ita"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Location"/>
+        <NamedIndividual IRI="paris"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Location"/>
+        <NamedIndividual IRI="paris-champs-élysées"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="fallsWithin"/>
+        <NamedIndividual IRI="florence-piazza-duomo"/>
+        <NamedIndividual IRI="florence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="fallsWithin"/>
+        <NamedIndividual IRI="florence-via-dei-fossi"/>
+        <NamedIndividual IRI="florence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasClosedOrganization"/>
+        <NamedIndividual IRI="i-cessation-tesori"/>
+        <NamedIndividual IRI="i-tesori"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasParticipant"/>
+        <NamedIndividual IRI="i-cessation-tesori"/>
+        <NamedIndividual IRI="i-RT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isLocatedIn"/>
+        <NamedIndividual IRI="i-seat-tesori"/>
+        <NamedIndividual IRI="florence-piazza-duomo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasSeat"/>
+        <NamedIndividual IRI="i-tesori"/>
+        <NamedIndividual IRI="i-seat-tesori"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasCompanyPurchaser"/>
+        <NamedIndividual IRI="ii-purchase-auction-house"/>
+        <NamedIndividual IRI="ii-MB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasCompanySeller"/>
+        <NamedIndividual IRI="ii-purchase-auction-house"/>
+        <NamedIndividual IRI="ii-SD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPurchasedOrganization"/>
+        <NamedIndividual IRI="ii-purchase-auction-house"/>
+        <NamedIndividual IRI="ii-auction-house"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasSeat"/>
+        <NamedIndividual IRI="iii-arti-fiorentine"/>
+        <NamedIndividual IRI="iii-seat-ita"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasSeat"/>
+        <NamedIndividual IRI="iii-arts-de-paris"/>
+        <NamedIndividual IRI="iii-seat-fra"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasOriginalOrganization"/>
+        <NamedIndividual IRI="iii-modification-arti-fiorentine"/>
+        <NamedIndividual IRI="iii-arti-fiorentine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasParticipant"/>
+        <NamedIndividual IRI="iii-modification-arti-fiorentine"/>
+        <NamedIndividual IRI="iii-LZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasResultingOrganization"/>
+        <NamedIndividual IRI="iii-modification-arti-fiorentine"/>
+        <NamedIndividual IRI="iii-arts-de-paris"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isLocatedIn"/>
+        <NamedIndividual IRI="iii-seat-fra"/>
+        <NamedIndividual IRI="paris-champs-élysées"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isLocatedIn"/>
+        <NamedIndividual IRI="iii-seat-ita"/>
+        <NamedIndividual IRI="florence-via-dei-fossi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="fallsWithin"/>
+        <NamedIndividual IRI="paris-champs-élysées"/>
+        <NamedIndividual IRI="paris"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasDate"/>
+        <NamedIndividual IRI="i-cessation-tesori"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1910</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="isActiveFrom"/>
+        <NamedIndividual IRI="i-seat-tesori"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1870</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="isActiveTo"/>
+        <NamedIndividual IRI="i-seat-tesori"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1910</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasName"/>
+        <NamedIndividual IRI="i-tesori"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Tesori</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasDate"/>
+        <NamedIndividual IRI="ii-purchase-auction-house"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1915</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasName"/>
+        <NamedIndividual IRI="iii-arti-fiorentine"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Arti fiorentine</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasName"/>
+        <NamedIndividual IRI="iii-arts-de-paris"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Les Arts de Paris</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasDate"/>
+        <NamedIndividual IRI="iii-modification-arti-fiorentine"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1920</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="isActiveFrom"/>
+        <NamedIndividual IRI="iii-seat-fra"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1920</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="isActiveFrom"/>
+        <NamedIndividual IRI="iii-seat-ita"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1850</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="isActiveTo"/>
+        <NamedIndividual IRI="iii-seat-ita"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1920</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasClosedOrganization"/>
         <ObjectProperty IRI="hasParticipant"/>
