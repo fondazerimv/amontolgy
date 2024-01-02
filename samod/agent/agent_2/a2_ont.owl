@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/zamo/agent/2#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.w3.org/zamo/agent/2#">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <DataProperty IRI="hasName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isLocatedIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Branch"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ArtDealerOrganization"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isActiveTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FamiliarVenture"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isCarriedOutBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSeat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isBranchOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Foundation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFoundedOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="RestorationLaboratory"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isActiveFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isSecundaryActivityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="fallsWithin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Seat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="participatesIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Location"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="Agent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ArtDealerOrganization"/>
+        <Class IRI="Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Branch"/>
+        <Class IRI="Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FamiliarVenture"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Foundation"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Location"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Organization"/>
+        <Class IRI="Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Person"/>
+        <Class IRI="Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="RestorationLaboratory"/>
+        <Class IRI="ArtDealerOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Seat"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="Agent"/>
+        <Class IRI="FamiliarVenture"/>
+        <Class IRI="Foundation"/>
+        <Class IRI="Location"/>
+        <Class IRI="Seat"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Organization"/>
+        <Class IRI="Person"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isBranchOf"/>
+        <ObjectProperty IRI="isSecundaryActivityOf"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="fallsWithin"/>
+        <Class IRI="Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasFoundedOrganization"/>
+        <Class IRI="Foundation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSeat"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isBranchOf"/>
+        <Class IRI="Branch"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isCarriedOutBy"/>
+        <Class IRI="FamiliarVenture"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isLocatedIn"/>
+        <Class IRI="Seat"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isSecundaryActivityOf"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="participatesIn"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="fallsWithin"/>
+        <Class IRI="Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasFoundedOrganization"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSeat"/>
+        <Class IRI="Seat"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isBranchOf"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isCarriedOutBy"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isLocatedIn"/>
+        <Class IRI="Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isSecundaryActivityOf"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="participatesIn"/>
+        <Class IRI="Foundation"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasDate"/>
+        <Class IRI="Foundation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasName"/>
+        <Class IRI="Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isActiveFrom"/>
+        <Class IRI="Seat"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isActiveTo"/>
+        <Class IRI="Seat"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="hasDate"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isActiveFrom"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isActiveTo"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
