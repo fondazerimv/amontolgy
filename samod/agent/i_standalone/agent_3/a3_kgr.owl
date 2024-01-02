@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/zamo/agent/3#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.w3.org/zamo/agent/3#">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <ObjectProperty IRI="isLocatedIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isActiveTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSeat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCompanySeller"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCompanyPurchaser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Event"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasResultingOrganization"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isActiveFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasClosedOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasParticipant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CompanyModification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CompanyPurchase"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPurchasedOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="fallsWithin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Seat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CessationOfActivity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasDate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Location"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasOriginalOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Organization"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="Agent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CessationOfActivity"/>
+        <Class IRI="Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CompanyModification"/>
+        <Class IRI="Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CompanyPurchase"/>
+        <Class IRI="CessationOfActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Event"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Location"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Organization"/>
+        <Class IRI="Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Person"/>
+        <Class IRI="Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Seat"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="Agent"/>
+        <Class IRI="Event"/>
+        <Class IRI="Location"/>
+        <Class IRI="Seat"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="CessationOfActivity"/>
+        <Class IRI="CompanyModification"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Organization"/>
+        <Class IRI="Person"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasClosedOrganization"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasCompanyPurchaser"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasCompanySeller"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasOriginalOrganization"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasPurchasedOrganization"/>
+        <ObjectProperty IRI="hasClosedOrganization"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasResultingOrganization"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="fallsWithin"/>
+        <Class IRI="Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasClosedOrganization"/>
+        <Class IRI="CessationOfActivity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCompanyPurchaser"/>
+        <Class IRI="CompanyPurchase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCompanySeller"/>
+        <Class IRI="CompanyPurchase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasOriginalOrganization"/>
+        <Class IRI="CompanyModification"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasParticipant"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPurchasedOrganization"/>
+        <Class IRI="CompanyPurchase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasResultingOrganization"/>
+        <Class IRI="CompanyModification"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSeat"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isLocatedIn"/>
+        <Class IRI="Seat"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="fallsWithin"/>
+        <Class IRI="Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasClosedOrganization"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCompanyPurchaser"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCompanySeller"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasOriginalOrganization"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasParticipant"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPurchasedOrganization"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasResultingOrganization"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSeat"/>
+        <Class IRI="Seat"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isLocatedIn"/>
+        <Class IRI="Location"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasDate"/>
+        <Class IRI="Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasName"/>
+        <Class IRI="Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isActiveFrom"/>
+        <Class IRI="Seat"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isActiveTo"/>
+        <Class IRI="Seat"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="hasDate"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isActiveFrom"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isActiveTo"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
