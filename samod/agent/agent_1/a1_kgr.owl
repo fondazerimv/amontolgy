@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/zamo/agent/1#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.w3.org/zamo/agent/1#">
+    <Prefix name="" IRI="http://www.w3.org/zamo/agent/1#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <ObjectProperty IRI="providesServiceIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="baroque-sculpture"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-beauxarts-art-gallery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="mannerist-painting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Collaboration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-collaboration-BV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Person"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-BV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-antichità-auction-house"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-collaboration-MF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ArtDealerCompany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-MF"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasEducationIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-collaboration-SR"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Subject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="managing-director"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-universo-mostre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Role"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-SR"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="requestsServiceIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AuctionHouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Organization"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="Agent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ArtDealerCompany"/>
+        <Class IRI="Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AuctionHouse"/>
+        <Class IRI="ArtDealerCompany"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Organization"/>
+        <Class IRI="Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Person"/>
+        <Class IRI="Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Role"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Subject"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="Agent"/>
+        <Class IRI="Collaboration"/>
+        <Class IRI="Role"/>
+        <Class IRI="Subject"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Organization"/>
+        <Class IRI="Person"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="Subject"/>
+        <NamedIndividual IRI="baroque-sculpture"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="i-SR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="AuctionHouse"/>
+        <NamedIndividual IRI="i-antichità-auction-house"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Collaboration"/>
+        <NamedIndividual IRI="i-collaboration-SR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="ii-MF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ArtDealerCompany"/>
+        <NamedIndividual IRI="ii-beauxarts-art-gallery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Collaboration"/>
+        <NamedIndividual IRI="ii-collaboration-MF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="iii-BV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Collaboration"/>
+        <NamedIndividual IRI="iii-collaboration-BV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Organization"/>
+        <NamedIndividual IRI="iii-universo-mostre"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Role"/>
+        <NamedIndividual IRI="managing-director"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Subject"/>
+        <NamedIndividual IRI="mannerist-painting"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasEducationIn"/>
+        <NamedIndividual IRI="i-SR"/>
+        <NamedIndividual IRI="mannerist-painting"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <NamedIndividual IRI="i-SR"/>
+        <NamedIndividual IRI="i-collaboration-SR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <NamedIndividual IRI="i-antichità-auction-house"/>
+        <NamedIndividual IRI="i-collaboration-SR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasRole"/>
+        <NamedIndividual IRI="i-collaboration-SR"/>
+        <NamedIndividual IRI="managing-director"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasEducationIn"/>
+        <NamedIndividual IRI="ii-MF"/>
+        <NamedIndividual IRI="baroque-sculpture"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <NamedIndividual IRI="ii-MF"/>
+        <NamedIndividual IRI="ii-collaboration-MF"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <NamedIndividual IRI="ii-beauxarts-art-gallery"/>
+        <NamedIndividual IRI="ii-collaboration-MF"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasRole"/>
+        <NamedIndividual IRI="ii-collaboration-MF"/>
+        <NamedIndividual IRI="managing-director"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <NamedIndividual IRI="iii-BV"/>
+        <NamedIndividual IRI="iii-collaboration-BV"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasRole"/>
+        <NamedIndividual IRI="iii-collaboration-BV"/>
+        <NamedIndividual IRI="managing-director"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <NamedIndividual IRI="iii-universo-mostre"/>
+        <NamedIndividual IRI="iii-collaboration-BV"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasEducationIn"/>
+        <Class IRI="Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRole"/>
+        <Class IRI="Collaboration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <Class IRI="Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasEducationIn"/>
+        <Class IRI="Subject"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasRole"/>
+        <Class IRI="Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <Class IRI="Collaboration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <Class IRI="Collaboration"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
