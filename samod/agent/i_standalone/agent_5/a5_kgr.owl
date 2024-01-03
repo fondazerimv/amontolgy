@@ -260,6 +260,16 @@
         <NamedIndividual IRI="ii-membership-SA"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="participatesIn"/>
+        <NamedIndividual IRI="ii-SA"/>
+        <NamedIndividual IRI="ii-arti-romane-82"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="participatesIn"/>
+        <NamedIndividual IRI="ii-SA"/>
+        <NamedIndividual IRI="ii-arti-romane-84"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="recursAs"/>
         <NamedIndividual IRI="ii-arti-romane"/>
         <NamedIndividual IRI="ii-arti-romane-82"/>
@@ -335,9 +345,19 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1982</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="hasName"/>
+        <NamedIndividual IRI="ii-arti-romane-82"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Arti romane - 1st edition (1982)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="hasDate"/>
         <NamedIndividual IRI="ii-arti-romane-84"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1984</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasName"/>
+        <NamedIndividual IRI="ii-arti-romane-84"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Arti romane - 2nd edition (1984)</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="hasEndDate"/>
