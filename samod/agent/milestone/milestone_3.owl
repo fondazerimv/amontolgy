@@ -1,0 +1,1702 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/zamo/agent/milestone-3#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.w3.org/zamo/agent/milestone-3#">
+    <Prefix name="" IRI="http://www.w3.org/zamo/agent/milestone-2#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.w3.org/zamo/agent/3#</Import>
+    <Import>http://www.w3.org/zamo/agent/2#</Import>
+    <Import>http://www.w3.org/zamo/agent/4#</Import>
+    <Declaration>
+        <NamedIndividual IRI="photographer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-arti-libere"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-seat-tesori"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-DD"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isBranchOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-ST"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-seat-arti-libere"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Seat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-collaboration-SR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-modification-arti-fiorentine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iv-AQ"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasClosedOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CompanyModification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ArtDealerOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasResultingOrganization"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-arts-de-paris"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iv-direction-AQ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-SD"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isCarriedOutBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-collab-ABandGT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-PS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AuctionHouse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-arti-fiorentine"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasEndDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iv-FZ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-AA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-ii-GT"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-beauxarts-art-gallery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Branch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-tesori"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iv-antichità-fiorentine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iv-direction-MZ"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Organization"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasStartDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-collab-ABandFR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-artimercato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-RT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="florence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-cessation-tesori"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Foundation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSeat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-MF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-FR"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasEducationIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Collaboration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="rome-piazza-delle-erbe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasOriginalOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isLocatedIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-laboratory-arti-urbe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasParticipant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-foundation-lab-arti-urbe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-collab-LAandFR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="paris"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-seat-fra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="rome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-antichità-auction-house"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-seat-arti-urbe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-iii-AB"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasRole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-seat-branch-artimercato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="baroque-sculpture"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-CP"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCompanySeller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="RestorationLaboratory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="requestsServiceIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="mannerist-painting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Event"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isActiveTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPurchasedOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isFunctionalTo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-arti-urbe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="providesServiceIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="restorer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-foundation-arti-urbe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-collab-AAandGT"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="participatesIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-branch-artimercato"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Role"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="paris-champs-élysées"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="florence-piazza-duomo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-foundation-arti-libere"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="fallsWithin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-universo-mostre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CompanyPurchase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-collaboration-BV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-seat-lab-arti-urbe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isSecundaryActivityOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="rome-piazza-navona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-catalogue-preparation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-SR"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="managing-director"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCompanyPurchaser"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-LA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-BV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-seat-ita"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-LZ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-MB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="KnowledgeDomain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="miniature-history"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-foundation-branch-artimercato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-GO"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-venture-familyP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Agent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-collab-GOandFR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iv-MZ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="art-historian-consultant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-auction-house"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isCollaboratorIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isExpertIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-purchase-auction-house"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFoundedOrganization"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-collaboration-MF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CessationOfActivity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isActiveFrom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-collab-DDandFR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="florence-via-dei-fossi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FamiliarVenture"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iv-direction-FZ"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="ArtDealerOrganization"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="KnowledgeDomain"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="Agent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ArtDealerOrganization"/>
+        <Class IRI="Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AuctionHouse"/>
+        <Class IRI="ArtDealerOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Branch"/>
+        <Class IRI="Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CessationOfActivity"/>
+        <Class IRI="Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Collaboration"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CompanyModification"/>
+        <Class IRI="Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CompanyPurchase"/>
+        <Class IRI="CessationOfActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Event"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FamiliarVenture"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Foundation"/>
+        <Class IRI="Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="KnowledgeDomain"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Location"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Organization"/>
+        <Class IRI="Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Person"/>
+        <Class IRI="Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="RestorationLaboratory"/>
+        <Class IRI="ArtDealerOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Role"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Seat"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="Agent"/>
+        <Class IRI="Collaboration"/>
+        <Class IRI="Event"/>
+        <Class IRI="Role"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Agent"/>
+        <Class IRI="Collaboration"/>
+        <Class IRI="KnowledgeDomain"/>
+        <Class IRI="Role"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Agent"/>
+        <Class IRI="Event"/>
+        <Class IRI="Location"/>
+        <Class IRI="Seat"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Agent"/>
+        <Class IRI="FamiliarVenture"/>
+        <Class IRI="Foundation"/>
+        <Class IRI="Location"/>
+        <Class IRI="Seat"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="CessationOfActivity"/>
+        <Class IRI="CompanyModification"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Organization"/>
+        <Class IRI="Person"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="Role"/>
+        <NamedIndividual IRI="art-historian-consultant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="KnowledgeDomain"/>
+        <NamedIndividual IRI="baroque-sculpture"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Location"/>
+        <NamedIndividual IRI="florence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Location"/>
+        <NamedIndividual IRI="florence-piazza-duomo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Location"/>
+        <NamedIndividual IRI="florence-via-dei-fossi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="i-RT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="i-SR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="i-ST"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="AuctionHouse"/>
+        <NamedIndividual IRI="i-antichità-auction-house"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ArtDealerOrganization"/>
+        <NamedIndividual IRI="i-arti-urbe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="CessationOfActivity"/>
+        <NamedIndividual IRI="i-cessation-tesori"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Collaboration"/>
+        <NamedIndividual IRI="i-collab-ABandGT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Collaboration"/>
+        <NamedIndividual IRI="i-collaboration-SR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Foundation"/>
+        <NamedIndividual IRI="i-foundation-arti-urbe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Foundation"/>
+        <NamedIndividual IRI="i-foundation-lab-arti-urbe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="i-ii-GT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="i-iii-AB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="RestorationLaboratory"/>
+        <NamedIndividual IRI="i-laboratory-arti-urbe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Seat"/>
+        <NamedIndividual IRI="i-seat-arti-urbe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Seat"/>
+        <NamedIndividual IRI="i-seat-lab-arti-urbe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Seat"/>
+        <NamedIndividual IRI="i-seat-tesori"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ArtDealerOrganization"/>
+        <NamedIndividual IRI="i-tesori"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="ii-AA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="ii-CP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="ii-MB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="ii-MF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="ii-SD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ArtDealerOrganization"/>
+        <NamedIndividual IRI="ii-artimercato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ArtDealerOrganization"/>
+        <NamedIndividual IRI="ii-auction-house"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ArtDealerOrganization"/>
+        <NamedIndividual IRI="ii-beauxarts-art-gallery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ArtDealerOrganization"/>
+        <NamedIndividual IRI="ii-branch-artimercato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Branch"/>
+        <NamedIndividual IRI="ii-branch-artimercato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Collaboration"/>
+        <NamedIndividual IRI="ii-collab-AAandGT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Collaboration"/>
+        <NamedIndividual IRI="ii-collaboration-MF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Foundation"/>
+        <NamedIndividual IRI="ii-foundation-branch-artimercato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="CompanyPurchase"/>
+        <NamedIndividual IRI="ii-purchase-auction-house"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Seat"/>
+        <NamedIndividual IRI="ii-seat-branch-artimercato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="FamiliarVenture"/>
+        <NamedIndividual IRI="ii-venture-familyP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="iii-BV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="iii-DD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="iii-FR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="iii-GO"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="iii-LA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="iii-LZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="iii-PS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ArtDealerOrganization"/>
+        <NamedIndividual IRI="iii-arti-fiorentine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ArtDealerOrganization"/>
+        <NamedIndividual IRI="iii-arti-libere"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ArtDealerOrganization"/>
+        <NamedIndividual IRI="iii-arts-de-paris"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Event"/>
+        <NamedIndividual IRI="iii-catalogue-preparation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Collaboration"/>
+        <NamedIndividual IRI="iii-collab-ABandFR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Collaboration"/>
+        <NamedIndividual IRI="iii-collab-DDandFR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Collaboration"/>
+        <NamedIndividual IRI="iii-collab-GOandFR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Collaboration"/>
+        <NamedIndividual IRI="iii-collab-LAandFR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Collaboration"/>
+        <NamedIndividual IRI="iii-collaboration-BV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Foundation"/>
+        <NamedIndividual IRI="iii-foundation-arti-libere"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="CompanyModification"/>
+        <NamedIndividual IRI="iii-modification-arti-fiorentine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Seat"/>
+        <NamedIndividual IRI="iii-seat-arti-libere"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Seat"/>
+        <NamedIndividual IRI="iii-seat-fra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Seat"/>
+        <NamedIndividual IRI="iii-seat-ita"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Organization"/>
+        <NamedIndividual IRI="iii-universo-mostre"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="iv-AQ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="iv-FZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Person"/>
+        <NamedIndividual IRI="iv-MZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ArtDealerOrganization"/>
+        <NamedIndividual IRI="iv-antichità-fiorentine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Collaboration"/>
+        <NamedIndividual IRI="iv-direction-AQ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Collaboration"/>
+        <NamedIndividual IRI="iv-direction-FZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Collaboration"/>
+        <NamedIndividual IRI="iv-direction-MZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Role"/>
+        <NamedIndividual IRI="managing-director"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="KnowledgeDomain"/>
+        <NamedIndividual IRI="mannerist-painting"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="KnowledgeDomain"/>
+        <NamedIndividual IRI="miniature-history"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Location"/>
+        <NamedIndividual IRI="paris"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Location"/>
+        <NamedIndividual IRI="paris-champs-élysées"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Role"/>
+        <NamedIndividual IRI="photographer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Role"/>
+        <NamedIndividual IRI="restorer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Location"/>
+        <NamedIndividual IRI="rome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Location"/>
+        <NamedIndividual IRI="rome-piazza-delle-erbe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Location"/>
+        <NamedIndividual IRI="rome-piazza-navona"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="fallsWithin"/>
+        <NamedIndividual IRI="florence-piazza-duomo"/>
+        <NamedIndividual IRI="florence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="fallsWithin"/>
+        <NamedIndividual IRI="florence-via-dei-fossi"/>
+        <NamedIndividual IRI="florence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasEducationIn"/>
+        <NamedIndividual IRI="i-SR"/>
+        <NamedIndividual IRI="mannerist-painting"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <NamedIndividual IRI="i-SR"/>
+        <NamedIndividual IRI="i-collaboration-SR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="participatesIn"/>
+        <NamedIndividual IRI="i-ST"/>
+        <NamedIndividual IRI="i-foundation-arti-urbe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="participatesIn"/>
+        <NamedIndividual IRI="i-ST"/>
+        <NamedIndividual IRI="i-foundation-lab-arti-urbe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <NamedIndividual IRI="i-antichità-auction-house"/>
+        <NamedIndividual IRI="i-collaboration-SR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasSeat"/>
+        <NamedIndividual IRI="i-arti-urbe"/>
+        <NamedIndividual IRI="i-seat-arti-urbe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasClosedOrganization"/>
+        <NamedIndividual IRI="i-cessation-tesori"/>
+        <NamedIndividual IRI="i-tesori"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasParticipant"/>
+        <NamedIndividual IRI="i-cessation-tesori"/>
+        <NamedIndividual IRI="i-RT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasRole"/>
+        <NamedIndividual IRI="i-collab-ABandGT"/>
+        <NamedIndividual IRI="art-historian-consultant"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasRole"/>
+        <NamedIndividual IRI="i-collaboration-SR"/>
+        <NamedIndividual IRI="managing-director"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasFoundedOrganization"/>
+        <NamedIndividual IRI="i-foundation-arti-urbe"/>
+        <NamedIndividual IRI="i-arti-urbe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasFoundedOrganization"/>
+        <NamedIndividual IRI="i-foundation-lab-arti-urbe"/>
+        <NamedIndividual IRI="i-laboratory-arti-urbe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <NamedIndividual IRI="i-ii-GT"/>
+        <NamedIndividual IRI="i-collab-ABandGT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <NamedIndividual IRI="i-ii-GT"/>
+        <NamedIndividual IRI="ii-collab-AAandGT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isExpertIn"/>
+        <NamedIndividual IRI="i-iii-AB"/>
+        <NamedIndividual IRI="miniature-history"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <NamedIndividual IRI="i-iii-AB"/>
+        <NamedIndividual IRI="i-collab-ABandGT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <NamedIndividual IRI="i-iii-AB"/>
+        <NamedIndividual IRI="iii-collab-ABandFR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasSeat"/>
+        <NamedIndividual IRI="i-laboratory-arti-urbe"/>
+        <NamedIndividual IRI="i-seat-lab-arti-urbe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isLocatedIn"/>
+        <NamedIndividual IRI="i-seat-arti-urbe"/>
+        <NamedIndividual IRI="rome-piazza-delle-erbe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isLocatedIn"/>
+        <NamedIndividual IRI="i-seat-lab-arti-urbe"/>
+        <NamedIndividual IRI="rome-piazza-navona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isLocatedIn"/>
+        <NamedIndividual IRI="i-seat-tesori"/>
+        <NamedIndividual IRI="florence-piazza-duomo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasSeat"/>
+        <NamedIndividual IRI="i-tesori"/>
+        <NamedIndividual IRI="i-seat-tesori"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <NamedIndividual IRI="ii-AA"/>
+        <NamedIndividual IRI="ii-collab-AAandGT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="participatesIn"/>
+        <NamedIndividual IRI="ii-CP"/>
+        <NamedIndividual IRI="ii-foundation-branch-artimercato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasEducationIn"/>
+        <NamedIndividual IRI="ii-MF"/>
+        <NamedIndividual IRI="baroque-sculpture"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <NamedIndividual IRI="ii-MF"/>
+        <NamedIndividual IRI="ii-collaboration-MF"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <NamedIndividual IRI="ii-beauxarts-art-gallery"/>
+        <NamedIndividual IRI="ii-collaboration-MF"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasSeat"/>
+        <NamedIndividual IRI="ii-branch-artimercato"/>
+        <NamedIndividual IRI="ii-seat-branch-artimercato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isBranchOf"/>
+        <NamedIndividual IRI="ii-branch-artimercato"/>
+        <NamedIndividual IRI="ii-artimercato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasRole"/>
+        <NamedIndividual IRI="ii-collab-AAandGT"/>
+        <NamedIndividual IRI="photographer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasRole"/>
+        <NamedIndividual IRI="ii-collaboration-MF"/>
+        <NamedIndividual IRI="managing-director"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasFoundedOrganization"/>
+        <NamedIndividual IRI="ii-foundation-branch-artimercato"/>
+        <NamedIndividual IRI="ii-branch-artimercato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasCompanyPurchaser"/>
+        <NamedIndividual IRI="ii-purchase-auction-house"/>
+        <NamedIndividual IRI="ii-MB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasCompanySeller"/>
+        <NamedIndividual IRI="ii-purchase-auction-house"/>
+        <NamedIndividual IRI="ii-SD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPurchasedOrganization"/>
+        <NamedIndividual IRI="ii-purchase-auction-house"/>
+        <NamedIndividual IRI="ii-auction-house"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isLocatedIn"/>
+        <NamedIndividual IRI="ii-seat-branch-artimercato"/>
+        <NamedIndividual IRI="florence-via-dei-fossi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isCarriedOutBy"/>
+        <NamedIndividual IRI="ii-venture-familyP"/>
+        <NamedIndividual IRI="ii-CP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isCarriedOutBy"/>
+        <NamedIndividual IRI="ii-venture-familyP"/>
+        <NamedIndividual IRI="ii-artimercato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isCarriedOutBy"/>
+        <NamedIndividual IRI="ii-venture-familyP"/>
+        <NamedIndividual IRI="ii-branch-artimercato"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <NamedIndividual IRI="iii-BV"/>
+        <NamedIndividual IRI="iii-collaboration-BV"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <NamedIndividual IRI="iii-DD"/>
+        <NamedIndividual IRI="iii-collab-DDandFR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <NamedIndividual IRI="iii-FR"/>
+        <NamedIndividual IRI="iii-collab-ABandFR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <NamedIndividual IRI="iii-FR"/>
+        <NamedIndividual IRI="iii-collab-DDandFR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <NamedIndividual IRI="iii-FR"/>
+        <NamedIndividual IRI="iii-collab-GOandFR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <NamedIndividual IRI="iii-FR"/>
+        <NamedIndividual IRI="iii-collab-LAandFR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isExpertIn"/>
+        <NamedIndividual IRI="iii-GO"/>
+        <NamedIndividual IRI="baroque-sculpture"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <NamedIndividual IRI="iii-GO"/>
+        <NamedIndividual IRI="iii-collab-GOandFR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isExpertIn"/>
+        <NamedIndividual IRI="iii-LA"/>
+        <NamedIndividual IRI="mannerist-painting"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <NamedIndividual IRI="iii-LA"/>
+        <NamedIndividual IRI="iii-collab-LAandFR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="participatesIn"/>
+        <NamedIndividual IRI="iii-LZ"/>
+        <NamedIndividual IRI="iii-foundation-arti-libere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="participatesIn"/>
+        <NamedIndividual IRI="iii-PS"/>
+        <NamedIndividual IRI="iii-foundation-arti-libere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasSeat"/>
+        <NamedIndividual IRI="iii-arti-fiorentine"/>
+        <NamedIndividual IRI="iii-seat-ita"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasSeat"/>
+        <NamedIndividual IRI="iii-arti-libere"/>
+        <NamedIndividual IRI="iii-seat-arti-libere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasSeat"/>
+        <NamedIndividual IRI="iii-arts-de-paris"/>
+        <NamedIndividual IRI="iii-seat-fra"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasRole"/>
+        <NamedIndividual IRI="iii-collab-ABandFR"/>
+        <NamedIndividual IRI="art-historian-consultant"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isFunctionalTo"/>
+        <NamedIndividual IRI="iii-collab-ABandFR"/>
+        <NamedIndividual IRI="iii-catalogue-preparation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasRole"/>
+        <NamedIndividual IRI="iii-collab-DDandFR"/>
+        <NamedIndividual IRI="photographer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isFunctionalTo"/>
+        <NamedIndividual IRI="iii-collab-DDandFR"/>
+        <NamedIndividual IRI="iii-catalogue-preparation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasRole"/>
+        <NamedIndividual IRI="iii-collab-GOandFR"/>
+        <NamedIndividual IRI="art-historian-consultant"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isFunctionalTo"/>
+        <NamedIndividual IRI="iii-collab-GOandFR"/>
+        <NamedIndividual IRI="iii-catalogue-preparation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasRole"/>
+        <NamedIndividual IRI="iii-collab-LAandFR"/>
+        <NamedIndividual IRI="art-historian-consultant"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isFunctionalTo"/>
+        <NamedIndividual IRI="iii-collab-LAandFR"/>
+        <NamedIndividual IRI="iii-catalogue-preparation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasRole"/>
+        <NamedIndividual IRI="iii-collaboration-BV"/>
+        <NamedIndividual IRI="managing-director"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasFoundedOrganization"/>
+        <NamedIndividual IRI="iii-foundation-arti-libere"/>
+        <NamedIndividual IRI="iii-arti-libere"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasOriginalOrganization"/>
+        <NamedIndividual IRI="iii-modification-arti-fiorentine"/>
+        <NamedIndividual IRI="iii-arti-fiorentine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasParticipant"/>
+        <NamedIndividual IRI="iii-modification-arti-fiorentine"/>
+        <NamedIndividual IRI="iii-LZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasResultingOrganization"/>
+        <NamedIndividual IRI="iii-modification-arti-fiorentine"/>
+        <NamedIndividual IRI="iii-arts-de-paris"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isLocatedIn"/>
+        <NamedIndividual IRI="iii-seat-arti-libere"/>
+        <NamedIndividual IRI="rome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isLocatedIn"/>
+        <NamedIndividual IRI="iii-seat-fra"/>
+        <NamedIndividual IRI="paris-champs-élysées"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isLocatedIn"/>
+        <NamedIndividual IRI="iii-seat-ita"/>
+        <NamedIndividual IRI="florence-via-dei-fossi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <NamedIndividual IRI="iii-universo-mostre"/>
+        <NamedIndividual IRI="iii-collaboration-BV"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <NamedIndividual IRI="iv-AQ"/>
+        <NamedIndividual IRI="iv-direction-AQ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <NamedIndividual IRI="iv-FZ"/>
+        <NamedIndividual IRI="iv-direction-FZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <NamedIndividual IRI="iv-MZ"/>
+        <NamedIndividual IRI="iv-direction-MZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <NamedIndividual IRI="iv-antichità-fiorentine"/>
+        <NamedIndividual IRI="iv-direction-AQ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <NamedIndividual IRI="iv-antichità-fiorentine"/>
+        <NamedIndividual IRI="iv-direction-FZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <NamedIndividual IRI="iv-antichità-fiorentine"/>
+        <NamedIndividual IRI="iv-direction-MZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasRole"/>
+        <NamedIndividual IRI="iv-direction-AQ"/>
+        <NamedIndividual IRI="managing-director"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasRole"/>
+        <NamedIndividual IRI="iv-direction-FZ"/>
+        <NamedIndividual IRI="managing-director"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasRole"/>
+        <NamedIndividual IRI="iv-direction-MZ"/>
+        <NamedIndividual IRI="managing-director"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="fallsWithin"/>
+        <NamedIndividual IRI="paris-champs-élysées"/>
+        <NamedIndividual IRI="paris"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="fallsWithin"/>
+        <NamedIndividual IRI="rome-piazza-delle-erbe"/>
+        <NamedIndividual IRI="rome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="fallsWithin"/>
+        <NamedIndividual IRI="rome-piazza-navona"/>
+        <NamedIndividual IRI="rome"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasName"/>
+        <NamedIndividual IRI="i-arti-urbe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Arti d&apos;Urbe</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasDate"/>
+        <NamedIndividual IRI="i-cessation-tesori"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1910</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasEndDate"/>
+        <NamedIndividual IRI="i-collab-ABandGT"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1982</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasStartDate"/>
+        <NamedIndividual IRI="i-collab-ABandGT"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1980</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasDate"/>
+        <NamedIndividual IRI="i-foundation-arti-urbe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1949</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasDate"/>
+        <NamedIndividual IRI="i-foundation-lab-arti-urbe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1956</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="isActiveFrom"/>
+        <NamedIndividual IRI="i-seat-arti-urbe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1949</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="isActiveFrom"/>
+        <NamedIndividual IRI="i-seat-lab-arti-urbe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1956</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="isActiveFrom"/>
+        <NamedIndividual IRI="i-seat-tesori"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1870</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="isActiveTo"/>
+        <NamedIndividual IRI="i-seat-tesori"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1910</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasName"/>
+        <NamedIndividual IRI="i-tesori"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Tesori</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasName"/>
+        <NamedIndividual IRI="ii-artimercato"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Artimercato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasEndDate"/>
+        <NamedIndividual IRI="ii-collab-AAandGT"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1985</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasStartDate"/>
+        <NamedIndividual IRI="ii-collab-AAandGT"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1960</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasDate"/>
+        <NamedIndividual IRI="ii-foundation-branch-artimercato"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1977</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasDate"/>
+        <NamedIndividual IRI="ii-purchase-auction-house"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1915</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="isActiveFrom"/>
+        <NamedIndividual IRI="ii-seat-branch-artimercato"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1977</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasName"/>
+        <NamedIndividual IRI="iii-arti-fiorentine"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Arti fiorentine</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasName"/>
+        <NamedIndividual IRI="iii-arti-libere"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Arti Libere</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasName"/>
+        <NamedIndividual IRI="iii-arts-de-paris"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Les Arts de Paris</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasEndDate"/>
+        <NamedIndividual IRI="iii-collab-DDandFR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1975</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasStartDate"/>
+        <NamedIndividual IRI="iii-collab-DDandFR"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1950</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasDate"/>
+        <NamedIndividual IRI="iii-foundation-arti-libere"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1980</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasDate"/>
+        <NamedIndividual IRI="iii-modification-arti-fiorentine"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1920</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="isActiveFrom"/>
+        <NamedIndividual IRI="iii-seat-arti-libere"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1980</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="isActiveFrom"/>
+        <NamedIndividual IRI="iii-seat-fra"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1920</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="isActiveFrom"/>
+        <NamedIndividual IRI="iii-seat-ita"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1850</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="isActiveTo"/>
+        <NamedIndividual IRI="iii-seat-ita"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1920</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasName"/>
+        <NamedIndividual IRI="iv-antichità-fiorentine"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Antichità fiorentine</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasEndDate"/>
+        <NamedIndividual IRI="iv-direction-AQ"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1920</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasStartDate"/>
+        <NamedIndividual IRI="iv-direction-AQ"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1910</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasEndDate"/>
+        <NamedIndividual IRI="iv-direction-FZ"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1948</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasStartDate"/>
+        <NamedIndividual IRI="iv-direction-FZ"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1920</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasEndDate"/>
+        <NamedIndividual IRI="iv-direction-MZ"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1970</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasStartDate"/>
+        <NamedIndividual IRI="iv-direction-MZ"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1948</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasClosedOrganization"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasCompanyPurchaser"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasCompanySeller"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFoundedOrganization"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasOriginalOrganization"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasPurchasedOrganization"/>
+        <ObjectProperty IRI="hasClosedOrganization"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasResultingOrganization"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isBranchOf"/>
+        <ObjectProperty IRI="isSecundaryActivityOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <ObjectProperty IRI="isCollaboratorIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <ObjectProperty IRI="isCollaboratorIn"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="fallsWithin"/>
+        <Class IRI="Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasClosedOrganization"/>
+        <Class IRI="CessationOfActivity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCompanyPurchaser"/>
+        <Class IRI="CompanyPurchase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCompanySeller"/>
+        <Class IRI="CompanyPurchase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasEducationIn"/>
+        <Class IRI="Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasFoundedOrganization"/>
+        <Class IRI="Foundation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasOriginalOrganization"/>
+        <Class IRI="CompanyModification"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasParticipant"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPurchasedOrganization"/>
+        <Class IRI="CompanyPurchase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasResultingOrganization"/>
+        <Class IRI="CompanyModification"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRole"/>
+        <Class IRI="Collaboration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSeat"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isBranchOf"/>
+        <Class IRI="Branch"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isCarriedOutBy"/>
+        <Class IRI="FamiliarVenture"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isCollaboratorIn"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isExpertIn"/>
+        <Class IRI="Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isFunctionalTo"/>
+        <Class IRI="Collaboration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isLocatedIn"/>
+        <Class IRI="Seat"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isSecundaryActivityOf"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="participatesIn"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <Class IRI="Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="fallsWithin"/>
+        <Class IRI="Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasClosedOrganization"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCompanyPurchaser"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCompanySeller"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasEducationIn"/>
+        <Class IRI="KnowledgeDomain"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasFoundedOrganization"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasOriginalOrganization"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasParticipant"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPurchasedOrganization"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasResultingOrganization"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasRole"/>
+        <Class IRI="Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSeat"/>
+        <Class IRI="Seat"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isBranchOf"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isCarriedOutBy"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isCollaboratorIn"/>
+        <Class IRI="Collaboration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isExpertIn"/>
+        <Class IRI="KnowledgeDomain"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isFunctionalTo"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isLocatedIn"/>
+        <Class IRI="Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isSecundaryActivityOf"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="participatesIn"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <Class IRI="Collaboration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <Class IRI="Collaboration"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasEndDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasDate"/>
+        <Class IRI="Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasDate"/>
+        <Class IRI="Foundation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasEndDate"/>
+        <Class IRI="Collaboration"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasName"/>
+        <Class IRI="Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasStartDate"/>
+        <Class IRI="Collaboration"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isActiveFrom"/>
+        <Class IRI="Seat"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isActiveTo"/>
+        <Class IRI="Seat"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="hasDate"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasEndDate"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasStartDate"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isActiveFrom"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isActiveTo"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
