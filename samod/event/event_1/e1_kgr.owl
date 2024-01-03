@@ -1,0 +1,562 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/zamo/event/1#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.w3.org/zamo/event/1#">
+    <Prefix name="" IRI="http://www.w3.org/zamo/event/1#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="Event"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-lot-gift"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Purchase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iv-lot-purchase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-exhibition-neoclassicism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-loan-terracotta"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iv-RE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-terracotta-canova"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-museum-milan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iv-museum-rome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-lot-purchase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Loan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Lot"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFacilitator"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-sacra-conversazione"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-ST"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Gift"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-lot-loan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="consistsOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasReceiver"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-heir-TC"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isContainedIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Location"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSurrender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Transaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Price"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iv-birth-baccus-romano"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-collection-TC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-QC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CuratedHolding"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iv-purchase-baccus-gromano"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iv-TD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="florence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-purchase-sacra-conversazione"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPurpose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="takesPlaceIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="transfersPropertyOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-gift-collection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="i-price-purchase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ii-PP"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="transfersCustodyOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="iii-museum-florence"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="Agent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CuratedHolding"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Gift"/>
+        <Class IRI="Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Loan"/>
+        <Class IRI="Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Location"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Lot"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Object"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Price"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Purchase"/>
+        <Class IRI="Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Transaction"/>
+        <Class IRI="Event"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="Agent"/>
+        <Class IRI="CuratedHolding"/>
+        <Class IRI="Event"/>
+        <Class IRI="Location"/>
+        <Class IRI="Lot"/>
+        <Class IRI="Object"/>
+        <Class IRI="Price"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Gift"/>
+        <Class IRI="Loan"/>
+        <Class IRI="Purchase"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="Location"/>
+        <NamedIndividual IRI="florence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Agent"/>
+        <NamedIndividual IRI="i-QC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Agent"/>
+        <NamedIndividual IRI="i-ST"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Lot"/>
+        <NamedIndividual IRI="i-lot-purchase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Price"/>
+        <NamedIndividual IRI="i-price-purchase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Purchase"/>
+        <NamedIndividual IRI="i-purchase-sacra-conversazione"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Object"/>
+        <NamedIndividual IRI="i-sacra-conversazione"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Agent"/>
+        <NamedIndividual IRI="ii-PP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Event"/>
+        <NamedIndividual IRI="ii-exhibition-neoclassicism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Loan"/>
+        <NamedIndividual IRI="ii-loan-terracotta"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Lot"/>
+        <NamedIndividual IRI="ii-lot-loan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Agent"/>
+        <NamedIndividual IRI="ii-museum-milan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Object"/>
+        <NamedIndividual IRI="ii-terracotta-canova"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="CuratedHolding"/>
+        <NamedIndividual IRI="iii-collection-TC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Gift"/>
+        <NamedIndividual IRI="iii-gift-collection"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Agent"/>
+        <NamedIndividual IRI="iii-heir-TC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Lot"/>
+        <NamedIndividual IRI="iii-lot-gift"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Agent"/>
+        <NamedIndividual IRI="iii-museum-florence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Agent"/>
+        <NamedIndividual IRI="iv-RE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Agent"/>
+        <NamedIndividual IRI="iv-TD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Object"/>
+        <NamedIndividual IRI="iv-birth-baccus-romano"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Lot"/>
+        <NamedIndividual IRI="iv-lot-purchase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Agent"/>
+        <NamedIndividual IRI="iv-museum-rome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Purchase"/>
+        <NamedIndividual IRI="iv-purchase-baccus-gromano"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="consistsOf"/>
+        <NamedIndividual IRI="i-lot-purchase"/>
+        <NamedIndividual IRI="i-sacra-conversazione"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPrice"/>
+        <NamedIndividual IRI="i-purchase-sacra-conversazione"/>
+        <NamedIndividual IRI="i-price-purchase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasReceiver"/>
+        <NamedIndividual IRI="i-purchase-sacra-conversazione"/>
+        <NamedIndividual IRI="i-QC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasSurrender"/>
+        <NamedIndividual IRI="i-purchase-sacra-conversazione"/>
+        <NamedIndividual IRI="i-ST"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="transfersCustodyOf"/>
+        <NamedIndividual IRI="i-purchase-sacra-conversazione"/>
+        <NamedIndividual IRI="i-lot-purchase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="transfersPropertyOf"/>
+        <NamedIndividual IRI="i-purchase-sacra-conversazione"/>
+        <NamedIndividual IRI="i-lot-purchase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasPurpose"/>
+        <NamedIndividual IRI="ii-loan-terracotta"/>
+        <NamedIndividual IRI="ii-exhibition-neoclassicism"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasReceiver"/>
+        <NamedIndividual IRI="ii-loan-terracotta"/>
+        <NamedIndividual IRI="ii-museum-milan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasSurrender"/>
+        <NamedIndividual IRI="ii-loan-terracotta"/>
+        <NamedIndividual IRI="ii-PP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="transfersCustodyOf"/>
+        <NamedIndividual IRI="ii-loan-terracotta"/>
+        <NamedIndividual IRI="ii-lot-loan"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="consistsOf"/>
+        <NamedIndividual IRI="ii-lot-loan"/>
+        <NamedIndividual IRI="ii-terracotta-canova"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasReceiver"/>
+        <NamedIndividual IRI="iii-gift-collection"/>
+        <NamedIndividual IRI="iii-museum-florence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasSurrender"/>
+        <NamedIndividual IRI="iii-gift-collection"/>
+        <NamedIndividual IRI="iii-heir-TC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="transfersCustodyOf"/>
+        <NamedIndividual IRI="iii-gift-collection"/>
+        <NamedIndividual IRI="iii-lot-gift"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="transfersPropertyOf"/>
+        <NamedIndividual IRI="iii-gift-collection"/>
+        <NamedIndividual IRI="iii-lot-gift"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="consistsOf"/>
+        <NamedIndividual IRI="iii-lot-gift"/>
+        <NamedIndividual IRI="iii-collection-TC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="consistsOf"/>
+        <NamedIndividual IRI="iv-lot-purchase"/>
+        <NamedIndividual IRI="iv-birth-baccus-romano"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasFacilitator"/>
+        <NamedIndividual IRI="iv-purchase-baccus-gromano"/>
+        <NamedIndividual IRI="iv-TD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasReceiver"/>
+        <NamedIndividual IRI="iv-purchase-baccus-gromano"/>
+        <NamedIndividual IRI="iv-museum-rome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasSurrender"/>
+        <NamedIndividual IRI="iv-purchase-baccus-gromano"/>
+        <NamedIndividual IRI="iv-RE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="takesPlaceIn"/>
+        <NamedIndividual IRI="iv-purchase-baccus-gromano"/>
+        <NamedIndividual IRI="florence"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="transfersCustodyOf"/>
+        <NamedIndividual IRI="iv-purchase-baccus-gromano"/>
+        <NamedIndividual IRI="iv-lot-purchase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="transfersPropertyOf"/>
+        <NamedIndividual IRI="iv-purchase-baccus-gromano"/>
+        <NamedIndividual IRI="iv-lot-purchase"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasValue"/>
+        <NamedIndividual IRI="i-price-purchase"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">10000€</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasDate"/>
+        <NamedIndividual IRI="i-purchase-sacra-conversazione"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1978</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasDate"/>
+        <NamedIndividual IRI="ii-exhibition-neoclassicism"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1980</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasDate"/>
+        <NamedIndividual IRI="ii-loan-terracotta"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1980</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="hasDate"/>
+        <NamedIndividual IRI="iii-gift-collection"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">1980</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="consistsOf"/>
+        <Class IRI="Lot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasFacilitator"/>
+        <Class IRI="Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPrice"/>
+        <ObjectUnionOf>
+            <Class IRI="Loan"/>
+            <Class IRI="Purchase"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPurpose"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasReceiver"/>
+        <Class IRI="Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSurrender"/>
+        <Class IRI="Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isContainedIn"/>
+        <Class IRI="Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="takesPlaceIn"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="transfersCustodyOf"/>
+        <Class IRI="Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="transfersPropertyOf"/>
+        <ObjectUnionOf>
+            <Class IRI="Gift"/>
+            <Class IRI="Purchase"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="consistsOf"/>
+        <ObjectUnionOf>
+            <Class IRI="CuratedHolding"/>
+            <Class IRI="Object"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasFacilitator"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPrice"/>
+        <Class IRI="Price"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPurpose"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasReceiver"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSurrender"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isContainedIn"/>
+        <Class IRI="CuratedHolding"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="takesPlaceIn"/>
+        <Class IRI="Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="transfersCustodyOf"/>
+        <Class IRI="Lot"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="transfersPropertyOf"/>
+        <Class IRI="Lot"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasDate"/>
+        <Class IRI="Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasValue"/>
+        <Class IRI="Price"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="hasDate"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasValue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/am00/events/attribute_assignment"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/am00/events/attribute_assignment">
+    <Prefix name="" IRI="http://www.semanticweb.org/am00/events/attribute_assignment"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/am00/events#AttributeAssignment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/am00/events#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/am00/events#Expertise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/am00/events#LegalNotice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/am00/events#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/am00/events#Price"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/am00/events#ValueProposition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#cites"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#disputes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasCurrentOwner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasProposedPrice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasPurpose"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasValidityOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#imposes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#isCarriedOutBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#isConstrainedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#isFocusedOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#isRequestedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#recognizesAsAuthor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#recognizesAsFormerOwner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#reliesOn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#describesConservationStatusAs"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#hasDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#isValidFrom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#isValidTo"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/am00/events#AttributeAssignment"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/am00/events#Expertise"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#AttributeAssignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/am00/events#ValueProposition"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#AttributeAssignment"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Event"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#LegalNotice"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Object"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Price"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.semanticweb.org/am00/events#Expertise"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#ValueProposition"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#cites"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#disputes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasCurrentOwner"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasProposedPrice"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasPurpose"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasValidityOn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#imposes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#isCarriedOutBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#isConstrainedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#isFocusedOn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#isRequestedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#recognizesAsAuthor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#recognizesAsFormerOwner"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#reliesOn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#cites"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Expertise"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#disputes"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasCurrentOwner"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasProposedPrice"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#ValueProposition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasPurpose"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasValidityOn"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#LegalNotice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#imposes"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#isCarriedOutBy"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#isConstrainedBy"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#isFocusedOn"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#isRequestedBy"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#recognizesAsAuthor"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Expertise"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#recognizesAsFormerOwner"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Expertise"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#reliesOn"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#cites"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#disputes"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#AttributeAssignment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasCurrentOwner"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasProposedPrice"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Price"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasPurpose"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#hasValidityOn"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#imposes"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#LegalNotice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#isCarriedOutBy"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#isConstrainedBy"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#LegalNotice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#isFocusedOn"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#isRequestedBy"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#recognizesAsAuthor"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#recognizesAsFormerOwner"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/am00/events#reliesOn"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#AttributeAssignment"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#describesConservationStatusAs"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#hasDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#hasValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#describesConservationStatusAs"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Expertise"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#hasDate"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#hasValue"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#Price"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#isValidFrom"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#LegalNotice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#isValidTo"/>
+        <Class IRI="http://www.semanticweb.org/am00/events#LegalNotice"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#describesConservationStatusAs"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#hasDate"/>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#hasValue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#isValidFrom"/>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/am00/events#isValidTo"/>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
