@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/zamo/event/2#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.w3.org/zamo/event/2#">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="AttributeAssignment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasProposedPrice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Expertise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Event"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="disputes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isRequestedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="reliesOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPerformedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="recognizesAsAuthor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="cites"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasDate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Object"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasValue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="imposes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasValidityOn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Price"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Agent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="assignsAttributesTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LegalNotice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ValueProposition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isConstrainedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCurrentOwner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="recognizesAsFormerOwner"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isValidFrom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isValidTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPurpose"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="describesConservationStatusAs"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="Agent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AttributeAssignment"/>
+        <Class IRI="Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Event"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Expertise"/>
+        <Class IRI="AttributeAssignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LegalNotice"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Object"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Price"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ValueProposition"/>
+        <Class IRI="AttributeAssignment"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="Agent"/>
+        <Class IRI="Event"/>
+        <Class IRI="LegalNotice"/>
+        <Class IRI="Object"/>
+        <Class IRI="Price"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Expertise"/>
+        <Class IRI="ValueProposition"/>
+    </DisjointClasses>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="assignsAttributesTo"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="cites"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="disputes"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCurrentOwner"/>
+        <Class IRI="Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasProposedPrice"/>
+        <Class IRI="ValueProposition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPurpose"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasValidityOn"/>
+        <Class IRI="LegalNotice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="imposes"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isPerformedBy"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isConstrainedBy"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRequestedBy"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="recognizesAsAuthor"/>
+        <Class IRI="Expertise"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="recognizesAsFormerOwner"/>
+        <Class IRI="Expertise"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="reliesOn"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="assignsAttributesTo"/>
+        <Class IRI="Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="cites"/>
+        <Class IRI="Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="disputes"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCurrentOwner"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasProposedPrice"/>
+        <Class IRI="Price"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPurpose"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasValidityOn"/>
+        <Class IRI="Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="imposes"/>
+        <Class IRI="LegalNotice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isPerformedBy"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isConstrainedBy"/>
+        <Class IRI="LegalNotice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isRequestedBy"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="recognizesAsAuthor"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="recognizesAsFormerOwner"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="reliesOn"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="describesConservationStatusAs"/>
+        <Class IRI="Expertise"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasDate"/>
+        <Class IRI="Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasValue"/>
+        <Class IRI="Price"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isValidFrom"/>
+        <Class IRI="LegalNotice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isValidTo"/>
+        <Class IRI="LegalNotice"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="describesConservationStatusAs"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasDate"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasValue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isValidFrom"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isValidTo"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
