@@ -1,17 +1,14 @@
 ## Scenario
 
-**Le tipologie di transazione nel mercato dell'arte**
+**Sources for the historical reconstruction of the art market**
 
-Gli oggetti possono principalmente (ma non solo) essere di natura bibliotecaria (che comprendono vari tipologie, fra cui i cataloghi) o archivistica (come, ma non solo, registro dei conti, ricevuta, lettere, foto) e opere d’arte; possono essere contenuti all’interno di un <i>curated holding</i> (biblioteca, archivio, fra cui le fototeche, o collezione; possono avere indicazioni di estensione) che è individuato da un proprietario attuale (un agente) e che può essere contenuta a sua volta da un altro holding.
+Objects  may  mainly  (but  not  only)  be  bibliographic  (comprising various types, including catalogues) or archival item (such as, but not limited to, account ledgers, receipts, letters, photos) and works of art; they  may  be  contained  within  a  curated  holding  (library,  archive, including photo archive, or art collection; they may have extension indications)  which  is  identified  by  a  current  owner  (an  agent)  and which may in turn be contained by another holding.These elements can be used as sources for events or agents: some of them are precipitates of  the agent's activity (primary source), while others are the result of later studies (secondary source).
 
-Questi elementi possono essere usati come fonti per eventi o agenti: alcuni di questi sono dei precipitati dell’attività dell’agente (primarie), mentre altri sono frutto di studi successivi (secondarie).
+## Examples
 
-## Esempi
-
-1) Il fondo archivistico dell’antiquario GT, che comprende 600 foto, e 300 lettere dal 1940 al 1990, è ora di proprietà della Fondazione SZ. 
-2) L’istituto di ricerca “Art Institute” possiede l’archivio di KG che contiene diversi fonti primarie, come la ricevuta #KG1950 della vendita di una predella di Gentile da Fabriano e  una lettera a SZ.
-3) Esiste inoltre l’autobiografia di KG “My life”, il cui manoscritto, inedito, è ora in possesso dell’erede FG
-4) Esistono anche fonti secondarie su KG:  il volume “KG: An Ar Collectionist” e il sito web “KG on the web”
-
+1) The archival collection of the antiquarian GT, comprising 600  photos  and  300  letters  from  1940  to  1990,  is  now owned by the SZ Foundation.
+2) The <i>Art Institute</i> research center owns KG's archive, which  contains  several  primary  sources,  such  as  receipt #KG1950  from  the  sale  of  a  predella  by  Gentile  da Fabriano and a letter to SZ
+3) There is also KG's autobiography <i>My life</i>, the unpublished manuscript of which is now in the possession of the heir FG
+4) There are also secondary sources on KG: the volume <i>KG: An Art Collectionist</i> and the website <i>KG on the web</i>.
 
 

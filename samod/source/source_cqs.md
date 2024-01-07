@@ -1,16 +1,17 @@
-## Domande di competenza
+## Competency Questions
 
-| No. | Domanda                           | Formato della risposta     | Risultato atteso                                                                                                                                     | SPARQL                                                                                                                                                                                                                                                                                                  |
+| No. | Question | Answer  | Example                                       | SPARQL |
 |-----|-----------------------------------|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.  | Chi possiede l’archivio di GT     | Nome del possessore        | Fondazione SZ                                                                                                                                        | ``` SELECT ?agent WHERE { am00:ex1_archive_GT am00:hasCurrentOwner ?agent } ```                                                                                                                                                                                                                         |
-| 2.  | Quali sono le fonti relative a KG | Fonte, nome del possessore | Archivio, Art Institute; <br> Ricevuta #KG1950, Art Institute; <br> Lettera a SZ, Art Institute; <br> <i>KG. My life</i>, FG; <br> <i>KG: An Art Collectionist</i>, n.a.; <br> KG on the web, n.a. | ```  SELECT DISTINCT ?source ?agent WHERE { ?source am00:isSourceFor \| am00:isPrimarySourceFor \| am00:isSecundarySourceFor am00:ex2_KG.    OPTIONAL { 	?source am00:hasCurrentOwner ?agent    }    OPTIONAL { 	?source ?isContainedIn ?curatedhold. 	?curatedhold am00:hasCurrentOwner ?agent    } } ``` |
+| 1.  | Who is the owner of GT’s archive?    | Name of the owner       | Foundation SZ SZ   | ``` SELECT ?s WHERE { zamo:i-archive-GT zamo:hasCurrentOwner ?s} ```       |
+| 2.  | Which are the sources which can be used to reconstruct the life and the activity of KG? | Source and name of the owner | KG’s archive, Art Institute <br><br> Receipt  #KG1950,  Art  Institute <br><br>  Letter  to  SZ,  Art Institute <br><br> <i>KG. My life</i>, FG <br><br> <i>KG: An Art Collectionist</i> <br><br> <i>KG on the web</i> | ``` SELECT ?source ?owner WHERE { ?source zamo:isSourceFor OR zamo:isPrimarySourceFor OR zamo:isSecondarySourceFor ?reconstruction. ?reconstruction zamo:reconstructs zamo:ii-KG. OPTIONAL { ?source zamo:hasCurrentOwner ?owner}    OPTIONAL { ?source zamo:isContainedIn ?curatedhold. ?curatedhold zamo:hasCurrentOwner ?owner }} ``` |
 
+Please, replace OR in the queries with `|`
 
-Dalle query in SPARQL sono stati omessi i seguenti prefissi:
+In these SPARQL queries, the following prefixes should be stated:
 ```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX am00: <http://www.semanticweb.org/am00/sources#>
+PREFIX zamo: <http://www.w3.org/zamo/sources#>
 ```

@@ -1,0 +1,256 @@
+Prefix(:=<http://www.w3.org/zamo/sources##>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.w3.org/zamo/sources#>
+
+Declaration(Class(<http://www.w3.org/zamo/sources#AccountRegister>))
+Declaration(Class(<http://www.w3.org/zamo/sources#Agent>))
+Declaration(Class(<http://www.w3.org/zamo/sources#ArchivalItem>))
+Declaration(Class(<http://www.w3.org/zamo/sources#Archive>))
+Declaration(Class(<http://www.w3.org/zamo/sources#ArtCollection>))
+Declaration(Class(<http://www.w3.org/zamo/sources#Artwork>))
+Declaration(Class(<http://www.w3.org/zamo/sources#BibliographicItem>))
+Declaration(Class(<http://www.w3.org/zamo/sources#Catalog>))
+Declaration(Class(<http://www.w3.org/zamo/sources#CuratedHolding>))
+Declaration(Class(<http://www.w3.org/zamo/sources#Event>))
+Declaration(Class(<http://www.w3.org/zamo/sources#HistoricalReconstruction>))
+Declaration(Class(<http://www.w3.org/zamo/sources#Letter>))
+Declaration(Class(<http://www.w3.org/zamo/sources#Library>))
+Declaration(Class(<http://www.w3.org/zamo/sources#Object>))
+Declaration(Class(<http://www.w3.org/zamo/sources#Photo>))
+Declaration(Class(<http://www.w3.org/zamo/sources#PhotoArchive>))
+Declaration(Class(<http://www.w3.org/zamo/sources#Receipt>))
+Declaration(Class(<http://www.w3.org/zamo/sources#Thing>))
+Declaration(ObjectProperty(<http://www.w3.org/zamo/sources#hasCurrentOwner>))
+Declaration(ObjectProperty(<http://www.w3.org/zamo/sources#isContainedIn>))
+Declaration(ObjectProperty(<http://www.w3.org/zamo/sources#isPrimarySourceFor>))
+Declaration(ObjectProperty(<http://www.w3.org/zamo/sources#isSecondarySourceFor>))
+Declaration(ObjectProperty(<http://www.w3.org/zamo/sources#isSourceFor>))
+Declaration(ObjectProperty(<http://www.w3.org/zamo/sources#reconstructs>))
+Declaration(DataProperty(<http://www.w3.org/zamo/sources#hasExtent>))
+Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#i-GT>))
+Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#i-archive-GT>))
+Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#i-foundation-SZ>))
+Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#i-reconstruction-GT>))
+Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#ii-KG>))
+Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#ii-archive-KG>))
+Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#ii-art-institute>))
+Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#ii-letter-SZ>))
+Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#ii-receipt-KG1950>))
+Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#ii-reconstruction-KG>))
+Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#iii-FG>))
+Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#iii-KG-my-life>))
+Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#iv-KG-an-art-collector>))
+Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#iv-KG-website>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.w3.org/zamo/sources#hasCurrentOwner> (<http://www.w3.org/zamo/sources#hasCurrentOwner>)
+
+ObjectPropertyDomain(<http://www.w3.org/zamo/sources#hasCurrentOwner> <http://www.w3.org/zamo/sources#Thing>)
+ObjectPropertyRange(<http://www.w3.org/zamo/sources#hasCurrentOwner> <http://www.w3.org/zamo/sources#Agent>)
+
+# Object Property: <http://www.w3.org/zamo/sources#isContainedIn> (<http://www.w3.org/zamo/sources#isContainedIn>)
+
+ObjectPropertyDomain(<http://www.w3.org/zamo/sources#isContainedIn> <http://www.w3.org/zamo/sources#Object>)
+ObjectPropertyRange(<http://www.w3.org/zamo/sources#isContainedIn> <http://www.w3.org/zamo/sources#CuratedHolding>)
+
+# Object Property: <http://www.w3.org/zamo/sources#isPrimarySourceFor> (<http://www.w3.org/zamo/sources#isPrimarySourceFor>)
+
+SubObjectPropertyOf(<http://www.w3.org/zamo/sources#isPrimarySourceFor> <http://www.w3.org/zamo/sources#isSourceFor>)
+ObjectPropertyDomain(<http://www.w3.org/zamo/sources#isPrimarySourceFor> <http://www.w3.org/zamo/sources#Thing>)
+ObjectPropertyRange(<http://www.w3.org/zamo/sources#isPrimarySourceFor> <http://www.w3.org/zamo/sources#HistoricalReconstruction>)
+
+# Object Property: <http://www.w3.org/zamo/sources#isSecondarySourceFor> (<http://www.w3.org/zamo/sources#isSecondarySourceFor>)
+
+SubObjectPropertyOf(<http://www.w3.org/zamo/sources#isSecondarySourceFor> <http://www.w3.org/zamo/sources#isSourceFor>)
+ObjectPropertyDomain(<http://www.w3.org/zamo/sources#isSecondarySourceFor> <http://www.w3.org/zamo/sources#Thing>)
+ObjectPropertyRange(<http://www.w3.org/zamo/sources#isSecondarySourceFor> <http://www.w3.org/zamo/sources#HistoricalReconstruction>)
+
+# Object Property: <http://www.w3.org/zamo/sources#isSourceFor> (<http://www.w3.org/zamo/sources#isSourceFor>)
+
+ObjectPropertyDomain(<http://www.w3.org/zamo/sources#isSourceFor> <http://www.w3.org/zamo/sources#Thing>)
+ObjectPropertyRange(<http://www.w3.org/zamo/sources#isSourceFor> <http://www.w3.org/zamo/sources#HistoricalReconstruction>)
+
+# Object Property: <http://www.w3.org/zamo/sources#reconstructs> (<http://www.w3.org/zamo/sources#reconstructs>)
+
+ObjectPropertyDomain(<http://www.w3.org/zamo/sources#reconstructs> <http://www.w3.org/zamo/sources#HistoricalReconstruction>)
+ObjectPropertyRange(<http://www.w3.org/zamo/sources#reconstructs> ObjectUnionOf(<http://www.w3.org/zamo/sources#Agent> <http://www.w3.org/zamo/sources#Event>))
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.w3.org/zamo/sources#hasExtent> (<http://www.w3.org/zamo/sources#hasExtent>)
+
+DataPropertyDomain(<http://www.w3.org/zamo/sources#hasExtent> <http://www.w3.org/zamo/sources#CuratedHolding>)
+DataPropertyRange(<http://www.w3.org/zamo/sources#hasExtent> xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.w3.org/zamo/sources#AccountRegister> (<http://www.w3.org/zamo/sources#AccountRegister>)
+
+SubClassOf(<http://www.w3.org/zamo/sources#AccountRegister> <http://www.w3.org/zamo/sources#ArchivalItem>)
+
+# Class: <http://www.w3.org/zamo/sources#Agent> (<http://www.w3.org/zamo/sources#Agent>)
+
+SubClassOf(<http://www.w3.org/zamo/sources#Agent> owl:Thing)
+
+# Class: <http://www.w3.org/zamo/sources#ArchivalItem> (<http://www.w3.org/zamo/sources#ArchivalItem>)
+
+SubClassOf(<http://www.w3.org/zamo/sources#ArchivalItem> <http://www.w3.org/zamo/sources#Object>)
+
+# Class: <http://www.w3.org/zamo/sources#Archive> (<http://www.w3.org/zamo/sources#Archive>)
+
+SubClassOf(<http://www.w3.org/zamo/sources#Archive> <http://www.w3.org/zamo/sources#CuratedHolding>)
+
+# Class: <http://www.w3.org/zamo/sources#ArtCollection> (<http://www.w3.org/zamo/sources#ArtCollection>)
+
+SubClassOf(<http://www.w3.org/zamo/sources#ArtCollection> <http://www.w3.org/zamo/sources#CuratedHolding>)
+
+# Class: <http://www.w3.org/zamo/sources#Artwork> (<http://www.w3.org/zamo/sources#Artwork>)
+
+SubClassOf(<http://www.w3.org/zamo/sources#Artwork> <http://www.w3.org/zamo/sources#Object>)
+
+# Class: <http://www.w3.org/zamo/sources#BibliographicItem> (<http://www.w3.org/zamo/sources#BibliographicItem>)
+
+SubClassOf(<http://www.w3.org/zamo/sources#BibliographicItem> <http://www.w3.org/zamo/sources#Object>)
+
+# Class: <http://www.w3.org/zamo/sources#Catalog> (<http://www.w3.org/zamo/sources#Catalog>)
+
+SubClassOf(<http://www.w3.org/zamo/sources#Catalog> <http://www.w3.org/zamo/sources#BibliographicItem>)
+
+# Class: <http://www.w3.org/zamo/sources#CuratedHolding> (<http://www.w3.org/zamo/sources#CuratedHolding>)
+
+SubClassOf(<http://www.w3.org/zamo/sources#CuratedHolding> <http://www.w3.org/zamo/sources#Thing>)
+DisjointClasses(<http://www.w3.org/zamo/sources#CuratedHolding> <http://www.w3.org/zamo/sources#Object>)
+
+# Class: <http://www.w3.org/zamo/sources#Event> (<http://www.w3.org/zamo/sources#Event>)
+
+SubClassOf(<http://www.w3.org/zamo/sources#Event> owl:Thing)
+
+# Class: <http://www.w3.org/zamo/sources#HistoricalReconstruction> (<http://www.w3.org/zamo/sources#HistoricalReconstruction>)
+
+SubClassOf(<http://www.w3.org/zamo/sources#HistoricalReconstruction> owl:Thing)
+
+# Class: <http://www.w3.org/zamo/sources#Letter> (<http://www.w3.org/zamo/sources#Letter>)
+
+SubClassOf(<http://www.w3.org/zamo/sources#Letter> <http://www.w3.org/zamo/sources#ArchivalItem>)
+
+# Class: <http://www.w3.org/zamo/sources#Library> (<http://www.w3.org/zamo/sources#Library>)
+
+SubClassOf(<http://www.w3.org/zamo/sources#Library> <http://www.w3.org/zamo/sources#CuratedHolding>)
+
+# Class: <http://www.w3.org/zamo/sources#Object> (<http://www.w3.org/zamo/sources#Object>)
+
+SubClassOf(<http://www.w3.org/zamo/sources#Object> <http://www.w3.org/zamo/sources#Thing>)
+
+# Class: <http://www.w3.org/zamo/sources#Photo> (<http://www.w3.org/zamo/sources#Photo>)
+
+SubClassOf(<http://www.w3.org/zamo/sources#Photo> <http://www.w3.org/zamo/sources#ArchivalItem>)
+
+# Class: <http://www.w3.org/zamo/sources#PhotoArchive> (<http://www.w3.org/zamo/sources#PhotoArchive>)
+
+SubClassOf(<http://www.w3.org/zamo/sources#PhotoArchive> <http://www.w3.org/zamo/sources#Archive>)
+
+# Class: <http://www.w3.org/zamo/sources#Receipt> (<http://www.w3.org/zamo/sources#Receipt>)
+
+SubClassOf(<http://www.w3.org/zamo/sources#Receipt> <http://www.w3.org/zamo/sources#ArchivalItem>)
+
+# Class: <http://www.w3.org/zamo/sources#Thing> (<http://www.w3.org/zamo/sources#Thing>)
+
+SubClassOf(<http://www.w3.org/zamo/sources#Thing> owl:Thing)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.w3.org/zamo/sources#i-GT> (<http://www.w3.org/zamo/sources#i-GT>)
+
+ClassAssertion(<http://www.w3.org/zamo/sources#Agent> <http://www.w3.org/zamo/sources#i-GT>)
+
+# Individual: <http://www.w3.org/zamo/sources#i-archive-GT> (<http://www.w3.org/zamo/sources#i-archive-GT>)
+
+ClassAssertion(<http://www.w3.org/zamo/sources#Archive> <http://www.w3.org/zamo/sources#i-archive-GT>)
+ObjectPropertyAssertion(<http://www.w3.org/zamo/sources#hasCurrentOwner> <http://www.w3.org/zamo/sources#i-archive-GT> <http://www.w3.org/zamo/sources#i-foundation-SZ>)
+ObjectPropertyAssertion(<http://www.w3.org/zamo/sources#isSourceFor> <http://www.w3.org/zamo/sources#i-archive-GT> <http://www.w3.org/zamo/sources#i-reconstruction-GT>)
+DataPropertyAssertion(<http://www.w3.org/zamo/sources#hasExtent> <http://www.w3.org/zamo/sources#i-archive-GT> "600 photos and 300 letters from 1940 to 1990"^^xsd:string)
+
+# Individual: <http://www.w3.org/zamo/sources#i-foundation-SZ> (<http://www.w3.org/zamo/sources#i-foundation-SZ>)
+
+ClassAssertion(<http://www.w3.org/zamo/sources#Agent> <http://www.w3.org/zamo/sources#i-foundation-SZ>)
+
+# Individual: <http://www.w3.org/zamo/sources#i-reconstruction-GT> (<http://www.w3.org/zamo/sources#i-reconstruction-GT>)
+
+ClassAssertion(<http://www.w3.org/zamo/sources#HistoricalReconstruction> <http://www.w3.org/zamo/sources#i-reconstruction-GT>)
+ObjectPropertyAssertion(<http://www.w3.org/zamo/sources#reconstructs> <http://www.w3.org/zamo/sources#i-reconstruction-GT> <http://www.w3.org/zamo/sources#i-GT>)
+
+# Individual: <http://www.w3.org/zamo/sources#ii-KG> (<http://www.w3.org/zamo/sources#ii-KG>)
+
+ClassAssertion(<http://www.w3.org/zamo/sources#Agent> <http://www.w3.org/zamo/sources#ii-KG>)
+
+# Individual: <http://www.w3.org/zamo/sources#ii-archive-KG> (<http://www.w3.org/zamo/sources#ii-archive-KG>)
+
+ClassAssertion(<http://www.w3.org/zamo/sources#Archive> <http://www.w3.org/zamo/sources#ii-archive-KG>)
+ObjectPropertyAssertion(<http://www.w3.org/zamo/sources#hasCurrentOwner> <http://www.w3.org/zamo/sources#ii-archive-KG> <http://www.w3.org/zamo/sources#ii-art-institute>)
+ObjectPropertyAssertion(<http://www.w3.org/zamo/sources#isSourceFor> <http://www.w3.org/zamo/sources#ii-archive-KG> <http://www.w3.org/zamo/sources#ii-reconstruction-KG>)
+
+# Individual: <http://www.w3.org/zamo/sources#ii-art-institute> (<http://www.w3.org/zamo/sources#ii-art-institute>)
+
+ClassAssertion(<http://www.w3.org/zamo/sources#Agent> <http://www.w3.org/zamo/sources#ii-art-institute>)
+
+# Individual: <http://www.w3.org/zamo/sources#ii-letter-SZ> (<http://www.w3.org/zamo/sources#ii-letter-SZ>)
+
+ClassAssertion(<http://www.w3.org/zamo/sources#Letter> <http://www.w3.org/zamo/sources#ii-letter-SZ>)
+ObjectPropertyAssertion(<http://www.w3.org/zamo/sources#isContainedIn> <http://www.w3.org/zamo/sources#ii-letter-SZ> <http://www.w3.org/zamo/sources#ii-archive-KG>)
+ObjectPropertyAssertion(<http://www.w3.org/zamo/sources#isPrimarySourceFor> <http://www.w3.org/zamo/sources#ii-letter-SZ> <http://www.w3.org/zamo/sources#ii-reconstruction-KG>)
+
+# Individual: <http://www.w3.org/zamo/sources#ii-receipt-KG1950> (<http://www.w3.org/zamo/sources#ii-receipt-KG1950>)
+
+ClassAssertion(<http://www.w3.org/zamo/sources#Receipt> <http://www.w3.org/zamo/sources#ii-receipt-KG1950>)
+ObjectPropertyAssertion(<http://www.w3.org/zamo/sources#isContainedIn> <http://www.w3.org/zamo/sources#ii-receipt-KG1950> <http://www.w3.org/zamo/sources#ii-archive-KG>)
+ObjectPropertyAssertion(<http://www.w3.org/zamo/sources#isPrimarySourceFor> <http://www.w3.org/zamo/sources#ii-receipt-KG1950> <http://www.w3.org/zamo/sources#ii-reconstruction-KG>)
+
+# Individual: <http://www.w3.org/zamo/sources#ii-reconstruction-KG> (<http://www.w3.org/zamo/sources#ii-reconstruction-KG>)
+
+ClassAssertion(<http://www.w3.org/zamo/sources#HistoricalReconstruction> <http://www.w3.org/zamo/sources#ii-reconstruction-KG>)
+ObjectPropertyAssertion(<http://www.w3.org/zamo/sources#reconstructs> <http://www.w3.org/zamo/sources#ii-reconstruction-KG> <http://www.w3.org/zamo/sources#ii-KG>)
+
+# Individual: <http://www.w3.org/zamo/sources#iii-FG> (<http://www.w3.org/zamo/sources#iii-FG>)
+
+ClassAssertion(<http://www.w3.org/zamo/sources#Agent> <http://www.w3.org/zamo/sources#iii-FG>)
+
+# Individual: <http://www.w3.org/zamo/sources#iii-KG-my-life> (<http://www.w3.org/zamo/sources#iii-KG-my-life>)
+
+ClassAssertion(<http://www.w3.org/zamo/sources#BibliographicItem> <http://www.w3.org/zamo/sources#iii-KG-my-life>)
+ObjectPropertyAssertion(<http://www.w3.org/zamo/sources#hasCurrentOwner> <http://www.w3.org/zamo/sources#iii-KG-my-life> <http://www.w3.org/zamo/sources#iii-FG>)
+ObjectPropertyAssertion(<http://www.w3.org/zamo/sources#isPrimarySourceFor> <http://www.w3.org/zamo/sources#iii-KG-my-life> <http://www.w3.org/zamo/sources#ii-reconstruction-KG>)
+
+# Individual: <http://www.w3.org/zamo/sources#iv-KG-an-art-collector> (<http://www.w3.org/zamo/sources#iv-KG-an-art-collector>)
+
+ClassAssertion(<http://www.w3.org/zamo/sources#BibliographicItem> <http://www.w3.org/zamo/sources#iv-KG-an-art-collector>)
+ObjectPropertyAssertion(<http://www.w3.org/zamo/sources#isSecondarySourceFor> <http://www.w3.org/zamo/sources#iv-KG-an-art-collector> <http://www.w3.org/zamo/sources#ii-reconstruction-KG>)
+
+# Individual: <http://www.w3.org/zamo/sources#iv-KG-website> (<http://www.w3.org/zamo/sources#iv-KG-website>)
+
+ClassAssertion(<http://www.w3.org/zamo/sources#Object> <http://www.w3.org/zamo/sources#iv-KG-website>)
+ObjectPropertyAssertion(<http://www.w3.org/zamo/sources#isSecondarySourceFor> <http://www.w3.org/zamo/sources#iv-KG-website> <http://www.w3.org/zamo/sources#ii-reconstruction-KG>)
+
+
+DisjointClasses(<http://www.w3.org/zamo/sources#AccountRegister> <http://www.w3.org/zamo/sources#Letter> <http://www.w3.org/zamo/sources#Photo> <http://www.w3.org/zamo/sources#Receipt>)
+DisjointClasses(<http://www.w3.org/zamo/sources#Agent> <http://www.w3.org/zamo/sources#Event> <http://www.w3.org/zamo/sources#HistoricalReconstruction> <http://www.w3.org/zamo/sources#Thing>)
+DisjointClasses(<http://www.w3.org/zamo/sources#ArchivalItem> <http://www.w3.org/zamo/sources#Artwork> <http://www.w3.org/zamo/sources#BibliographicItem>)
+DisjointClasses(<http://www.w3.org/zamo/sources#Archive> <http://www.w3.org/zamo/sources#ArtCollection> <http://www.w3.org/zamo/sources#Library>)
+)
