@@ -2,6 +2,7 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://www.w3.org/zamo/event/2#" uri="file:/Users/manuele/Desktop/e2_kgr.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1704657363936" name="http://www.w3.org/zamo/event#" uri="event.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1704725490027" name="duplicate:http://www.w3.org/zamo/event#" uri="event-refactored.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1704725490027" name="duplicate:http://www.w3.org/zamo/event#" uri="event-merged.owl"/>
     </group>
 </catalog>
