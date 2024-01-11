@@ -2,7 +2,7 @@
 
 Please, correct the original competency questions following these instructions
 
-> [milestone-1](samod/agent/milestone/milestone_1.owl)
+> [milestone-1](samod/agent/milestone/merged/milestone_1.owl)
 
 `PREFIX zamo: <http://www.w3.org/zamo/agent/milestone-1#>`
 
@@ -10,7 +10,7 @@ Please, correct the original competency questions following these instructions
 |-----------------|--------------|-----------------------------------------|
 | 2               | 1            | `SELECT DISTINCT` (instead of `SELECT`) | 
 
-> [milestone-2](samod/agent/milestone/milestone_2.owl)
+> [milestone-2](samod/agent/milestone/merged/milestone_2.owl)
 
 `PREFIX zamo: <http://www.w3.org/zamo/agent/milestone-2#>`
 
@@ -18,7 +18,7 @@ Please, correct the original competency questions following these instructions
 |-----------------|--------------|-----------------------------------------|
 | 3               | All           | `SELECT DISTINCT` (instead of `SELECT`) | 
 
-> [milestone-3](samod/agent/milestone/milestone_3.owl)
+> [milestone-3](samod/agent/milestone/merged/milestone_3.owl)
 
 `PREFIX zamo: <http://www.w3.org/zamo/agent/milestone-3#>`
 
@@ -26,7 +26,7 @@ Please, correct the original competency questions following these instructions
 |-----------------|--------------|-----------------------------------------|
 | 4               | All           | `SELECT DISTINCT` (instead of `SELECT`) | 
 
-> [milestone-4](samod/agent/milestone/milestone_4.owl)
+> [milestone-4](samod/agent/milestone/merged/milestone_4.owl)
 
 `PREFIX zamo: <http://www.w3.org/zamo/agent/milestone-4#>`
 
