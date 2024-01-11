@@ -106,10 +106,10 @@
         <NamedIndividual IRI="iii-price-1980"/>
     </Declaration>
     <Declaration>
-        <Class IRI="AttributeAssignment"/>
+        <NamedIndividual IRI="good"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="good"/>
+        <Class IRI="AttributeAssignment"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="authorship"/>
@@ -136,25 +136,31 @@
         <NamedIndividual IRI="i-san-rocco"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Currency"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="cites"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="hasValue"/>
+        <NamedIndividual IRI="euro"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="iv-value-proposition-1991"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasValidityOn"/>
+        <DataProperty IRI="hasValue"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="assignsAttributeTo"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Price"/>
+        <ObjectProperty IRI="hasValidityOn"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="iv-ML"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Price"/>
     </Declaration>
     <Declaration>
         <Class IRI="Agent"/>
@@ -167,6 +173,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="ii-deposition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCurrency"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="iv-price-1990"/>
@@ -224,6 +233,7 @@
         <Class IRI="Agent"/>
         <Class IRI="AttributeType"/>
         <Class IRI="ConditionState"/>
+        <Class IRI="Currency"/>
         <Class IRI="Event"/>
         <Class IRI="LegalNotice"/>
         <Class IRI="Object"/>
@@ -240,6 +250,10 @@
     <ClassAssertion>
         <Class IRI="Agent"/>
         <NamedIndividual IRI="domenichino"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Currency"/>
+        <NamedIndividual IRI="euro"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="ConditionState"/>
@@ -408,6 +422,11 @@
         <NamedIndividual IRI="good"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasCurrency"/>
+        <NamedIndividual IRI="iii-price-1980"/>
+        <NamedIndividual IRI="euro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="assignsAttributeTo"/>
         <NamedIndividual IRI="iii-value-proposition"/>
         <NamedIndividual IRI="iii-canvas-tintoretto"/>
@@ -431,6 +450,16 @@
         <ObjectProperty IRI="reliesOn"/>
         <NamedIndividual IRI="iii-value-proposition"/>
         <NamedIndividual IRI="iii-initial-appraisal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasCurrency"/>
+        <NamedIndividual IRI="iv-price-1990"/>
+        <NamedIndividual IRI="euro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasCurrency"/>
+        <NamedIndividual IRI="iv-price-1991"/>
+        <NamedIndividual IRI="euro"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="assignsAgentAsAttribute"/>
@@ -510,7 +539,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="hasValue"/>
         <NamedIndividual IRI="iii-price-1980"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">15.000€</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="hasDate"/>
@@ -520,12 +549,12 @@
     <DataPropertyAssertion>
         <DataProperty IRI="hasValue"/>
         <NamedIndividual IRI="iv-price-1990"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">35.000€</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">35000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="hasValue"/>
         <NamedIndividual IRI="iv-price-1991"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">30.000€</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="hasDate"/>
@@ -561,6 +590,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasAttributeType"/>
         <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCurrency"/>
+        <Class IRI="Price"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasProposedPrice"/>
@@ -617,6 +650,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasAttributeType"/>
         <Class IRI="AttributeType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCurrency"/>
+        <Class IRI="Currency"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasProposedPrice"/>
@@ -679,7 +716,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="hasValue"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:float"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataUnionOf>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="isValidFrom"/>

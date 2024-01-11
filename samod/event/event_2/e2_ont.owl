@@ -40,28 +40,31 @@
         <ObjectProperty IRI="isPerformedBy"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Currency"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="cites"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="hasDate"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="hasValue"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Object"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="hasValue"/>
+        <ObjectProperty IRI="assignsAttributeTo"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasValidityOn"/>
     </Declaration>
     <Declaration>
-        <Datatype abbreviatedIRI="xsd:gYear"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="imposes"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="assignsAttributeTo"/>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
     </Declaration>
     <Declaration>
         <Class IRI="Price"/>
@@ -70,10 +73,10 @@
         <Class IRI="Agent"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ValueProposition"/>
+        <Class IRI="LegalNotice"/>
     </Declaration>
     <Declaration>
-        <Class IRI="LegalNotice"/>
+        <Class IRI="ValueProposition"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="isConstrainedBy"/>
@@ -85,16 +88,19 @@
         <ObjectProperty IRI="recognizesConservationStatusAs"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasCurrency"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="previous-owner"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="isValidFrom"/>
     </Declaration>
     <Declaration>
-        <Class IRI="AttributeType"/>
+        <Class IRI="ConditionAssessment"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ConditionAssessment"/>
+        <Class IRI="AttributeType"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="isValidTo"/>
@@ -149,6 +155,7 @@
         <Class IRI="Agent"/>
         <Class IRI="AttributeType"/>
         <Class IRI="ConditionState"/>
+        <Class IRI="Currency"/>
         <Class IRI="Event"/>
         <Class IRI="LegalNotice"/>
         <Class IRI="Object"/>
@@ -185,6 +192,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasAttributeType"/>
         <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCurrency"/>
+        <Class IRI="Price"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasProposedPrice"/>
@@ -241,6 +252,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasAttributeType"/>
         <Class IRI="AttributeType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCurrency"/>
+        <Class IRI="Currency"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasProposedPrice"/>
@@ -303,7 +318,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="hasValue"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:float"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataUnionOf>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="isValidFrom"/>
