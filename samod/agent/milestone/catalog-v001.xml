@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1705007695411" name="http://www.w3.org/zamo/agent/milestone-1#" uri="merged/milestone_1.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1705007695411" name="http://www.w3.org/zamo/agent/milestone-2#" uri="merged/milestone_2.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1705007695411" name="http://www.w3.org/zamo/agent/milestone-3#" uri="merged/milestone_3.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1705007695411" name="http://www.w3.org/zamo/agent/milestone-4#" uri="agent_refactored.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1705007695411" name="shadowed:http://www.w3.org/zamo/agent/milestone-4#" uri="merged/milestone_4.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1705012940775" name="http://www.w3.org/zamo/agent/milestone-1#" uri="merged/milestone_1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1705012940775" name="http://www.w3.org/zamo/agent/milestone-2#" uri="merged/milestone_2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1705012940775" name="http://www.w3.org/zamo/agent/milestone-3#" uri="merged/milestone_3.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1705012940775" name="http://www.w3.org/zamo/agent/milestone-4#" uri="merged/milestone_4.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1705012940775" name="https://w3id.org/zeri/ontology/zamo/agents#" uri="agent_refactored.owl"/>
     </group>
 </catalog>
