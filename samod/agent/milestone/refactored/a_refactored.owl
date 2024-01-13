@@ -1,0 +1,992 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/zeri/ontology/zamo/agents#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/zeri/ontology/zamo/agents#">
+    <Prefix name="" IRI="https://w3id.org/zeri/ontology/zamo/agents#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This module of ZAMO (Zeri Art Market Ontology) models an agent of the art market domain, stating the most relevant classes and properties.
+
+**URL:** https://w3id.org/zeri/ontology/zamo/agents#
+
+**Creators**: [Manuele Veggi](http://orcid.org/0000-0002-5958-2100)
+
+**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="Association"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="joinsAsMember"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="organizes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="restorer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isLocatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSeat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Foundation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/zamo/events#takesPlaceIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EventEdition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://w3id.org/zeri/ontology/zamo/events#hasEndDate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Seat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasEducationIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isFunctionalTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/zamo/events#hasParticipant"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Membership"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Branch"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="promotes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CompanyPurchase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="RestorationLaboratory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="fallsWithin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isSecundaryActivityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isCarriedOutBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Role"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasRole"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://w3id.org/zeri/ontology/zamo/events#hasDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AuctionHouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ArtDealerOrganization"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isActiveTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="KnowledgeDomain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isBranchOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="providesServiceIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Collaboration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasReferenceAssociation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CompanyModification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCompanySeller"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPurchasedOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasResultingOrganization"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="photographer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasClosedOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCompanyPurchaser"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="managing-director"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Initiative"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://w3id.org/zeri/ontology/zamo/events#hasStartDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/zamo/events#participatesIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isCollaboratorIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="art-historian-consultant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="requestsServiceIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CessationOfActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="recursAs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFoundedOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Exhibition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isActiveFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isExpertIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasOriginalOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FamiliarVenture"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="ArtDealerOrganization"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="KnowledgeDomain"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="Agent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ArtDealerOrganization"/>
+        <Class IRI="Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Association"/>
+        <Class IRI="Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AuctionHouse"/>
+        <Class IRI="ArtDealerOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Branch"/>
+        <Class IRI="Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CessationOfActivity"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Collaboration"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CompanyModification"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CompanyPurchase"/>
+        <Class IRI="CessationOfActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EventEdition"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Exhibition"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FamiliarVenture"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Foundation"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Initiative"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="KnowledgeDomain"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Location"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Membership"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Organization"/>
+        <Class IRI="Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Person"/>
+        <Class IRI="Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="RestorationLaboratory"/>
+        <Class IRI="ArtDealerOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Role"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Seat"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="Agent"/>
+        <Class IRI="Collaboration"/>
+        <Class IRI="FamiliarVenture"/>
+        <Class IRI="Initiative"/>
+        <Class IRI="KnowledgeDomain"/>
+        <Class IRI="Location"/>
+        <Class IRI="Membership"/>
+        <Class IRI="Role"/>
+        <Class IRI="Seat"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="CessationOfActivity"/>
+        <Class IRI="CompanyModification"/>
+        <Class IRI="EventEdition"/>
+        <Class IRI="Exhibition"/>
+        <Class IRI="Foundation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Organization"/>
+        <Class IRI="Person"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="Role"/>
+        <NamedIndividual IRI="art-historian-consultant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Role"/>
+        <NamedIndividual IRI="managing-director"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Role"/>
+        <NamedIndividual IRI="photographer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Role"/>
+        <NamedIndividual IRI="restorer"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasClosedOrganization"/>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/zamo/events#hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasCompanyPurchaser"/>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/zamo/events#hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasCompanySeller"/>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/zamo/events#hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFoundedOrganization"/>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/zamo/events#hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasOriginalOrganization"/>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/zamo/events#hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasPurchasedOrganization"/>
+        <ObjectProperty IRI="hasClosedOrganization"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasResultingOrganization"/>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/zamo/events#hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isBranchOf"/>
+        <ObjectProperty IRI="isSecundaryActivityOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <ObjectProperty IRI="isCollaboratorIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <ObjectProperty IRI="isCollaboratorIn"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/zamo/events#hasParticipant"/>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/zamo/events#participatesIn"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="fallsWithin"/>
+        <Class IRI="Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasClosedOrganization"/>
+        <Class IRI="CessationOfActivity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCompanyPurchaser"/>
+        <Class IRI="CompanyPurchase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCompanySeller"/>
+        <Class IRI="CompanyPurchase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasEducationIn"/>
+        <Class IRI="Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasFoundedOrganization"/>
+        <Class IRI="Foundation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasOriginalOrganization"/>
+        <Class IRI="CompanyModification"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPurchasedOrganization"/>
+        <Class IRI="CompanyPurchase"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasReferenceAssociation"/>
+        <Class IRI="Membership"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasResultingOrganization"/>
+        <Class IRI="CompanyModification"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRole"/>
+        <Class IRI="Collaboration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSeat"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isBranchOf"/>
+        <Class IRI="Branch"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isCarriedOutBy"/>
+        <Class IRI="FamiliarVenture"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isCollaboratorIn"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isExpertIn"/>
+        <Class IRI="Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isFunctionalTo"/>
+        <Class IRI="Collaboration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isLocatedIn"/>
+        <Class IRI="Seat"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isSecundaryActivityOf"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="joinsAsMember"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="organizes"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="promotes"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="recursAs"/>
+        <Class IRI="Initiative"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/zamo/events#hasParticipant"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/zamo/events#participatesIn"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/zamo/events#takesPlaceIn"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="fallsWithin"/>
+        <Class IRI="Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasClosedOrganization"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCompanyPurchaser"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCompanySeller"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasEducationIn"/>
+        <Class IRI="KnowledgeDomain"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasFoundedOrganization"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasOriginalOrganization"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPurchasedOrganization"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasReferenceAssociation"/>
+        <Class IRI="Association"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasResultingOrganization"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasRole"/>
+        <Class IRI="Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSeat"/>
+        <Class IRI="Seat"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isBranchOf"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isCarriedOutBy"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isCollaboratorIn"/>
+        <Class IRI="Collaboration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isExpertIn"/>
+        <Class IRI="KnowledgeDomain"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isFunctionalTo"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isLocatedIn"/>
+        <Class IRI="Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isSecundaryActivityOf"/>
+        <Class IRI="Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="joinsAsMember"/>
+        <Class IRI="Membership"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="organizes"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="promotes"/>
+        <Class IRI="Initiative"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="providesServiceIn"/>
+        <Class IRI="Collaboration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="recursAs"/>
+        <Class IRI="EventEdition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="requestsServiceIn"/>
+        <Class IRI="Collaboration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/zamo/events#hasParticipant"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/zamo/events#participatesIn"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/zamo/events#takesPlaceIn"/>
+        <Class IRI="Location"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="https://w3id.org/zeri/ontology/zamo/events#hasEndDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasName"/>
+        <ObjectUnionOf>
+            <Class IRI="Agent"/>
+            <Class IRI="Initiative"/>
+            <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isActiveFrom"/>
+        <Class IRI="Seat"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isActiveTo"/>
+        <Class IRI="Seat"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://w3id.org/zeri/ontology/zamo/events#hasDate"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://w3id.org/zeri/ontology/zamo/events#hasEndDate"/>
+        <ObjectUnionOf>
+            <Class IRI="Collaboration"/>
+            <Class IRI="Membership"/>
+            <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://w3id.org/zeri/ontology/zamo/events#hasStartDate"/>
+        <ObjectUnionOf>
+            <Class IRI="Collaboration"/>
+            <Class IRI="Membership"/>
+            <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isActiveFrom"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isActiveTo"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://w3id.org/zeri/ontology/zamo/events#hasDate"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://w3id.org/zeri/ontology/zamo/events#hasEndDate"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://w3id.org/zeri/ontology/zamo/events#hasStartDate"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Agent</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies people and organizations who are able to perform and be responsible for one or more activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ArtDealerOrganization</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies an organization which operates in the art market domain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Association</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies a  connection or cooperative link between agents. They often stipulate these agreements to defend and pursue shared professional interests.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>AuctionHouse</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies an art dealer company whose purpose is facilitating the buying and selling of works of art through auction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Branch</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies an organization dependending on another one. The latter is often recognized as the main office or seat.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>CessationOfActivity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies an event causing the cessation of activity of an organization, considered as an individual of class &quot;Organization&quot; which can be referred to a specific familiar venture (see class &quot;FamiliarVenture&quot;).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Collaboration</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies the fact that two agents have stipulated any form of collaboration or partnership to maximize their own interests. This can be translated also - but not mandatorily - into an employment contract.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>CompanyModification</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies an event causing a change in the seat, the name or the business name of the organization. If the organization is still traceable to the same familiar venture, change in the personnel are not modeled through this class (see class &quot;Collaboration&quot; instead).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>CompanyPurchase</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies a peculiar kind of cessation of activity in which the reference organization has been purchased by an agent external to the current familiar venture.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>EventEdition</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies as a specific edition of a recurrent event belonging to the class Initiative. One example is the edition held in a specific year of an annual fair.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Exhibition</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies a typical event of the art historical and art market domain, during which works of art are exposed to an audience to seize several and heterogenous purposes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>FamiliarVenture</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies a crucial entity in the art domain, encompassing all the agents (both people and organizations) belonging to the same family, across multiple generations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Foundation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies an event which leads to the creation of an instance of class &quot;Organization&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Initiative</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class is associated with a recurrent event and identifies it on an abstract level, in order to connect all of its different editions. For instance it identifies a fair which recurs annually. Each edition is to be instantiated as an &quot;Event&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>KnowledgeDomain</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies a field of knowledge which a person can study and master.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Location</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies a physical place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Membership</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies the fact that an agent is member of an association.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Organization</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies organizations, intended as a structured group of agents  working together to pursue a declared goal, whether it is commercial or not.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Person</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies individuals who live or are believed to have lived.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>RestorationLaboratory</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies a company working in the art domain whose purpose is to restore or create ex novo works of art and collectibles. In this model, the primary destination of these objects is the art market.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Role</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class better defines an existing collaboration between two agents, stating which role is being occupied. The semantics of this class should be expressed through a controlled vocabulary: the current version of the ontology already expresses the managing director of an organization, the phtographer, the restorer, and the art historian consultant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Seat</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies the fact that an organization is operative in a physical location for a limited period of time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>fallsWithin</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This properties associates two places, stating that the first one is contained in the second one (e.g. a street falls within a city).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasClosedOrganization</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property identifies the organization closed during an event of type &quot;CessationOfActivity&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasCompanyPurchaser</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property identifies the &quot;Agent&quot; who purchased an organization during an event of type &quot;CompanyPurchase&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasCompanySeller</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property identifies the &quot;Agent&quot; who sold an organization during an event of type &quot;CompanyPurchase&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasEducationIn</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property defines the educational background of an person in specific &quot;KnowledgeDomain&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasFoundedOrganization</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property identifies the organization founded during an event of type “Foundation”.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasName</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property expresses a string the name of an &quot;Agent&quot;, an &quot;Initiative&quot;, or of an &quot;Event&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasOriginalOrganization</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property identifies the organization undergoing the change described by  a “CompanyModification” event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasPurchasedOrganization</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property identifies the Organization purchased during an event of type &quot;CompanyPurchase&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasReferenceAssociation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property declares to which association an instance of &quot;Membership&quot; refers to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasResultingOrganization</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property identifies the organization resulting from a “CompanyModification” event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasRole</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property declares which role is being served during an instance of class &quot;Collaboration&quot; (see also comment to class &quot;Role&quot;).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasSeat</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property identifies the seat of an organization.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isActiveFrom</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property states the date or the year from which the seat of an organization is active.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isActiveTo</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property states the date or the year until which the seat of an organization is active.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isBranchOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property describes an organization of class &quot;Branch&quot; as dependent on a second major &quot;Organization&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isCarriedOutBy</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property connects a &quot;FamiliarVenture&quot; instance to the individual of class &quot;Agent&quot;: they can be either members of the family or the commercial activities they manage.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isCollaboratorIn</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property generically declares that an agent is involved in a collaboration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isExpertIn</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property defines the expertise of a person in specific &quot;Knowledge Domain&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isFunctionalTo</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property states the scope, instantiated as an individual of class &quot;Event&quot;, for which a &quot;Collaboration&quot; is considered necessary.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isLocatedIn</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property states the place (e.g an address or, more generically, a city) where an individual of class &quot;Seat&quot; is located.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isSecundaryActivityOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property an organizational hierarchy between two instances of class &quot;Organization&quot; (e.g. a restoration laboratory may be a secundary activity of an art gallery, as in the case of Giuseppe Sangiorgi).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>joinsAsMember</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property connects an agent who is joining an &quot;Association&quot; to an individual of class &quot;Membership&quot;. The reference &quot;Association&quot; is defined by &quot;hasReferenceAssociation&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>organizes</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property indicates that an &quot;Agent&quot; is organizing an &quot;Event&quot;. The organization of an event does not per se require also the participation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>promotes</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Similarly to &quot;organizes&quot;, this property associates an &quot;Agent&quot; to an individual of class &quot;Initiative&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>providesServiceIn</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property better defines &quot;isCollaboratorIn&quot;. In this case, the &quot;Agent&quot; is providing a service to another &quot;Agent&quot; by means of a &quot;Collaboration&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>recursAs</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property associate the edition of class &quot;EventEdition&quot; to an individual of class &quot;Initiative&quot;, such as the edition held in a specific year of an annual fair.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>requestsServiceIn</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property better defines &quot;isCollaboratorIn&quot;. In this case, the &quot;Agent&quot; is requesting a service to another &quot;Agent&quot; by means of a &quot;Collaboration&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/zeri/ontology/zamo/events#Event</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies an action involving any instance of a subclass of Agent that can be identified by one or more participants, a location and a time, defined as either a precise date or a time span.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/zeri/ontology/zamo/events#hasDate</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property states the date or the year in which an event happened.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/zeri/ontology/zamo/events#hasEndDate</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property states the date or the year in which a &quot;Collaboration&quot;, a &quot;Membership&quot; or an &quot;Event&quot; finishes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/zeri/ontology/zamo/events#hasParticipant</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property identifies the instance of &quot;Agent&quot; participating to an &quot;Event&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/zeri/ontology/zamo/events#hasStartDate</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property states the date or the year in which a &quot;Collaboration&quot;, a &quot;Membership&quot; or an &quot;Event&quot; begins.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/zeri/ontology/zamo/events#participatesIn</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Inverse of &quot;hasParticipant&quot;, this property associates individuals of class &quot;Agent&quot; to the event in which they participate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/zeri/ontology/zamo/events#takesPlaceIn</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property defines the individual of class &quot;Location&quot; in which an event takes place.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

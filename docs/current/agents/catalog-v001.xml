@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="https://w3id.org/zeri/ontology/amo/events" uri="file:/Users/manuele/Desktop/Current%20Projects/Pubblication%20Proposals/Umanistica%20digitale%20Zeri/docs/current/events/events.owl"/>
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1684001090971" name="https://www.w3id.org/zeri/ontology/amo/agents" uri="agents.owl"/>
-    </group>
-</catalog>

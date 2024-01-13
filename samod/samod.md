@@ -1,4 +1,4 @@
-## Caveat on the implementation of the SAMOD Methodology
+## Organization of the materials for SAMOD Methodology implementation
 
 This subfolder contains the material produced during the iterations foreseen by [SAMOD Methodology](https://essepuntato.it/samod/), subdivided into the three different modules in which the ontology is articulated. 
 

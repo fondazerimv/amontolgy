@@ -1,0 +1,402 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/zeri/ontology/zamo/sources#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/zeri/ontology/zamo/sources#">
+    <Prefix name="" IRI="http://www.w3.org/zamo/sources#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This module of ZAMO (Zeri Art Market Ontology) models the sources which may be used to reconstruct the events and the activity of the agents in the art market domain, stating the most relevant classes and properties.
+
+**URL:** https://w3id.org/zeri/ontology/zamo/sources#
+
+**Creators**: [Manuele Veggi](http://orcid.org/0000-0002-5958-2100)
+
+**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/)</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="BibliographicItem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CuratedHolding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="HistoricalReconstruction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCurrentOwner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Photo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Letter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Catalog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Receipt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Artwork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPrimarySourceFor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ArchivalItem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="reconstructs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Library"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isSourceFor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AccountRegister"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isSecondarySourceFor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PhotoArchive"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasExtent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Archive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Thing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ArtCollection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isContainedIn"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AccountRegister"/>
+        <Class IRI="ArchivalItem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ArchivalItem"/>
+        <Class IRI="Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Archive"/>
+        <Class IRI="CuratedHolding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ArtCollection"/>
+        <Class IRI="CuratedHolding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Artwork"/>
+        <Class IRI="Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BibliographicItem"/>
+        <Class IRI="Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Catalog"/>
+        <Class IRI="BibliographicItem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CuratedHolding"/>
+        <Class IRI="Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="HistoricalReconstruction"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Letter"/>
+        <Class IRI="ArchivalItem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Library"/>
+        <Class IRI="CuratedHolding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Object"/>
+        <Class IRI="Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Photo"/>
+        <Class IRI="ArchivalItem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PhotoArchive"/>
+        <Class IRI="Archive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Receipt"/>
+        <Class IRI="ArchivalItem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Thing"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+        <Class IRI="HistoricalReconstruction"/>
+        <Class IRI="Thing"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="AccountRegister"/>
+        <Class IRI="Letter"/>
+        <Class IRI="Photo"/>
+        <Class IRI="Receipt"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="ArchivalItem"/>
+        <Class IRI="Artwork"/>
+        <Class IRI="BibliographicItem"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Archive"/>
+        <Class IRI="ArtCollection"/>
+        <Class IRI="Library"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="CuratedHolding"/>
+        <Class IRI="Object"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isPrimarySourceFor"/>
+        <ObjectProperty IRI="isSourceFor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isSecondarySourceFor"/>
+        <ObjectProperty IRI="isSourceFor"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCurrentOwner"/>
+        <Class IRI="Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isContainedIn"/>
+        <Class IRI="Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isPrimarySourceFor"/>
+        <Class IRI="Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isSecondarySourceFor"/>
+        <Class IRI="Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isSourceFor"/>
+        <Class IRI="Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="reconstructs"/>
+        <Class IRI="HistoricalReconstruction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCurrentOwner"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isContainedIn"/>
+        <Class IRI="CuratedHolding"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isPrimarySourceFor"/>
+        <Class IRI="HistoricalReconstruction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isSecondarySourceFor"/>
+        <Class IRI="HistoricalReconstruction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isSourceFor"/>
+        <Class IRI="HistoricalReconstruction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="reconstructs"/>
+        <ObjectUnionOf>
+            <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
+            <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasExtent"/>
+        <Class IRI="CuratedHolding"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="hasExtent"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/zeri/ontology/zamo/agents#Agent</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies people and organizations who are able to perform and be responsible for one or more activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/zeri/ontology/zamo/events#Event</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies an action involving any instance of a subclass of Agent that can be identified by one or more participants, a location and a time, defined as either a precise date or a time span.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>AccountRegister</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies any document listing the properties of an individual of type &quot;Agent&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ArchivalItem</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies the documents and records included in an &quot;Archive&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Archive</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies a &quot;CuratedHolding&quot; containing documents or records (instanced as &quot;ArchivalItem&quot;)  providing information about a place, institution, or group of people.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ArtCollection</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies a &quot;CuratedHolding&quot; including exclusively instances of &quot;ArtWork&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Artwork</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies individuals of class &quot;Object&quot; which are considered relevant for their aesthetical or art-historical value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>BibliographicItem</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies digital, printed or manuscript items which can be treated as a single entity and hence be identified by a  single bibliographic description. It can be contained in a &quot;Library&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Catalog</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies a &quot;BibliographicItem&quot; whose purpose is to list specific groups of objects following an intentional order (e.g. alphabetical, chronological etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>CuratedHolding</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies sets of &quot;Objects&quot; that are curated by one or more agents and organized according to a specific criterion. The three main categories are &quot;Library&quot;, &quot;Archive&quot; and &quot;ArtCollection&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>HistoricalReconstruction</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies the scholarly activity performed by an agent in order to generate new information on an historical figure or event. It is carried out following a historical methodology, based on the analysis of primary and secondary sources.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Letter</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies a communication between two agents which is treated as document. As a consequence, it is here considered as a subclass of &quot;ArchivalItem&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Library</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies a &quot;Curated Holding&quot; containing instances of &quot;BibliographicItem&quot;, such as books and periodicals.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Object</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies instances of the class &quot;Thing&quot; which are produced by human activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Photo</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies an &quot;ArchivalItem&quot; produced by the reaction to light of a photosensitive film.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PhotoArchive</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies an &quot;Archive&quot; whose items are instances of class &quot;Photo&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Receipt</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies an &quot;ArchivalItem&quot; which attests and documents a commercial transaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Thing</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies human-made and natural objects or groups of objects which are persistent in time and space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasCurrentOwner</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property identifies the agent holding the ownership of an individual of type &quot;Thing&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasExtent</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This data property allows to express as a free-text string the extent of a &quot;CuratedHolding&quot; instance, which is the measurement or amount of materials contained in it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isContainedIn</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property links one or more individuals of class &quot;Object&quot; to the &quot;CuratedHolding&quot; instance that contains them.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isPrimarySourceFor</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property specifies the super-property &quot;isSourceFor&quot; stating that the source was produced during the historical period it refers to (e.g an autobiography or a letter).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isSecondarySourceFor</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property specifies the super-property &quot;isSourceFor&quot; stating that the source  was produced after the historical period it refers to (e.g. the monograph by a scholar on a painter). Secondary sources usually quote or refer to primary sources (to express the citation between two sources, please see other ontologies, such as CiTO, https://sparontologies.github.io/cito/current/cito.html).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isSourceFor</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property connects a source (any instance of &quot;Thing&quot; or its subclasses) to the historical reconstruction in which is cited.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>reconstructs</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property associates an historical reconstruction to the event or the agent they refer to.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
