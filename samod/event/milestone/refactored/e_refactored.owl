@@ -1,0 +1,557 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/zamo/event#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.w3.org/zamo/event#">
+    <Prefix name="" IRI="http://www.w3.org/zamo/event#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.w3.org/zamo/event/2#</Import>
+    <Declaration>
+        <ObjectProperty IRI="hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ConditionState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Object"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasReceiver"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPerformedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Transaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LegalNotice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AttributeType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isContainedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="transfersPropertyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="recognizesConservationStatusAs"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasProposedPrice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="disputes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Gift"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="authorship"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="consistsOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="previous-owner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="transfersCustodyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCurrency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="reliesOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="takesPlaceIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CuratedHolding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Loan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="cites"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFacilitator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="participatesIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Agent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasValidityOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="assignsAttributeTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isValidTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ValueProposition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isConstrainedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Price"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSurrender"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPurpose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Event"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isRequestedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Purchase"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasAttributeType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isValidFrom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="assignsAgentAsAttribute"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ConditionAssessment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasParticipant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Lot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Currency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="imposes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AttributeAssignment"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="Agent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AttributeAssignment"/>
+        <Class IRI="Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AttributeType"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConditionAssessment"/>
+        <Class IRI="AttributeAssignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConditionState"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CuratedHolding"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Event"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Gift"/>
+        <Class IRI="Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LegalNotice"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Loan"/>
+        <Class IRI="Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Location"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Lot"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Object"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Price"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Purchase"/>
+        <Class IRI="Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Transaction"/>
+        <Class IRI="Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ValueProposition"/>
+        <Class IRI="AttributeAssignment"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="Agent"/>
+        <Class IRI="AttributeType"/>
+        <Class IRI="ConditionState"/>
+        <Class IRI="CuratedHolding"/>
+        <Class IRI="Currency"/>
+        <Class IRI="Event"/>
+        <Class IRI="LegalNotice"/>
+        <Class IRI="Location"/>
+        <Class IRI="Lot"/>
+        <Class IRI="Object"/>
+        <Class IRI="Price"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="ConditionAssessment"/>
+        <Class IRI="ValueProposition"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Gift"/>
+        <Class IRI="Loan"/>
+        <Class IRI="Purchase"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="AttributeType"/>
+        <NamedIndividual IRI="authorship"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="AttributeType"/>
+        <NamedIndividual IRI="previous-owner"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFacilitator"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasReceiver"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSurrender"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isPerformedBy"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isRequestedBy"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasParticipant"/>
+        <ObjectProperty IRI="participatesIn"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="assignsAgentAsAttribute"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="assignsAttributeTo"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="cites"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="consistsOf"/>
+        <Class IRI="Lot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="disputes"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasAttributeType"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCurrency"/>
+        <Class IRI="Price"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasFacilitator"/>
+        <Class IRI="Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasParticipant"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPrice"/>
+        <ObjectUnionOf>
+            <Class IRI="Loan"/>
+            <Class IRI="Purchase"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasProposedPrice"/>
+        <Class IRI="ValueProposition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPurpose"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasReceiver"/>
+        <Class IRI="Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSurrender"/>
+        <Class IRI="Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasValidityOn"/>
+        <Class IRI="LegalNotice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="imposes"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isConstrainedBy"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isContainedIn"/>
+        <Class IRI="Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isPerformedBy"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRequestedBy"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="participatesIn"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="recognizesConservationStatusAs"/>
+        <Class IRI="ConditionAssessment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="reliesOn"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="takesPlaceIn"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="transfersCustodyOf"/>
+        <Class IRI="Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="transfersPropertyOf"/>
+        <ObjectUnionOf>
+            <Class IRI="Gift"/>
+            <Class IRI="Purchase"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="assignsAgentAsAttribute"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="assignsAttributeTo"/>
+        <Class IRI="Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="cites"/>
+        <Class IRI="Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="consistsOf"/>
+        <ObjectUnionOf>
+            <Class IRI="CuratedHolding"/>
+            <Class IRI="Object"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="disputes"/>
+        <Class IRI="AttributeType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasAttributeType"/>
+        <Class IRI="AttributeType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCurrency"/>
+        <Class IRI="Currency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasFacilitator"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasParticipant"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPrice"/>
+        <Class IRI="Price"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasProposedPrice"/>
+        <Class IRI="Price"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPurpose"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasReceiver"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSurrender"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasValidityOn"/>
+        <Class IRI="Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="imposes"/>
+        <Class IRI="LegalNotice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isConstrainedBy"/>
+        <Class IRI="LegalNotice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isContainedIn"/>
+        <Class IRI="CuratedHolding"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isPerformedBy"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isRequestedBy"/>
+        <Class IRI="Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="participatesIn"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="recognizesConservationStatusAs"/>
+        <Class IRI="ConditionState"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="reliesOn"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="takesPlaceIn"/>
+        <Class IRI="Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="transfersCustodyOf"/>
+        <Class IRI="Lot"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="transfersPropertyOf"/>
+        <Class IRI="Lot"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasDate"/>
+        <Class IRI="Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasValue"/>
+        <Class IRI="Price"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isValidFrom"/>
+        <Class IRI="LegalNotice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isValidTo"/>
+        <Class IRI="LegalNotice"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="hasDate"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasValue"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:float"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isValidFrom"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isValidTo"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
