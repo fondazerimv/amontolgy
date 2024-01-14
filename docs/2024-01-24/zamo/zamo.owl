@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://w3id.org/zeri/ontology/zamo">
+    <Prefix name="" IRI="https://w3id.org/zeri/ontology/zamo"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -14,6 +15,20 @@
     <Import>https://w3id.org/zeri/ontology/zamo/agents#</Import>
     <Import>https://w3id.org/zeri/ontology/zamo/events#</Import>
     <Import>https://w3id.org/zeri/ontology/zamo/sources#</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The ontology ZAMO (Zeri Art Market Ontology) models art market domain, stating its most relevant classes and properties. It is articulated into three main modules, which respectivelt describes the agent, the event, and the historical sources which characterizes this domain.
+
+**URL:** https://w3id.org/zeri/ontology/zamo/sources#
+
+**Creators**: [Manuele Veggi](http://orcid.org/0000-0002-5958-2100)
+
+**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/)</Literal>
+    </Annotation>
 </Ontology>
 
 

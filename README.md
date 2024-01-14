@@ -5,18 +5,14 @@ The following repository contains material concerning the Zeri Art Market Ontolo
 ZAMO has been developed following [SAMOD](http://dx.doi.org/10.6084/m9.figshare.3189769), the Simplified Agile Methodology for Ontology Development.
 
 This repository contains the full documentation produced during the development of the ontology. In particular:
-- the ```samod``` directory contains the material produced during SAMOD iterations, i.e. Motivating Scenario, a set of examples use case, a list of Informal Competency Questions (in English), their translation into SPARQL, a Graffoo diagram of the model in .png format (along with its .graphml file), a TBox and a ABox. 
-As it can be inferred by the hierarchy of its subfolders, the iterations were run separately on the three different modules; later, milestones were created by merging the populated modelets (TBox and ABox), on which the different test were performed, and by refractoring these knowledge graphs;
+- the ```samod``` directory contains the material produced during SAMOD iterations, i.e. Motivating Scenario, a set of examples use case, a list of Informal Competency Questions (in English), their translation into SPARQL, a Graffoo diagram of the model in .png format (along with its .graphml file), a TBox and a ABox. For the organization of the material in the subfolder, please read the corresponding [note](samod/samod.md).
 - the ```docs``` directory contains all the files related to the ontology and its versions in time;
 
-
-<img src="docs/current/amo/amo.png">
+<img src="docs/2024-01-24/zamo/zamo_modules.png">
 
 ## Resources and Publication
 
 A preliminary analysis of the current ontology was published as Veggi, Manuele, and Francesca Mambelli. "Modelling The Art Market in The Semantic Web. A Preliminary Analysis." <i>Umanistica Digitale</i> 16 (2023): 141-166. ![Static Badge](https://img.shields.io/badge/doi-10.6092%2Fissn.2532-8816%2F17208?color=B31B1B&link=http%3A%2F%2Fdoi.org%2F10.6092%2Fissn.2532-8816%2F17208)
-
-Draft of the alignment available at the following [Google Document](https://docs.google.com/document/d/1a5xt6RPwbrgx-sX4Zi5iYsC8NPONPft-SpdreQEzJew/edit?usp=sharing)
 
 ## License
 
