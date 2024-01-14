@@ -267,7 +267,7 @@
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="hasExtent"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
+        <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

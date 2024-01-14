@@ -5,8 +5,9 @@ The following repository contains material concerning the Zeri Art Market Ontolo
 ZAMO has been developed following [SAMOD](http://dx.doi.org/10.6084/m9.figshare.3189769), the Simplified Agile Methodology for Ontology Development.
 
 This repository contains the full documentation produced during the development of the ontology. In particular:
-- the ```samod``` directory contains the material produced during SAMOD iterations, i.e. Motivating Scenario, a set of examples use case, a list of Informal Competency Questions (in English), their translation into SPARQL, a Graffoo diagram of the model in .png format (along with its .graphml file), a TBox and a ABox. For the organization of the material in the subfolder, please read the corresponding [note](samod/samod.md).
 - the ```docs``` directory contains all the files related to the ontology and its versions in time;
+- the ```samod``` directory contains the material produced during SAMOD iterations, i.e. Motivating Scenario, a set of examples use case, a list of Informal Competency Questions (in English), their translation into SPARQL, a Graffoo diagram of the model in .png format (along with its .graphml file), a TBox and a ABox. For the organization of the material in the subfolder, please read the corresponding [note](samod/samod.md).
+- the ```ancillary``` directory contains addition material produced during the development of the ontology.
 
 <img src="docs/2024-01-24/zamo/zamo_modules.png">
 

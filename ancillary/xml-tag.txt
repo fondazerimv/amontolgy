@@ -1,0 +1,1049 @@
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#Agent -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#Agent">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#Location -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#Location">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#Seat -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#Seat">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#Organization -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#Organization">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#CompanyModification -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#CompanyModification">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#Role -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#Role">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#Collaboration -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#Collaboration">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#KnowledgeDomain -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#KnowledgeDomain">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#Initiative -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#Initiative">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#EventEdition -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#EventEdition">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#Foundation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#Foundation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#Branch -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#Branch">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#CessationOfActivity -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#CessationOfActivity">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#Person -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#Person">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#hasResultingOrganization -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#hasResultingOrganization">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#hasOriginalOrganization -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#hasOriginalOrganization">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#hasFoundedOrganization -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#hasFoundedOrganization">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#isBranchOf -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#isBranchOf">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#hasRole -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#hasRole">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#fallsWithin -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#fallsWithin">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#isLocatedIn -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#isLocatedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#isSecundaryActivityOf -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#isSecundaryActivityOf">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#hasSeat -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#hasSeat">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#hasClosedOrganization -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#hasClosedOrganization">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/agents#isCollaboratorIn -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/agents#isCollaboratorIn">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#hasCurrency -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#hasCurrency">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#assignsAttributeTo -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#assignsAttributeTo">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#transfersCustodyOf -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#transfersCustodyOf">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#disputes -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#disputes">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#hasSurrender -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#hasSurrender">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#takesPlaceIn -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#takesPlaceIn">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#participatesIn -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#participatesIn">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#isPerformedBy -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#isPerformedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#hasReceiver -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#hasReceiver">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#hasPrice -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#hasPrice">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#isConstrainedBy -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#isConstrainedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#hasProposedPrice -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#hasProposedPrice">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#transfersPropertyOf -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#transfersPropertyOf">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#assignsAgentAsAttribute -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#assignsAgentAsAttribute">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#consistsOf -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#consistsOf">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#cites -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#cites">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#hasPurpose -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#hasPurpose">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#reliesOn -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#reliesOn">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#recognizesConservationStatusAs -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#recognizesConservationStatusAs">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#hasParticipant -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#hasParticipant">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#hasAttributeType -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#hasAttributeType">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#Price -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#Price">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#Transaction -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#Transaction">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#Purchase -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#Purchase">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#AttributeAssignment -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#AttributeAssignment">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#Event -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#Event">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#ConditionAssessment -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#ConditionAssessment">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#LegalNotice -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#LegalNotice">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#AttributeType -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#AttributeType">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#ConditionState -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#ConditionState">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/events#Currency -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/events#Currency">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/sources#HistoricalReconstruction -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/sources#HistoricalReconstruction">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/sources#Thing -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/sources#Thing">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/sources#CuratedHolding -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/sources#CuratedHolding">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/sources#ArchivalItem -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/sources#ArchivalItem">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/sources#Letter -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/sources#Letter">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/sources#Object -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/sources#Object">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/sources#Artwork -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/sources#Artwork">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/sources#Photo -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/sources#Photo">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/sources#Archive -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/sources#Archive">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/sources#PhotoArchive -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/sources#PhotoArchive">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/sources#BibliographicItem -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/sources#BibliographicItem">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/sources#Catalog -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/sources#Catalog">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/sources#isContainedIn -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/sources#isContainedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/sources#isSourceFor -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/sources#isSourceFor">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/sources#hasCurrentOwner -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/sources#hasCurrentOwner">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/sources#reconstructs -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/sources#reconstructs">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/zeri/ontology/zamo/sources#hasExtent -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/zeri/ontology/zamo/sources#hasExtent">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/E39_Actor -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/E53_Place -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/E53_Place">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.w3.org/ns/org#Site -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/org#Site">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.w3.org/ns/org#Organization -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/org#Organization">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.w3.org/ns/org#ChangeEvent -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/org#ChangeEvent">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.w3.org/ns/org#Role -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/org#Role">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.w3.org/ns/org#Membership -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/org#Membership">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://purl.org/spar/fabio/SubjectDiscipline -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio/SubjectDiscipline">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.loa-cnr.it/ontologies/DUL.owl#Collection -->
+
+    <owl:NamedIndividual rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Collection">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.loa-cnr.it/ontologies/DUL.owl#Event -->
+
+    <owl:NamedIndividual rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#Event">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/E66_Formation -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/E66_Formation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.w3.org/ns/org#Organizational Unit -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/org#Organizational Unit">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/E68_Dissolution -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/E68_Dissolution">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/E21_Person -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/E21_Person">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.w3.org/ns/org#resultingOrganization -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/org#resultingOrganization">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.w3.org/ns/org#originalOrganization -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/org#originalOrganization">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P95_has_formed -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P95_has_formed">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.w3.org/ns/org#hasUnit -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/org#hasUnit">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.w3.org/ns/org#role -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/org#role">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P89_falls_within -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P89_falls_within">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.w3.org/ns/org#siteAddress -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/org#siteAddress">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.w3.org/ns/org#subOrganizationOf -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/org#subOrganizationOf">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.w3.org/ns/org#hasSite -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/org#hasSite">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P99_dissolved -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P99_dissolved">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.w3.org/ns/org#hasMember -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/org#hasMember">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P180_has_currency -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P180_has_currency">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P140_assigned_attribute_to -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P140_assigned_attribute_to">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P30_transferred_custody_of -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P30_transferred_custody_of">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://purl.org/spar/cito/disputes -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/cito/disputes">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P23_transferred_title_from -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P23_transferred_title_from">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P28_custody_surrendered_by -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P28_custody_surrendered_by">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P29_custody_received_by -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P29_custody_received_by">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P22_transferred_title_to -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P22_transferred_title_to">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P179_had_sales_price -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P179_had_sales_price">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P24_transferred_title_of -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P24_transferred_title_of">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P141_assigned -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P141_assigned">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.loa-cnr.it/ontologies/DUL.owl#hasPart -->
+
+    <owl:NamedIndividual rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#hasPart">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://purl.org/spar/cito/cites -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/cito/cites">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P20_had_specific_purpose -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P20_had_specific_purpose">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://purl.org/spar/cito/isSupportedBy -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/cito/isSupportedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P35_has_identified -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P35_has_identified">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P11_had_participant -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P177_assigned_property_of_type -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P177_assigned_property_of_type">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/E10_Transfer_of_Custody -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/E10_Transfer_of_Custody">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/E8_Acquisition -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/E8_Acquisition">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/E96_Purchase -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/E96_Purchase">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/E5_Event -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/E5_Event">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/E55_Type -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/E55_Type">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/E98_Currency -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/E98_Currency">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://purl.org/emmedi/hico/InterpretationAct -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/emmedi/hico/InterpretationAct">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/arco/ontology/context-description/Interpretation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/context-description/Interpretation">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/arco/ontology/archive/ArchivalResource -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/archive/ArchivalResource">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://purl.org/spar/fabio/Letter -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio/Letter">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://purl.org/spar/fabio/ArtisticWork -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio/ArtisticWork">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.essepuntato.it/2014/03/fentry/Photograph -->
+
+    <owl:NamedIndividual rdf:about="http://www.essepuntato.it/2014/03/fentry/Photograph">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/arco/ontology/archive/ArchivalCollection -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/archive/ArchivalCollection">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/arco/ontology/context-description/PhotographicFonds -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/context-description/PhotographicFonds">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://purl.org/spar/fabio/Item -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio/Item">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://purl.org/spar/fabio/Catalog -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/fabio/Catalog">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://purl.org/spar/cito/isDocumentedBy -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/spar/cito/isDocumentedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/P52_has_current_owner -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/P52_has_current_owner">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/arco/ontology/context-description/hasInterpretationSubject -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/context-description/hasInterpretationSubject">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- https://w3id.org/arco/ontology/archive/extent -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/ontology/archive/extent">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
