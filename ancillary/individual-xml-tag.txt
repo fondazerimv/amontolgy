@@ -587,9 +587,9 @@
     </owl:NamedIndividual>
 
 
-<!-- http://www.w3.org/ns/org#Organizational Unit -->
+<!-- http://www.w3.org/ns/org#OrganizationalUnit -->
 
-    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/org#Organizational Unit">
+    <owl:NamedIndividual rdf:about="http://www.w3.org/ns/org#OrganizationalUnit">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:NamedIndividual>
 
@@ -919,6 +919,13 @@
 <!-- http://www.cidoc-crm.org/cidoc-crm/E98_Currency -->
 
     <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/E98_Currency">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:NamedIndividual>
+
+
+<!-- http://www.cidoc-crm.org/cidoc-crm/E16_Measurement -->
+
+    <owl:NamedIndividual rdf:about="http://www.cidoc-crm.org/cidoc-crm/E16_Measurement">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:NamedIndividual>
 

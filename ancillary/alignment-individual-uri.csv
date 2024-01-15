@@ -83,7 +83,7 @@ http://purl.org/spar/fabio/SubjectDiscipline
 http://www.loa-cnr.it/ontologies/DUL.owl#Collection
 http://www.loa-cnr.it/ontologies/DUL.owl#Event
 http://www.cidoc-crm.org/cidoc-crm/E66_Formation
-http://www.w3.org/ns/org#Organizational Unit
+http://www.w3.org/ns/org#OrganizationalUnit
 http://www.cidoc-crm.org/cidoc-crm/E68_Dissolution
 http://www.cidoc-crm.org/cidoc-crm/E21_Person
 http://www.w3.org/ns/org#resultingOrganization
@@ -131,6 +131,7 @@ http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object
 http://www.cidoc-crm.org/cidoc-crm/E55_Type
 http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State
 http://www.cidoc-crm.org/cidoc-crm/E98_Currency
+http://www.cidoc-crm.org/cidoc-crm/E16_Measurement
 http://purl.org/emmedi/hico/InterpretationAct
 https://w3id.org/arco/ontology/context-description/Interpretation
 http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing

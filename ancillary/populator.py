@@ -1,35 +1,70 @@
+# This Python algorithm streamlines the population of the alignment ontology (via punning)
+
+# It creates two distinct txt files containing the axioms in OWL/XML format
+
+# The first one (TASK 1) is responsibile for the creation of individuals as instance of skos:Concept
+# The tag of each individual is described as follows:
+# <!-- <IRI> -->
+#
+#    <owl:NamedIndividual rdf:about="<IRI>">
+#        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+#    </owl:NamedIndividual>
+
+# The second one (TASK 2) is responsibile for the assertion of the mapping properties between individuals
+# The tag of each axiom is described as follows:
+# <ObjectPropertyAssertion>
+#     <ObjectProperty IRI="<Object Property IRI>"/>
+#     <NamedIndividual IRI="<Subject Individual IRI>"/>
+#     <NamedIndividual IRI="<Object Individual IRI>"/>
+# </ObjectPropertyAssertion>
+
+#########################
+
 import csv
 from pprint import pprint
 
-# Declare the tag
+# Declare the tags
+
 individual_tag = """
 <!-- {iri} -->
 
     <owl:NamedIndividual rdf:about="{iri}">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:NamedIndividual>
-"""
+""" #to instantiate each individual
 
-# Extract your IRIs
-with open('alignment-uri.csv', 'r') as file:
-    csv_reader = csv.reader(file)
-    next(csv_reader)
-    iri_list = [row[0] for row in csv_reader]
+alignment_axiom_tag = """
+<ObjectPropertyAssertion>
+        <ObjectProperty IRI="{p_iri}"/>
+        <NamedIndividual IRI="{s_iri}"/>
+        <NamedIndividual IRI="{o_iri}"/>
+</ObjectPropertyAssertion>
+""" #to create aligment axioms via SKOS
 
-pprint(iri_list)
-print(">>>>>> ", len(iri_list))
+# ============= TASK 1 ===================
 
-# Create OWL/XML tag for the individuals
-tag_list = []
+def individual_populator(csv_path):
 
-for el in iri_list:
-    tag_list.append(individual_tag.format(iri=el))
+    # Extract IRIs from the source csv file
+    with open(csv_path, 'r') as file:
+        csv_reader = csv.reader(file)
+        next(csv_reader)
+        iri_list = [row[0] for row in csv_reader]
 
-ir_tag_string = '\n'.join(tag_list)
+    tag_list = [] #initialize an empty list, which will contain the final OWL / XML tag
 
-# Export
+    # Iteratively replace the IRI in the base tag
+    for el in iri_list:
+        tag_list.append(individual_tag.format(iri=el))
 
-# print(ir_tag_string)
+    # Convert the tag list into a string and save it as txt file
+    individual_iri_tag_string = '\n'.join(tag_list)
 
-with open('xml-tag.txt', 'w') as file:
-    file.write(ir_tag_string)
+    with open('individual-xml-tag.txt', 'w') as file:
+        file.write(individual_iri_tag_string)
+    
+    print("Instantiated {len} skos:Concept instances".format(len=len(tag_list)))
+
+print(individual_populator("alignment-individual-uri.csv"))
+
+# ============= TASK 2 ===================
