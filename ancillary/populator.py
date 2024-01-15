@@ -76,8 +76,6 @@ def alignment_axiom_populator(csv_path):
         csv_dict_reader = csv.DictReader(file)
         iri_list = [row for row in csv_dict_reader]
 
-    #pprint(iri_list)
-
     tag_list = [] #initialize an empty list, which will contain the final OWL / XML tag
 
     # Iteratively replace the IRI in the base tag
