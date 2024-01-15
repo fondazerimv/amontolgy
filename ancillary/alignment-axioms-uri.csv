@@ -1,0 +1,3 @@
+zamo-uri,skos-match,aligned-uri
+https://w3id.org/zeri/ontology/zamo/agents#Agent,http://www.w3.org/2004/02/skos/core#exactMatch,http://www.cidoc-crm.org/cidoc-crm/E39_Actor
+https://w3id.org/zeri/ontology/zamo/agents#Location,http://www.w3.org/2004/02/skos/core#exactMatch,http://www.cidoc-crm.org/cidoc-crm/E53_Place

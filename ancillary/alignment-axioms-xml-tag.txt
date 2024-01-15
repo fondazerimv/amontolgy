@@ -1,0 +1,13 @@
+
+<ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+</ObjectPropertyAssertion>
+
+
+<ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Location"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+</ObjectPropertyAssertion>

@@ -65,6 +65,32 @@ def individual_populator(csv_path):
     
     print("Instantiated {len} skos:Concept instances".format(len=len(tag_list)))
 
-print(individual_populator("alignment-individual-uri.csv"))
+# print(individual_populator("alignment-individual-uri.csv"))
 
 # ============= TASK 2 ===================
+    
+def alignment_axiom_populator(csv_path):
+    
+    # Extract IRIs from the source csv file
+    with open(csv_path, 'r') as file:
+        csv_dict_reader = csv.DictReader(file)
+        iri_list = [row for row in csv_dict_reader]
+
+    #pprint(iri_list)
+
+    tag_list = [] #initialize an empty list, which will contain the final OWL / XML tag
+
+    # Iteratively replace the IRI in the base tag
+    for el in iri_list:
+        tag_list.append(alignment_axiom_tag.format(p_iri=el["skos-match"], s_iri=el["zamo-uri"], o_iri=el["aligned-uri"]))
+    
+    # Convert the tag list into a string and save it as txt file
+    alignment_axioms_tag_string = '\n'.join(tag_list)
+
+    with open('alignment-axioms-xml-tag.txt', 'w') as file:
+        file.write(alignment_axioms_tag_string)
+
+    print(alignment_axioms_tag_string)
+    print("{len} axioms have been asserted".format(len=len(tag_list)))
+
+print(alignment_axiom_populator("alignment-axioms-uri.csv"))
