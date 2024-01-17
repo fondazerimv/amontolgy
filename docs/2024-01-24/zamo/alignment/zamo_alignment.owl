@@ -10,6 +10,20 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="https://w3id.org/zeri/ontology/zamo/alignment#">
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This knowledge graph describes the alignment of the ZAMO ontology (Zeri Art Market Ontology), which models art market domain, stating its most relevant classes and properties, with existing models.
+
+**URL:** https://w3id.org/zeri/ontology/zamo/sources#
+
+**Creators**: [Manuele Veggi](http://orcid.org/0000-0002-5958-2100)
+
+**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/)</Literal>
+    </Annotation>
     </owl:Ontology>
     
 
