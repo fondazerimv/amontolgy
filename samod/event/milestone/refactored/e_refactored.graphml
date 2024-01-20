@@ -51,7 +51,7 @@
               <y:Geometry height="22.2421875" width="207.83128065395096" x="239.32484778566405" y="752.6138241741193"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-              <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="98.21875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="378.3203125" x="-89.60401598529043" xml:space="preserve" y="-45.058137877083084">https://w3id.org/zeri/ontology/zamo/events#
+              <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="98.21875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="378.3203125" x="-89.60401598529043" xml:space="preserve" y="-45.05813787708314">https://w3id.org/zeri/ontology/zamo/events#
 https://w3id.org/zeri/ontology/zamo/agents#
 https://w3id.org/zeri/ontology/zamo/sources#
 http://www.w3.org/2001/XMLSchema#
@@ -371,8 +371,8 @@ rdfs:</y:NodeLabel>
           <y:Geometry height="345.5318567057449" width="437.99873906249854" x="44.33977821743861" y="-107.12561737694912"/>
           <y:Fill color="#CCFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="324.34375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="290.3046875" x="73.84702578124927" xml:space="preserve" y="10.594053352872436">ObjectProperty: events:participatesIn
-     InverseOf:  events:hasParticipant
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="324.34375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="265.921875" x="86.03843203124927" xml:space="preserve" y="10.594053352872436">ObjectProperty: participatesIn
+     InverseOf: hasParticipant
 
 ObjectProperty:  hasSurrender
      SubPropertyOf:  hasParticipant
