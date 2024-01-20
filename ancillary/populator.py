@@ -41,7 +41,7 @@ alignment_axiom_tag = """
 </ObjectPropertyAssertion>
 """ #to create aligment axioms via SKOS
 
-# ============= TASK 1 ===================
+# ============= TASK 1 =================== For RDF / XML
 
 def individual_populator(csv_path):
 
@@ -67,13 +67,13 @@ def individual_populator(csv_path):
 
 # print(individual_populator("alignment-individual-uri.csv"))
 
-# ============= TASK 2 ===================
+# ============= TASK 2 =================== For OWL / XML
     
 def alignment_axiom_populator(csv_path):
     
     # Extract IRIs from the source csv file
     with open(csv_path, 'r') as file:
-        csv_dict_reader = csv.DictReader(file)
+        csv_dict_reader = csv.DictReader(file, delimiter=';')
         iri_list = [row for row in csv_dict_reader]
 
     tag_list = [] #initialize an empty list, which will contain the final OWL / XML tag
