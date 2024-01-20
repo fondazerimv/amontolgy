@@ -1,6 +1,6 @@
 # Zeri Art Market Ontology
 
-The following repository contains material concerning the Zeri Art Market Ontology (ZAMO, link to documentation soon available), an OWL 2 DL ontology analyzing most relevant entities and properties in the art market starting from the data available in the Fondazione Zeri Photo Archive. This project is carried out by Manuele Veggi and was firstly conceived as internship activity (January - March 2023, tutor: Prof Mambelli) at the Fondazione Zeri - Bologna and later completed as Collegio Superiore final thesis (tutor: Prof Iannucci, co-tutor: Prof Peroni).
+The following repository contains material concerning the Zeri Art Market Ontology (ZAMO, link to documentation soon available), an **OWL 2 DL ontology** analyzing most relevant **entities and properties in the art market** starting from the data available in the Fondazione Zeri Photo Archive. This project is carried out by Manuele Veggi and was firstly conceived as internship activity (January - March 2023, tutor: Prof Mambelli) at the **Fondazione Zeri - Bologna** and later completed as Collegio Superiore final thesis (tutor: Prof Iannucci, co-tutor: Prof Peroni).
 
 ZAMO has been developed following [SAMOD](http://dx.doi.org/10.6084/m9.figshare.3189769), the Simplified Agile Methodology for Ontology Development.
 
