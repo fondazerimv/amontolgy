@@ -6,12 +6,16 @@ ZAMO has been developed following [**SAMOD**](http://dx.doi.org/10.6084/m9.figsh
 
 This repository contains the full documentation produced during the development of the ontology. In particular:
 - the ```docs``` directory contains all the files related to the ontology and its versions in time;
-- the ```samod``` directory contains the material produced during SAMOD iterations, i.e. Motivating Scenario, a set of examples use case, a list of Informal Competency Questions (in English), their translation into SPARQL, a Graffoo diagram of the model in .png format (along with its .graphml file), a TBox and a ABox. For the organization of the material in the subfolder, please read the corresponding [note](samod/samod.md).
-- the ```ancillary``` directory contains addition material produced during the development of the ontology.
+- the ```samod``` directory contains the material produced during SAMOD iterations. For the description and the organization of the material in the subfolder, please read the corresponding [note](samod/samod.md).
+
+Additional material produced in the conceptualization and the development of the ontology may be found in an *ad hoc* private [GitHub repository](https://github.com/fondazerimv/zamo-ancillary).
+
+For any issue, you can write an email to manuele.veggi@uniroma1.it.
 
 <img src="docs/2024-01-24/zamo/zamo.png">
 
 ## Resources and Publication
+The final thesis, containing a description of the ontology and of the adopted methodology, will be soon published on Zenodo.
 
 A preliminary analysis of the current ontology was published as 
 > Veggi, Manuele, and Francesca Mambelli. "Modelling the Art Market in the Semantic Web. A Preliminary Analysis." <i>Umanistica Digitale</i> 16 (2023): 141-166. ![Static Badge](https://img.shields.io/badge/doi-10.6092%2Fissn.2532-8816%2F17208?color=B31B1B&link=http%3A%2F%2Fdoi.org%2F10.6092%2Fissn.2532-8816%2F17208)
