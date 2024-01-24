@@ -1,0 +1,813 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://w3id.org/zeri/ontology/zamo/events#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://w3id.org/zeri/ontology/zamo/events#">
+    <Prefix name="" IRI="http://www.w3.org/zamo/event#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This module of ZAMO (Zeri Art Market Ontology) models the most important events of the art market domain, stating the most relevant classes and properties.
+
+**URL:** https://w3id.org/zeri/ontology/zamo/agents#
+
+**Creators**: [Manuele Veggi](http://orcid.org/0000-0002-5958-2100)
+
+**License:** [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/)</Literal>
+    </Annotation>
+    <Declaration>
+        <ObjectProperty IRI="consistsOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AttributeAssignment"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Event"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasProposedPrice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ConditionAssessment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="authorship"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isValidTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="isValidFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="recognizesConservationStatusAs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="takesPlaceIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Purchase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/sources#Object"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="assignsAttributeTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCurrency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Price"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasParticipant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="imposes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasValidityOn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ConditionState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Location"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasAttributeType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Currency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Lot"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/zamo/sources#isContainedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isRequestedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/sources#CuratedHolding"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="disputes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="previous-owner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="assignsAgentAsAttribute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="transfersPropertyOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPurpose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AttributeType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="transfersCustodyOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Transaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="cites"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isConstrainedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LegalNotice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSurrender"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="participatesIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasReceiver"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasValue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFacilitator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="reliesOn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ValueProposition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Loan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPerformedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Gift"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Location"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AttributeAssignment"/>
+        <Class IRI="Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AttributeType"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConditionAssessment"/>
+        <Class IRI="AttributeAssignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConditionState"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Event"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Gift"/>
+        <Class IRI="Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LegalNotice"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Loan"/>
+        <Class IRI="Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Lot"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Price"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Purchase"/>
+        <Class IRI="Transaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Transaction"/>
+        <Class IRI="Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ValueProposition"/>
+        <Class IRI="AttributeAssignment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/sources#CuratedHolding"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/sources#Object"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Location"/>
+        <Class IRI="AttributeType"/>
+        <Class IRI="ConditionState"/>
+        <Class IRI="Currency"/>
+        <Class IRI="Event"/>
+        <Class IRI="LegalNotice"/>
+        <Class IRI="Lot"/>
+        <Class IRI="Price"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/sources#CuratedHolding"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/sources#Object"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="ConditionAssessment"/>
+        <Class IRI="ValueProposition"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Gift"/>
+        <Class IRI="Loan"/>
+        <Class IRI="Purchase"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="AttributeType"/>
+        <NamedIndividual IRI="authorship"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="AttributeType"/>
+        <NamedIndividual IRI="previous-owner"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFacilitator"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasReceiver"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSurrender"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isPerformedBy"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isRequestedBy"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasParticipant"/>
+        <ObjectProperty IRI="participatesIn"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="assignsAgentAsAttribute"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="assignsAttributeTo"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="cites"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="consistsOf"/>
+        <Class IRI="Lot"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="disputes"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasAttributeType"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCurrency"/>
+        <Class IRI="Price"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasFacilitator"/>
+        <Class IRI="Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasParticipant"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPrice"/>
+        <ObjectUnionOf>
+            <Class IRI="Loan"/>
+            <Class IRI="Purchase"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasProposedPrice"/>
+        <Class IRI="ValueProposition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPurpose"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasReceiver"/>
+        <Class IRI="Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSurrender"/>
+        <Class IRI="Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasValidityOn"/>
+        <Class IRI="LegalNotice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="imposes"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isConstrainedBy"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isPerformedBy"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRequestedBy"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="participatesIn"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="recognizesConservationStatusAs"/>
+        <Class IRI="ConditionAssessment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="reliesOn"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="takesPlaceIn"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="transfersCustodyOf"/>
+        <Class IRI="Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="transfersPropertyOf"/>
+        <ObjectUnionOf>
+            <Class IRI="Gift"/>
+            <Class IRI="Purchase"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/zamo/sources#isContainedIn"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/sources#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="assignsAgentAsAttribute"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="assignsAttributeTo"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/sources#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="cites"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/sources#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="consistsOf"/>
+        <ObjectUnionOf>
+            <Class IRI="https://w3id.org/zeri/ontology/zamo/sources#CuratedHolding"/>
+            <Class IRI="https://w3id.org/zeri/ontology/zamo/sources#Object"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="disputes"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasAttributeType"/>
+        <Class IRI="AttributeType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCurrency"/>
+        <Class IRI="Currency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasFacilitator"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasParticipant"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPrice"/>
+        <Class IRI="Price"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasProposedPrice"/>
+        <Class IRI="Price"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPurpose"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasReceiver"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSurrender"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasValidityOn"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/sources#Object"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="imposes"/>
+        <Class IRI="LegalNotice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isConstrainedBy"/>
+        <Class IRI="LegalNotice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isPerformedBy"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isRequestedBy"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="participatesIn"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="recognizesConservationStatusAs"/>
+        <Class IRI="ConditionState"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="reliesOn"/>
+        <Class IRI="AttributeAssignment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="takesPlaceIn"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="transfersCustodyOf"/>
+        <Class IRI="Lot"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="transfersPropertyOf"/>
+        <Class IRI="Lot"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://w3id.org/zeri/ontology/zamo/sources#isContainedIn"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/sources#CuratedHolding"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasDate"/>
+        <Class IRI="Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasValue"/>
+        <Class IRI="Price"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isValidFrom"/>
+        <Class IRI="LegalNotice"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="isValidTo"/>
+        <Class IRI="LegalNotice"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="hasDate"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="hasValue"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:float"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isValidFrom"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="isValidTo"/>
+        <DataUnionOf>
+            <Datatype abbreviatedIRI="xsd:dateTime"/>
+            <Datatype abbreviatedIRI="xsd:gYear"/>
+        </DataUnionOf>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/zeri/ontology/zamo/agents#Agent</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies people and organizations who are able to perform and be responsible for one or more activity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/zeri/ontology/zamo/agents#Location</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies a physical place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>AttributeAssignment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class indicates a peculiar kind of &quot;Event&quot; in which an agent makes assertions on an &quot;Object&quot; instance. This assertion consists of expressing a specific attribute related to the object, such as the author or the previous owner (see &quot;AttributeType&quot;). As an example, art historians&apos; expertises fall within this class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>AttributeType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class better defines the event &quot;AttributeAssignment&quot;, stating which kind of attribute is associated to the examined objects. Possible example are the author or the previous owner. The semantics of this class should be expressed through a controlled vocabulary.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ConditionAssessment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class describes an &quot;AttributeAssignment&quot; instance whose primary goal is the assessment of the conservation state of the examined object.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ConditionState</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class describes the state of conservation of an object in a precise period, as observed during an event of type &quot;ConditionAssessment&quot;. These states should be expressed by a controlled vocabulary.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Currency</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class groups systems of money in general use in a particular country. It is used to better specify monetary amounts (see &quot;Price&quot;).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Event</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies an action involving any instance of a subclass of Agent that can be identified by one or more participants, a location and a time, defined as either a precise date or a time span.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Gift</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies a transfer of custody and ownership without any exchange of a monetary amount.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>LegalNotice</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies an administrative or legal act concerning an object. Its presence may set constraints upon the events involving this &quot;Object&quot; instance.  In the Italian art market, an example is the “notifica” (ex d.lgs. 22 gennaio 2004, n. 42, c.d. Codice dei beni culturali e del paesaggio).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Loan</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies a transfer of custody which may foresee an exchange of a monetary amount.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Lot</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies what is being sold or exchanged during an event of type &quot;Transaction&quot;. It can consists either of one or more object or of an entire &quot;CuratedHolding&quot; instance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Price</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies the actual or proposed price of an object during events of type &quot;Transaction&quot; (and its subclasses) or &quot;ValueProposition&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Purchase</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies a transfer of custody and ownership which foresees an exchange of a monetary amount.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Transaction</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies an event during which the custody and/or the ownership of a &quot;Lot&quot; instance is transferred from an agent to another. Three main transactions typologies characterizes the art market, i.e. &quot;Gift&quot;, &quot;Loan&quot;, &quot;Purchase&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ValueProposition</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies an &quot;AttributeAssignment&quot; during which an agent assesses the economic value of an object. This assessment is usually dependent by previous &quot;AttirbuteAssignment&quot; events</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>assignsAgentAsAttribute</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">When an event of type &quot;AttributeAssignment&quot; is aimed at identifying a relevant actor in the history of an object (e.g. creator, previous owner), this property connects the event to the identified agent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>assignsAttributeTo</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property connects the event of type &quot;AttributeAssignment&quot; (and subclasses) to the object it refers to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>cites</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property allows to lists the references used to support the statements expressed in an event of type &quot;AttributeAssignment&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>consistsOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property declares which objects or curated holdings are included in a &quot;Lot&quot; instance exchanged in a &quot;Transaction&quot; event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>disputes</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property connects two events of type &quot;AttributeAssignment&quot;, stating that the first one is expressing some criticism on the second one.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasAttributeType</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This properties which kind of attribute is assessed during an &quot;AttributeAssessment&quot; instance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasCurrency</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property associates a price to its currency.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasDate</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property states the date or the year in which an event happened.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasFacilitator</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property identifies any agent who takes an active part in an event of type &quot;Transaction&quot;. A facilitator does not have a direct economic interest in the commercial transaction and should not be confused with the seller (see &quot;hasSurrender&quot;) or the buyer (see &quot;hasReceiver&quot;). A typical case of facilitator in a transaction in this domain may be a scholar who suggests an agent to buy a specific object.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasParticipant</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property identifies the instance of &quot;Agent&quot; participating to an &quot;Event&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasPrice</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property expresses the price of a &quot;Purchase&quot; or a &quot;Loan&quot; instance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasProposedPrice</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property expresses the worth which has been assessed during an event of type &quot;ValueProposition&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasPurpose</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property identifies the relationship between two events: the first one is intended to be preparation for the second one (e.g. an authorship attribution may be functional to an assessment of the worth of a work of art).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasReceiver</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property identifies any agent who receives custody or ownership of a &quot;Lot&quot; instance during a &quot;Transaction&quot; event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasSurrender</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property identifies any agent who surrends custody or ownership of a “Lot” instance during a “Transaction” event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasValidityOn</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property identifies the object for which a &quot;LegalNotice&quot; instance is enforced.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasValue</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property states as a number (float or integer) the amount of a price.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>imposes</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property identifies the individual of type &quot;LegalNotice&quot; enforced by an agent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isConstrainedBy</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property associates an event and the corresponding &quot;LegalNotice&quot; instance by which is constrained.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isPerformedBy</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property identifies the agent who performs an &quot;AttributeAssignment&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isRequestedBy</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property identifies the agent who is asking for an &quot;AttributeAssignment&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isValidFrom</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property declares the date from which a specific &quot;LegalNotice&quot; instance is valid.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isValidTo</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property declares the date until which a specific &quot;LegalNotice&quot; instance is valid.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>participatesIn</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Inverse of &quot;hasParticipant&quot;, this property associates individuals of class &quot;Agent&quot; to the event in which they participate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>recognizesConservationStatusAs</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This properties associates an instance of &quot;ConditionAssessment&quot; to the observed conservation state (&quot;ConditionState&quot;)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>reliesOn</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property connects two events of type &quot;AttributeAssignment&quot;, stating that the first one is based on the conclusions of the second one.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>takesPlaceIn</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property defines the individual of class &quot;Location&quot; in which an event takes place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>transfersCustodyOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property identifies the object whose custody is transferred during any event of type &quot;Transaction&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>transfersPropertyOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property identifies the Object whose ownership is transferred during an event of type &quot;Transaction&quot;, such a gift or a purchase.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/zeri/ontology/zamo/sources#CuratedHolding</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies sets of &quot;Objects&quot; that are curated by one or more agents and organized according to a specific criterion. The three main categories are &quot;Library&quot;, &quot;Archive&quot; and &quot;ArtCollection&quot; (see module &quot;Sources&quot;).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/zeri/ontology/zamo/sources#Object</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies instances of the class &quot;Thing&quot; (see module &quot;Sources&quot;) which are produced by human activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>https://w3id.org/zeri/ontology/zamo/sources#isContainedIn</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property links one or more individuals of class &quot;Object&quot; to the &quot;CuratedHolding&quot; instance that contains them.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

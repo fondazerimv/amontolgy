@@ -6,13 +6,13 @@ ZAMO has been developed following [**SAMOD**](http://dx.doi.org/10.6084/m9.figsh
 
 This repository contains the full documentation produced during the development of the ontology. In particular:
 - the ```docs``` directory contains all the files related to the ontology and its versions in time;
-- the ```samod``` directory contains the material produced during SAMOD iterations. For the description and the organization of the material in the subfolder, please read the corresponding [note](samod/samod.md).
+- the ```samod``` directory contains the material produced during SAMOD iterations. For the description and the organization of the material in the subfolder, please read the corresponding [note](samod/README.md).
 
 Additional material produced in the conceptualization and the development of the ontology may be found in an *ad hoc* private [GitHub repository](https://github.com/fondazerimv/zamo-ancillary).
 
 For any issue, you can write an email to manuele.veggi@uniroma1.it.
 
-<img src="docs/2024-01-24/zamo/zamo.png">
+<img src="docs/imports/images/zamo.png">
 
 ## Resources and Publication
 The final thesis, containing a description of the ontology and of the adopted methodology, will be soon published on Zenodo.

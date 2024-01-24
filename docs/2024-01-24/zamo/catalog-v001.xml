@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="https://w3id.org/zeri/ontology/zamo/sources#" uri="file:/Users/manuele/Desktop/ZAMO%20Ontology/docs/2024-01-24/sources/sources.owl"/>
-    <uri id="Imports Wizard Entry" name="https://w3id.org/zeri/ontology/zamo/events#" uri="file:/Users/manuele/Desktop/ZAMO%20Ontology/docs/2024-01-24/events/events.owl"/>
-    <uri id="Imports Wizard Entry" name="https://w3id.org/zeri/ontology/zamo/agents#" uri="file:/Users/manuele/Desktop/ZAMO%20Ontology/docs/2024-01-24/agents/agents.owl"/>
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1705246681525" name="https://w3id.org/zeri/ontology/zamo" uri="zamo.owl"/>
-    </group>
-</catalog>
