@@ -13,7 +13,7 @@
   <key attr.name="description" attr.type="string" for="edge" id="d9"/>
   <key for="edge" id="d10" yfiles.type="edgegraphics"/>
   <graph edgedefault="directed" id="G">
-    <data key="d0"/>
+    <data key="d0" xml:space="preserve"/>
     <node id="n0">
       <data key="d6">
         <y:ShapeNode>
@@ -383,7 +383,7 @@
           <y:Geometry height="44.0" width="492.43451216859444" x="1220.6973530692776" y="215.04209901739523"/>
           <y:Fill color="#FFFF99" transparent="false"/>
           <y:BorderStyle color="#000000" type="dotted" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="468.3203125" x="12.057099834297105" xml:space="preserve" y="10.578125">agents:Collaboration or agents:Membership or events:Event</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="468.3203125" x="12.057099834297333" xml:space="preserve" y="10.578125">agents:Collaboration or agents:Membership or events:Event</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -418,7 +418,7 @@
           <y:Geometry height="494.3792581739274" width="461.3887509512093" x="-266.6772952010791" y="674.3231367445305"/>
           <y:Fill color="#CCFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="437.40625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="398.6640625" x="31.36234422560466" xml:space="preserve" y="28.48650408696369">ObjectProperty: events:participatesIn
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="437.40625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="398.6640625" x="31.36234422560466" xml:space="preserve" y="28.486504086963578">ObjectProperty: events:participatesIn
      InverseOf:  events:hasParticipant
 
 ObjectProperty:  agents:hasCompanyPurchaser
@@ -545,7 +545,7 @@ ObjectProperty:  agents:requestsServiceIn
           <y:Geometry height="77.06175418535645" width="175.96822102864604" x="2062.6676033634935" y="1593.6197682399034"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="119.25" x="28.35911051432322" xml:space="preserve" y="27.109002092678338">sources:Object</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="119.25" x="28.35911051432322" xml:space="preserve" y="27.10900209267811">sources:Object</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -699,7 +699,7 @@ ObjectProperty:  agents:requestsServiceIn
           <y:Geometry height="44.0" width="286.21040268114496" x="779.4839826329628" y="1956.3007080408777"/>
           <y:Fill color="#FFFF99" transparent="false"/>
           <y:BorderStyle color="#000000" type="dotted" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="247.4609375" x="19.374732590572535" xml:space="preserve" y="10.578125">events:Loan or events:Purchase</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="247.4609375" x="19.37473259057242" xml:space="preserve" y="10.578125">events:Loan or events:Purchase</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -749,6 +749,7 @@ ObjectProperty:  events:isRequestedBy
           <y:Geometry height="22.2421875" width="207.83128065395096" x="549.0229755023718" y="1932.1400959179607"/>
           <y:Fill hasColor="false" transparent="false"/>
           <y:BorderStyle hasColor="false" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="101.91564032697545" y="9.12109375"/>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data>
@@ -879,7 +880,7 @@ ObjectProperty:  events:isRequestedBy
           <y:Geometry height="44.0" width="189.25987391135783" x="1756.373582125903" y="2030.300708040878"/>
           <y:Fill color="#FFFF00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="170.734375" x="9.262749455679113" xml:space="preserve" y="10.578125">sources:PhotoArchive</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="170.734375" x="9.262749455678886" xml:space="preserve" y="10.578125">sources:PhotoArchive</y:NodeLabel>
           <y:Shape type="roundrectangle"/>
         </y:ShapeNode>
       </data>
@@ -890,7 +891,7 @@ ObjectProperty:  events:isRequestedBy
           <y:Geometry height="43.0" width="126.0949682107173" x="2063.9755773737143" y="1887.2980468019996"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="87.78125" x="19.15685910535865" xml:space="preserve" y="10.078125">rdfs:Literal</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="87.78125" x="19.156859105358762" xml:space="preserve" y="10.078125">rdfs:Literal</y:NodeLabel>
           <y:Shape type="parallelogram"/>
         </y:ShapeNode>
       </data>
@@ -973,7 +974,7 @@ ObjectProperty:  sources:isSecondarySourceFor
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="152.798515555294" width="503.0608661452007" x="2327.65309292719" y="220.7314406378116"/>
+              <y:Geometry height="152.79851555529393" width="503.0608661452007" x="2327.65309292719" y="220.7314406378116"/>
               <y:Fill color="#FFFFFF" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
               <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#B7B69E" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="bold" hasLineColor="false" height="21.666015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="503.0608661452007" x="0.0" xml:space="preserve" y="0.0">Prefixes   </y:NodeLabel>
@@ -1004,7 +1005,7 @@ ObjectProperty:  sources:isSecondarySourceFor
               <y:Geometry height="22.2421875" width="207.83128065395096" x="2522.638162495415" y="305.3693440701886"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle hasColor="false" type="line" width="1.0"/>
-              <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="98.21875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="378.3203125" x="-89.60401598529046" xml:space="preserve" y="-45.05813787708303">https://w3id.org/zeri/ontology/zamo/agents#
+              <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="98.21875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="378.3203125" x="-89.60401598529052" xml:space="preserve" y="-45.058137877083084">https://w3id.org/zeri/ontology/zamo/agents#
 https://w3id.org/zeri/ontology/zamo/events#
 https://w3id.org/zeri/ontology/zamo/sources#
 http://www.w3.org/2001/XMLSchema#
@@ -1486,18 +1487,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e37" source="n2" target="n24">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="-58.368286984712995" sy="0.0" tx="47.087811647121725" ty="9.022196531214718"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="127.03125" x="-63.515605643468916" xml:space="preserve" y="-154.38631787574218">rdfs:subClassOf<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e38" source="n10" target="n17">
+    <edge id="e37" source="n10" target="n17">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-176.63637290082443" sy="-10.591005013258837" tx="0.0" ty="0.0">
@@ -1510,7 +1500,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e39" source="n0" target="n10">
+    <edge id="e38" source="n0" target="n10">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-56.40310223157587" sy="24.4778509159421" tx="-156.86066379989597" ty="-3.1991208528315838">
@@ -1523,7 +1513,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e40" source="n0" target="n25">
+    <edge id="e39" source="n0" target="n25">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-120.45177524587723" sy="25.28146990188884" tx="0.0" ty="0.0">
@@ -1536,7 +1526,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e41" source="n25" target="n26">
+    <edge id="e40" source="n25" target="n26">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1547,7 +1537,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e42" source="n26" target="n10">
+    <edge id="e41" source="n26" target="n10">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-176.2487705238682" ty="57.97566798750904">
@@ -1560,7 +1550,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e43" source="n27" target="n10">
+    <edge id="e42" source="n27" target="n10">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="23.20136868009513" sy="14.773377465509157" tx="129.1514495444967" ty="-0.6671751108308399">
@@ -1573,7 +1563,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e44" source="n0" target="n28">
+    <edge id="e43" source="n0" target="n28">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="210.54331863360505" sy="-11.869087718899607" tx="68.7950785544291" ty="21.625403138355978"/>
@@ -1584,7 +1574,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e45" source="n28" target="n24">
+    <edge id="e44" source="n28" target="n24">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -1597,7 +1587,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e46" source="n30" target="n29">
+    <edge id="e45" source="n30" target="n29">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="6.470286885246196" tx="0.0" ty="0.0"/>
@@ -1608,7 +1598,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e47" source="n31" target="n32">
+    <edge id="e46" source="n31" target="n32">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1619,7 +1609,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e48" source="n33" target="n34">
+    <edge id="e47" source="n33" target="n34">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1630,7 +1620,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e49" source="n10" target="n35">
+    <edge id="e48" source="n10" target="n35">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="64.22711325200817" sy="-45.69997662001265" tx="-38.00095199212228" ty="12.873603095737053"/>
@@ -1641,7 +1631,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e50" source="n21" target="n10">
+    <edge id="e49" source="n21" target="n10">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-91.01790856344996" ty="-60.61657437616668">
@@ -1654,7 +1644,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e51" source="n45" target="n41">
+    <edge id="e50" source="n45" target="n41">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="1.789897654480228" sy="28.141313497304736" tx="0.0" ty="0.0">
@@ -1668,7 +1658,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e52" source="n39" target="n0">
+    <edge id="e51" source="n39" target="n0">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-64.48789087898342" sy="-23.45809893892215" tx="-303.75085429960143" ty="40.76055848391678">
@@ -1682,7 +1672,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e53" source="n39" target="n0">
+    <edge id="e52" source="n39" target="n0">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-55.44988837866627" sy="-24.897680689315166" tx="-321.53714120591474" ty="29.049330794774562">
@@ -1695,7 +1685,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e54" source="n39" target="n0">
+    <edge id="e53" source="n39" target="n0">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-37.33624930576184" sy="-24.06628879929167" tx="-285.6946736999355" ty="52.653232280877944">
@@ -1709,7 +1699,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e55" source="n44" target="n40">
+    <edge id="e54" source="n44" target="n40">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -1722,7 +1712,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e56" source="n43" target="n40">
+    <edge id="e55" source="n43" target="n40">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="24.631689344968322" sy="15.346388478638119" tx="6.81949579378045" ty="0.0">
@@ -1735,7 +1725,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e57" source="n44" target="n39">
+    <edge id="e56" source="n44" target="n39">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="44.664332266878624" ty="20.7357606994496">
@@ -1748,7 +1738,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e58" source="n42" target="n39">
+    <edge id="e57" source="n42" target="n39">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="38.475018231663434" sy="-1.0" tx="-71.46574908963522" ty="8.007324298828337"/>
@@ -1759,7 +1749,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e59" source="n43" target="n39">
+    <edge id="e58" source="n43" target="n39">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-79.37155876398776" ty="8.038410104204331">
@@ -1772,7 +1762,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e60" source="n39" target="n40">
+    <edge id="e59" source="n39" target="n40">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-20.319840443428575" sy="17.161258009748053" tx="14.914083338528712" ty="0.0"/>
@@ -1783,7 +1773,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e61" source="n56" target="n55">
+    <edge id="e60" source="n56" target="n55">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-80.55159215746204" sy="-15.478228278580929" tx="-70.04765226265302" ty="16.0">
@@ -1796,7 +1786,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e62" source="n56" target="n0">
+    <edge id="e61" source="n56" target="n0">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-21.151306747637484" sy="-19.0" tx="-204.10448417311886" ty="43.69821147915417">
@@ -1810,7 +1800,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e63" source="n56" target="n0">
+    <edge id="e62" source="n56" target="n0">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-67.42186040004052" sy="-11.62444986496871" tx="-221.86854709305004" ty="45.26633745861329">
@@ -1824,7 +1814,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e64" source="n56" target="n0">
+    <edge id="e63" source="n56" target="n0">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-90.35495274633476" sy="-21.980640916689936" tx="-240.40487651473723" ty="49.003532750221325">
@@ -1838,7 +1828,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e65" source="n56" target="n45">
+    <edge id="e64" source="n56" target="n45">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="30.76284690431362" sy="2.133776032394735" tx="-81.70481636901695" ty="0.08358224679818704">
@@ -1851,7 +1841,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e66" source="n46" target="n45">
+    <edge id="e65" source="n46" target="n45">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-21.810529811771175" sy="21.918462841419114" tx="73.96094292036969" ty="-33.581320914838216"/>
@@ -1862,7 +1852,7 @@ rdfs:</y:NodeLabel>
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e67" source="n56" target="n56">
+    <edge id="e66" source="n56" target="n56">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-93.97728251163812" sy="5.1132944554351525" tx="0.0" ty="0.0">
@@ -1878,7 +1868,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e68" source="n56" target="n45">
+    <edge id="e67" source="n56" target="n45">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="8.148291018264672" sy="3.126948840074874" tx="-59.663646912112654" ty="29.63470335504917">
@@ -1891,7 +1881,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e69" source="n48" target="n49">
+    <edge id="e68" source="n48" target="n49">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-97.04653666298498" sy="-7.909475786902419" tx="4.06844582929898" ty="-16.864502431829123"/>
@@ -1902,7 +1892,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e70" source="n47" target="n50">
+    <edge id="e69" source="n47" target="n50">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-23.865350683276574" sy="15.731630203916893" tx="-67.06836781736388" ty="-13.832413731684937"/>
@@ -1913,7 +1903,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e71" source="n46" target="n51">
+    <edge id="e70" source="n46" target="n51">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="38.72007863306271" sy="0.0" tx="0.0" ty="0.0">
@@ -1926,7 +1916,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e72" source="n46" target="n52">
+    <edge id="e71" source="n46" target="n52">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="71.16805218601849" sy="-16.912231759041788" tx="-11.879431919340277" ty="11.652220040218026"/>
@@ -1937,7 +1927,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e73" source="n49" target="n53">
+    <edge id="e72" source="n49" target="n53">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="25.089878857888948" sy="0.0" tx="0.0" ty="0.0"/>
@@ -1948,7 +1938,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e74" source="n49" target="n54">
+    <edge id="e73" source="n49" target="n54">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="38.872804721841135" sy="-13.60237144250982" tx="0.0" ty="0.0">
@@ -1961,7 +1951,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e75" source="n58" target="n55">
+    <edge id="e74" source="n58" target="n55">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-57.047814207650276" ty="17.358606557377016"/>
@@ -1972,7 +1962,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e76" source="n57" target="n55">
+    <edge id="e75" source="n57" target="n55">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="38.831105049842094" ty="16.2868852459016"/>
@@ -1983,7 +1973,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e77" source="n48" target="n56">
+    <edge id="e76" source="n48" target="n56">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-56.08455622916923" ty="-4.163934426229503">
@@ -1996,7 +1986,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e78" source="n47" target="n56">
+    <edge id="e77" source="n47" target="n56">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-16.243479739832992" ty="-7.797952044406884">
@@ -2009,7 +1999,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e79" source="n10" target="n46">
+    <edge id="e78" source="n10" target="n46">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="9.117898450581833" sy="65.0841113174065" tx="0.0" ty="0.0"/>
@@ -2020,7 +2010,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e80" source="n59" target="n49">
+    <edge id="e79" source="n59" target="n49">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -2031,7 +2021,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e81" source="n40" target="n60">
+    <edge id="e80" source="n40" target="n60">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="14.914083338528712" sy="10.70710040597487" tx="-135.389695055964" ty="-7.858191408560401"/>
@@ -2042,7 +2032,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e82" source="n10" target="n10">
+    <edge id="e81" source="n10" target="n10">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="183.36184672873333" sy="36.51929592373358" tx="168.0358666831794" ty="21.82500659394077">
@@ -2057,7 +2047,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e83" source="n0" target="n46">
+    <edge id="e82" source="n0" target="n46">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-163.3093894097106" sy="43.69821147915417" tx="-13.455200975277421" ty="8.403038230085485">
@@ -2071,7 +2061,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e84" source="n56" target="n10">
+    <edge id="e83" source="n56" target="n10">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-100.3667015866331" ty="20.836989501543258">
@@ -2084,7 +2074,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e85" source="n39" target="n10">
+    <edge id="e84" source="n39" target="n10">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="88.17758341466765" sy="-16.508553971245874" tx="-146.63612314994634" ty="13.60739238227552">
@@ -2097,7 +2087,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e86" source="n70" target="n65">
+    <edge id="e85" source="n70" target="n65">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -2110,7 +2100,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e87" source="n69" target="n65">
+    <edge id="e86" source="n69" target="n65">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="36.147925092618564" ty="16.18481612184405">
@@ -2123,7 +2113,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e88" source="n68" target="n65">
+    <edge id="e87" source="n68" target="n65">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-47.957698823853676" ty="0.0">
@@ -2136,7 +2126,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e89" source="n65" target="n45">
+    <edge id="e88" source="n65" target="n45">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-97.7181954806196" sy="-13.303417217790411" tx="48.4478404772799" ty="26.311590249351866">
@@ -2149,7 +2139,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e90" source="n64" target="n45">
+    <edge id="e89" source="n64" target="n45">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-65.18400279658908" sy="0.2656221531517531" tx="-22.46917345358679" ty="-25.074818109061653">
@@ -2162,7 +2152,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e91" source="n66" target="n45">
+    <edge id="e90" source="n66" target="n45">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="68.86407889243856" ty="28.024796608257475"/>
@@ -2173,7 +2163,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e92" source="n67" target="n65">
+    <edge id="e91" source="n67" target="n65">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
@@ -2186,7 +2176,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e93" source="n73" target="n41">
+    <edge id="e92" source="n73" target="n41">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-26.191933245308064" sy="-14.254762076923953" tx="92.1142177101433" ty="2.8905868586330143"/>
@@ -2197,7 +2187,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e94" source="n71" target="n41">
+    <edge id="e93" source="n71" target="n41">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="20.979515983935016" sy="-12.756225220928627" tx="-47.93621194927164" ty="11.953218717213076"/>
@@ -2208,7 +2198,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e95" source="n72" target="n41">
+    <edge id="e94" source="n72" target="n41">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-88.00696784326556" ty="10.165331180201065">
@@ -2222,7 +2212,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e96" source="n74" target="n72">
+    <edge id="e95" source="n74" target="n72">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-59.93550495210684" ty="14.717701564714616"/>
@@ -2233,7 +2223,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e97" source="n41" target="n75">
+    <edge id="e96" source="n41" target="n75">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-100.01554298296332" sy="0.034751409969430824" tx="0.0" ty="0.0"/>
@@ -2244,7 +2234,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e98" source="n45" target="n76">
+    <edge id="e97" source="n45" target="n76">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="40.71195100384966" sy="-14.141415471204937" tx="-34.61551254062533" ty="-11.76323378213192"/>
@@ -2255,7 +2245,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e99" source="n41" target="n76">
+    <edge id="e98" source="n41" target="n76">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="109.61938817163491" sy="0.0" tx="-63.62215087528921" ty="13.214723809549469">
@@ -2268,7 +2258,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e100" source="n76" target="n0">
+    <edge id="e99" source="n76" target="n0">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-50.886381733251596" sy="-5.088482953060009" tx="343.42202612576136" ty="-48.32474457826146">
@@ -2281,7 +2271,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e101" source="n77" target="n66">
+    <edge id="e100" source="n77" target="n66">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="-91.84258676992613" ty="2.3161511003982014">
@@ -2294,7 +2284,7 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e102" source="n76" target="n80">
+    <edge id="e101" source="n76" target="n80">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="111.3376341733142" ty="-10.271465285679596">
@@ -2307,13 +2297,24 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e103" source="n80" target="n81">
+    <edge id="e102" source="n80" target="n81">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="-57.3183618194048" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000080" type="line" width="1.0"/>
           <y:Arrows source="circle" target="delta"/>
           <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000080" verticalTextPosition="bottom" visible="true" width="165.15625" x="-82.57802316900597" xml:space="preserve" y="-61.73361533314937">sources:reconstructs<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e103" source="n24" target="n2">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="56.33457065968014" sy="0.0" tx="-49.12152797215458" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="127.03125" x="-63.5156728027855" xml:space="preserve" y="131.48846850121095">rdfs:subClassOf<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
