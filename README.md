@@ -15,7 +15,7 @@ For any issue, you can write an email to manuele.veggi@uniroma1.it.
 <img src="docs/imports/images/zamo.png">
 
 ## Resources and Publication
-The final thesis, containing a description of the ontology and of the adopted methodology, will be soon published on Zenodo.
+The final thesis, containing a description of the ontology and of the adopted methodology, will be soon released in open access.
 
 A preliminary analysis of the current ontology was published as 
 > Veggi, Manuele, and Francesca Mambelli. "Modelling the Art Market in the Semantic Web. A Preliminary Analysis." <i>Umanistica Digitale</i> 16 (2023): 141-166. ![Static Badge](https://img.shields.io/badge/doi-10.6092%2Fissn.2532-8816%2F17208?color=B31B1B&link=http%3A%2F%2Fdoi.org%2F10.6092%2Fissn.2532-8816%2F17208)
