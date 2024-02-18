@@ -1,5 +1,7 @@
 # Scenario
 
+**Expertise and value proposition in the art market**
+
 The peculiarity of the art market is the fact that the value of an artwork cannot be deduced objectively but depends on multiple external factors. In fact, an agent can value the work independently or by relying on an expert. He reconstructs several characteristics of the work of art. Among these, some important ones are the artefact's authorship (attribution), state of preservation, collecting history (understood as a series of possessions), bibliography. Based on this analysis, an agent proposes a monetary value for the object. Both the attribution and the value proposition can be rediscussed over time by other attributive assignments: all these events influence (without necessarily coinciding) the real price of the transaction. The asset may be subject to notification (usually not withdrawn but may only be valid for a certain amount of time) by the State and this affects the value of the asset.
 
 # Examples
