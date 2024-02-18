@@ -2,9 +2,9 @@
 
 **Professional roles and collaborations in the art market**
 
-Una società di antiquari si avvale di diverse professionalità fornite dal singolo individuo o da un’altra società, con cui stringe legami di collaborazione definiti da un intervallo di tempo e funzionali a un evento o a un oggetto. 
+An antiquarian society makes use of various professional figures provided by the individual or by another society, with whom it forms collaborative ties defined by a time interval and functional to an event or object.
 
-Oltre al responsabile, le figure principali (possono essere anche più di uno) sono lo studioso di riferimento (che ha una preparazione su un dominio storico-artistico; interviene per le attribuzioni ed i cataloghi), il restauratore, il fotografo.  
+In addition to the person in charge, the main figures (there may be more than one) are the reference scholar (who has a background on an art-historical domain; he intervenes for attributions and catalogs), the restorer, and the photographer.  
 
 ## Examples
 
