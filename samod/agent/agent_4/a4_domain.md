@@ -2,7 +2,7 @@
 
 **Professional roles and collaborations in the art market**
 
-An antiquarian society makes use of various professional figures provided by the individual or by another society, with whom it forms collaborative ties defined by a time interval and functional to an event or object.
+An art dealer organization society makes use of various professional figures provided by the individual or by another society, with whom it forms collaborative ties defined by a time interval and functional to an event or object.
 
 In addition to the person in charge, the main figures (there may be more than one) are the reference scholar (who has a background on an art-historical domain; he intervenes for attributions and catalogs), the restorer, and the photographer.  
 
