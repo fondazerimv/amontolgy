@@ -10,6 +10,7 @@ Ontology(<http://www.w3.org/zamo/sources#>
 
 Declaration(Class(<http://www.w3.org/zamo/sources#AccountRegister>))
 Declaration(Class(<http://www.w3.org/zamo/sources#Agent>))
+Declaration(Class(<http://www.w3.org/zamo/sources#AgentActivity>))
 Declaration(Class(<http://www.w3.org/zamo/sources#ArchivalItem>))
 Declaration(Class(<http://www.w3.org/zamo/sources#Archive>))
 Declaration(Class(<http://www.w3.org/zamo/sources#ArtCollection>))
@@ -28,16 +29,20 @@ Declaration(Class(<http://www.w3.org/zamo/sources#Receipt>))
 Declaration(Class(<http://www.w3.org/zamo/sources#Thing>))
 Declaration(ObjectProperty(<http://www.w3.org/zamo/sources#hasCurrentOwner>))
 Declaration(ObjectProperty(<http://www.w3.org/zamo/sources#isContainedIn>))
+Declaration(ObjectProperty(<http://www.w3.org/zamo/sources#isPartOf>))
 Declaration(ObjectProperty(<http://www.w3.org/zamo/sources#isPrimarySourceFor>))
+Declaration(ObjectProperty(<http://www.w3.org/zamo/sources#isReconstructedBy>))
 Declaration(ObjectProperty(<http://www.w3.org/zamo/sources#isSecondarySourceFor>))
 Declaration(ObjectProperty(<http://www.w3.org/zamo/sources#isSourceFor>))
-Declaration(ObjectProperty(<http://www.w3.org/zamo/sources#reconstructs>))
+Declaration(ObjectProperty(<http://www.w3.org/zamo/sources#refersTo>))
 Declaration(DataProperty(<http://www.w3.org/zamo/sources#hasExtent>))
 Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#i-GT>))
+Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#i-GT-activity>))
 Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#i-archive-GT>))
 Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#i-foundation-SZ>))
 Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#i-reconstruction-GT>))
 Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#ii-KG>))
+Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#ii-KG-activity>))
 Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#ii-archive-KG>))
 Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#ii-art-institute>))
 Declaration(NamedIndividual(<http://www.w3.org/zamo/sources#ii-letter-SZ>))
@@ -61,11 +66,21 @@ ObjectPropertyRange(<http://www.w3.org/zamo/sources#hasCurrentOwner> <http://www
 ObjectPropertyDomain(<http://www.w3.org/zamo/sources#isContainedIn> <http://www.w3.org/zamo/sources#Object>)
 ObjectPropertyRange(<http://www.w3.org/zamo/sources#isContainedIn> <http://www.w3.org/zamo/sources#CuratedHolding>)
 
+# Object Property: <http://www.w3.org/zamo/sources#isPartOf> (<http://www.w3.org/zamo/sources#isPartOf>)
+
+ObjectPropertyDomain(<http://www.w3.org/zamo/sources#isPartOf> <http://www.w3.org/zamo/sources#Event>)
+ObjectPropertyRange(<http://www.w3.org/zamo/sources#isPartOf> <http://www.w3.org/zamo/sources#AgentActivity>)
+
 # Object Property: <http://www.w3.org/zamo/sources#isPrimarySourceFor> (<http://www.w3.org/zamo/sources#isPrimarySourceFor>)
 
 SubObjectPropertyOf(<http://www.w3.org/zamo/sources#isPrimarySourceFor> <http://www.w3.org/zamo/sources#isSourceFor>)
 ObjectPropertyDomain(<http://www.w3.org/zamo/sources#isPrimarySourceFor> <http://www.w3.org/zamo/sources#Thing>)
 ObjectPropertyRange(<http://www.w3.org/zamo/sources#isPrimarySourceFor> <http://www.w3.org/zamo/sources#HistoricalReconstruction>)
+
+# Object Property: <http://www.w3.org/zamo/sources#isReconstructedBy> (<http://www.w3.org/zamo/sources#isReconstructedBy>)
+
+ObjectPropertyDomain(<http://www.w3.org/zamo/sources#isReconstructedBy> <http://www.w3.org/zamo/sources#AgentActivity>)
+ObjectPropertyRange(<http://www.w3.org/zamo/sources#isReconstructedBy> <http://www.w3.org/zamo/sources#HistoricalReconstruction>)
 
 # Object Property: <http://www.w3.org/zamo/sources#isSecondarySourceFor> (<http://www.w3.org/zamo/sources#isSecondarySourceFor>)
 
@@ -78,10 +93,10 @@ ObjectPropertyRange(<http://www.w3.org/zamo/sources#isSecondarySourceFor> <http:
 ObjectPropertyDomain(<http://www.w3.org/zamo/sources#isSourceFor> <http://www.w3.org/zamo/sources#Thing>)
 ObjectPropertyRange(<http://www.w3.org/zamo/sources#isSourceFor> <http://www.w3.org/zamo/sources#HistoricalReconstruction>)
 
-# Object Property: <http://www.w3.org/zamo/sources#reconstructs> (<http://www.w3.org/zamo/sources#reconstructs>)
+# Object Property: <http://www.w3.org/zamo/sources#refersTo> (<http://www.w3.org/zamo/sources#refersTo>)
 
-ObjectPropertyDomain(<http://www.w3.org/zamo/sources#reconstructs> <http://www.w3.org/zamo/sources#HistoricalReconstruction>)
-ObjectPropertyRange(<http://www.w3.org/zamo/sources#reconstructs> ObjectUnionOf(<http://www.w3.org/zamo/sources#Agent> <http://www.w3.org/zamo/sources#Event>))
+ObjectPropertyDomain(<http://www.w3.org/zamo/sources#refersTo> <http://www.w3.org/zamo/sources#AgentActivity>)
+ObjectPropertyRange(<http://www.w3.org/zamo/sources#refersTo> <http://www.w3.org/zamo/sources#Agent>)
 
 
 ############################
@@ -181,6 +196,12 @@ SubClassOf(<http://www.w3.org/zamo/sources#Thing> owl:Thing)
 
 ClassAssertion(<http://www.w3.org/zamo/sources#Agent> <http://www.w3.org/zamo/sources#i-GT>)
 
+# Individual: <http://www.w3.org/zamo/sources#i-GT-activity> (<http://www.w3.org/zamo/sources#i-GT-activity>)
+
+ClassAssertion(<http://www.w3.org/zamo/sources#AgentActivity> <http://www.w3.org/zamo/sources#i-GT-activity>)
+ObjectPropertyAssertion(<http://www.w3.org/zamo/sources#isReconstructedBy> <http://www.w3.org/zamo/sources#i-GT-activity> <http://www.w3.org/zamo/sources#i-reconstruction-GT>)
+ObjectPropertyAssertion(<http://www.w3.org/zamo/sources#refersTo> <http://www.w3.org/zamo/sources#i-GT-activity> <http://www.w3.org/zamo/sources#i-GT>)
+
 # Individual: <http://www.w3.org/zamo/sources#i-archive-GT> (<http://www.w3.org/zamo/sources#i-archive-GT>)
 
 ClassAssertion(<http://www.w3.org/zamo/sources#Archive> <http://www.w3.org/zamo/sources#i-archive-GT>)
@@ -195,11 +216,16 @@ ClassAssertion(<http://www.w3.org/zamo/sources#Agent> <http://www.w3.org/zamo/so
 # Individual: <http://www.w3.org/zamo/sources#i-reconstruction-GT> (<http://www.w3.org/zamo/sources#i-reconstruction-GT>)
 
 ClassAssertion(<http://www.w3.org/zamo/sources#HistoricalReconstruction> <http://www.w3.org/zamo/sources#i-reconstruction-GT>)
-ObjectPropertyAssertion(<http://www.w3.org/zamo/sources#reconstructs> <http://www.w3.org/zamo/sources#i-reconstruction-GT> <http://www.w3.org/zamo/sources#i-GT>)
 
 # Individual: <http://www.w3.org/zamo/sources#ii-KG> (<http://www.w3.org/zamo/sources#ii-KG>)
 
 ClassAssertion(<http://www.w3.org/zamo/sources#Agent> <http://www.w3.org/zamo/sources#ii-KG>)
+
+# Individual: <http://www.w3.org/zamo/sources#ii-KG-activity> (<http://www.w3.org/zamo/sources#ii-KG-activity>)
+
+ClassAssertion(<http://www.w3.org/zamo/sources#AgentActivity> <http://www.w3.org/zamo/sources#ii-KG-activity>)
+ObjectPropertyAssertion(<http://www.w3.org/zamo/sources#isReconstructedBy> <http://www.w3.org/zamo/sources#ii-KG-activity> <http://www.w3.org/zamo/sources#ii-reconstruction-KG>)
+ObjectPropertyAssertion(<http://www.w3.org/zamo/sources#refersTo> <http://www.w3.org/zamo/sources#ii-KG-activity> <http://www.w3.org/zamo/sources#ii-KG>)
 
 # Individual: <http://www.w3.org/zamo/sources#ii-archive-KG> (<http://www.w3.org/zamo/sources#ii-archive-KG>)
 
@@ -226,7 +252,6 @@ ObjectPropertyAssertion(<http://www.w3.org/zamo/sources#isPrimarySourceFor> <htt
 # Individual: <http://www.w3.org/zamo/sources#ii-reconstruction-KG> (<http://www.w3.org/zamo/sources#ii-reconstruction-KG>)
 
 ClassAssertion(<http://www.w3.org/zamo/sources#HistoricalReconstruction> <http://www.w3.org/zamo/sources#ii-reconstruction-KG>)
-ObjectPropertyAssertion(<http://www.w3.org/zamo/sources#reconstructs> <http://www.w3.org/zamo/sources#ii-reconstruction-KG> <http://www.w3.org/zamo/sources#ii-KG>)
 
 # Individual: <http://www.w3.org/zamo/sources#iii-FG> (<http://www.w3.org/zamo/sources#iii-FG>)
 

@@ -6,19 +6,17 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.w3.org/zamo/sources#">
+    <Prefix name="" IRI="http://www.w3.org/zamo/sources#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <ObjectProperty IRI="reconstructs"/>
+        <Class IRI="ArtCollection"/>
     </Declaration>
     <Declaration>
         <Class IRI="Event"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="ArtCollection"/>
     </Declaration>
     <Declaration>
         <Class IRI="ArchivalItem"/>
@@ -51,10 +49,16 @@
         <Class IRI="Photo"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="isPartOf"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Object"/>
     </Declaration>
     <Declaration>
         <Class IRI="Thing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="refersTo"/>
     </Declaration>
     <Declaration>
         <Class IRI="Agent"/>
@@ -72,19 +76,25 @@
         <DataProperty IRI="hasExtent"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="isReconstructedBy"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="AccountRegister"/>
     </Declaration>
     <Declaration>
         <Class IRI="BibliographicItem"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Library"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="PhotoArchive"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Library"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="isSecondarySourceFor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AgentActivity"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="AccountRegister"/>
@@ -166,6 +176,7 @@
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="Agent"/>
+        <Class IRI="AgentActivity"/>
         <Class IRI="Event"/>
         <Class IRI="HistoricalReconstruction"/>
         <Class IRI="Thing"/>
@@ -201,8 +212,16 @@
         <Class IRI="Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="isPartOf"/>
+        <Class IRI="Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="isPrimarySourceFor"/>
         <Class IRI="Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isReconstructedBy"/>
+        <Class IRI="AgentActivity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="isSecondarySourceFor"/>
@@ -213,8 +232,8 @@
         <Class IRI="Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="reconstructs"/>
-        <Class IRI="HistoricalReconstruction"/>
+        <ObjectProperty IRI="refersTo"/>
+        <Class IRI="AgentActivity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasCurrentOwner"/>
@@ -225,7 +244,15 @@
         <Class IRI="CuratedHolding"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="isPartOf"/>
+        <Class IRI="AgentActivity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="isPrimarySourceFor"/>
+        <Class IRI="HistoricalReconstruction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isReconstructedBy"/>
         <Class IRI="HistoricalReconstruction"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -237,11 +264,8 @@
         <Class IRI="HistoricalReconstruction"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="reconstructs"/>
-        <ObjectUnionOf>
-            <Class IRI="Agent"/>
-            <Class IRI="Event"/>
-        </ObjectUnionOf>
+        <ObjectProperty IRI="refersTo"/>
+        <Class IRI="Agent"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="hasExtent"/>

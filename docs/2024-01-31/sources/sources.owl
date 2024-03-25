@@ -27,13 +27,16 @@
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/)</Literal>
     </Annotation>
     <Declaration>
+        <ObjectProperty IRI="refersTo"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="BibliographicItem"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
     </Declaration>
     <Declaration>
         <Class IRI="CuratedHolding"/>
@@ -49,6 +52,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="Letter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isPartOf"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
@@ -72,7 +78,10 @@
         <Class IRI="ArchivalItem"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="reconstructs"/>
+        <Class IRI="AgentActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isReconstructedBy"/>
     </Declaration>
     <Declaration>
         <Class IRI="Library"/>
@@ -84,10 +93,10 @@
         <Class IRI="AccountRegister"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="isSecondarySourceFor"/>
+        <Class IRI="PhotoArchive"/>
     </Declaration>
     <Declaration>
-        <Class IRI="PhotoArchive"/>
+        <ObjectProperty IRI="isSecondarySourceFor"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="hasExtent"/>
@@ -99,10 +108,10 @@
         <Class IRI="Thing"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ArtCollection"/>
+        <ObjectProperty IRI="isContainedIn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="isContainedIn"/>
+        <Class IRI="ArtCollection"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
@@ -179,6 +188,7 @@
     <DisjointClasses>
         <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
         <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+        <Class IRI="AgentActivity"/>
         <Class IRI="HistoricalReconstruction"/>
         <Class IRI="Thing"/>
     </DisjointClasses>
@@ -219,8 +229,16 @@
         <Class IRI="Object"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="isPartOf"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="isPrimarySourceFor"/>
         <Class IRI="Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isReconstructedBy"/>
+        <Class IRI="AgentActivity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="isSecondarySourceFor"/>
@@ -231,8 +249,8 @@
         <Class IRI="Thing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="reconstructs"/>
-        <Class IRI="HistoricalReconstruction"/>
+        <ObjectProperty IRI="refersTo"/>
+        <Class IRI="AgentActivity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasCurrentOwner"/>
@@ -243,7 +261,15 @@
         <Class IRI="CuratedHolding"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="isPartOf"/>
+        <Class IRI="AgentActivity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="isPrimarySourceFor"/>
+        <Class IRI="HistoricalReconstruction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isReconstructedBy"/>
         <Class IRI="HistoricalReconstruction"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -255,11 +281,8 @@
         <Class IRI="HistoricalReconstruction"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="reconstructs"/>
-        <ObjectUnionOf>
-            <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
-            <Class IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
-        </ObjectUnionOf>
+        <ObjectProperty IRI="refersTo"/>
+        <Class IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="hasExtent"/>
@@ -283,6 +306,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>AccountRegister</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies any document listing the properties of an individual of type &quot;Agent&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>AgentActivity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies at an higher-level all the events to which an event has participated and it is the main subject of historical reconstructions</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -322,7 +350,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HistoricalReconstruction</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies the scholarly activity performed by an agent in order to generate new information on an historical figure or event. It is carried out following a historical methodology, based on the analysis of primary and secondary sources.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This class identifies the scholarly activity performed by an agent in order to generate new information on an historical figure or event (see AgentActivity). It is carried out following a historical methodology, based on the analysis of primary and secondary sources.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -376,8 +404,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isPartOf</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Through this property, a single event can be included in the general activity of an agent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>isPrimarySourceFor</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property specifies the super-property &quot;isSourceFor&quot; stating that the source was produced during the historical period it refers to (e.g an autobiography or a letter).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isReconstructedBy</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property associates the activity carried out by an agent (see AgentActivity) to the corresponding historical reconstruction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -391,8 +429,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>reconstructs</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property associates an historical reconstruction to the event or the agent they refer to.</Literal>
+        <IRI>refersTo</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This property associates an activity (see AgentActivity) to the corresponding agent</Literal>
     </AnnotationAssertion>
 </Ontology>
 

@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://w3id.org/zeri/ontology/zamo/alignment#">
+    <Prefix name="" IRI="https://w3id.org/zeri/ontology/zamo/alignment#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -94,10 +95,10 @@
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E96_Purchase"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#Price"/>
+        <NamedIndividual IRI="http://purl.org/spar/fabio/Item"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/spar/fabio/Item"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#Price"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E10_Transfer_of_Custody"/>
@@ -118,10 +119,10 @@
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Branch"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P29_custody_received_by"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#fallsWithin"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#fallsWithin"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P29_custody_received_by"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P177_assigned_property_of_type"/>
@@ -130,10 +131,10 @@
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.w3.org/ns/org#hasMember"/>
+        <NamedIndividual IRI="http://purl.org/spar/cito/isSupportedBy"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://purl.org/spar/cito/isSupportedBy"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/org#hasMember"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#participatesIn"/>
@@ -154,10 +155,10 @@
         <NamedIndividual IRI="http://purl.org/spar/fabio/SubjectDiscipline"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#Purchase"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E66_Formation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E66_Formation"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#Purchase"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P35_has_identified"/>
@@ -184,10 +185,10 @@
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#assignsAgentAsAttribute"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasAttributeType"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P23_transferred_title_from"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P23_transferred_title_from"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasAttributeType"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#AttributeType"/>
@@ -220,10 +221,10 @@
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#Artwork"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P28_custody_surrendered_by"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#Archive"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#Archive"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P28_custody_surrendered_by"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Foundation"/>
@@ -247,28 +248,22 @@
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P179_had_sales_price"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P99_dissolved"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="https://w3id.org/arco/ontology/context-description/Interpretation"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasPrice"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#isCollaboratorIn"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#isPerformedBy"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P99_dissolved"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#transfersPropertyOf"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.w3.org/ns/org#resultingOrganization"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#isPerformedBy"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://w3id.org/arco/ontology/context-description/hasInterpretationSubject"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/org#resultingOrganization"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#CompanyModification"/>
@@ -289,10 +284,10 @@
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#hasCurrentOwner"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.w3.org/ns/org#Organization"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/org#Organization"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P52_has_current_owner"/>
@@ -304,19 +299,19 @@
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#hasResultingOrganization"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#hasResultingOrganization"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Location"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State"/>
@@ -328,10 +323,10 @@
         <NamedIndividual IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Collection"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#consistsOf"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#Catalog"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#Catalog"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#consistsOf"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Initiative"/>
@@ -346,6 +341,9 @@
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#cites"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="isReconstructedBy"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://purl.org/spar/cito/isDocumentedBy"/>
     </Declaration>
     <Declaration>
@@ -353,6 +351,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P20_had_specific_purpose"/>
@@ -370,10 +371,10 @@
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E16_Measurement"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.w3.org/ns/org#Role"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P89_falls_within"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P89_falls_within"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/org#Role"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#Transaction"/>
@@ -391,13 +392,13 @@
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#assignsAttributeTo"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#Object"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P95_has_formed"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#isConstrainedBy"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P95_has_formed"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#Object"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#isLocatedIn"/>
@@ -461,6 +462,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://purl.org/spar/cito/cites"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#ValueProposition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broaderMatch"/>
     </Declaration>
     <ClassAssertion>
         <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -748,6 +755,10 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
         <NamedIndividual IRI="https://w3id.org/arco/ontology/archive/ArchivalCollection"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -760,15 +771,7 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <NamedIndividual IRI="https://w3id.org/arco/ontology/context-description/Interpretation"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
         <NamedIndividual IRI="https://w3id.org/arco/ontology/context-description/PhotographicFonds"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <NamedIndividual IRI="https://w3id.org/arco/ontology/context-description/hasInterpretationSubject"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -869,6 +872,10 @@
     <ClassAssertion>
         <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#isSecundaryActivityOf"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <NamedIndividual IRI="isReconstructedBy"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -1062,552 +1069,391 @@
         <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#reconstructs"/>
     </ClassAssertion>
-
-<ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Agent"/>
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Location"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Seat"/>
-        <NamedIndividual IRI="http://www.w3.org/ns/org#Site"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Organization"/>
-        <NamedIndividual IRI="http://www.w3.org/ns/org#Organization"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#CompanyModification"/>
-        <NamedIndividual IRI="http://www.w3.org/ns/org#ChangeEvent"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Role"/>
-        <NamedIndividual IRI="http://www.w3.org/ns/org#Role"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Collaboration"/>
-        <NamedIndividual IRI="http://www.w3.org/ns/org#Membership"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#KnowledgeDomain"/>
-        <NamedIndividual IRI="http://purl.org/spar/fabio/SubjectDiscipline"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Initiative"/>
-        <NamedIndividual IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Collection"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#EventEdition"/>
-        <NamedIndividual IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Foundation"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E66_Formation"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Branch"/>
         <NamedIndividual IRI="http://www.w3.org/ns/org#OrganizationalUnit"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#CessationOfActivity"/>
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E68_Dissolution"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Collaboration"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/org#Membership"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#CompanyModification"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/org#ChangeEvent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#EventEdition"/>
+        <NamedIndividual IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Event"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Foundation"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E66_Formation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Initiative"/>
+        <NamedIndividual IRI="http://www.loa-cnr.it/ontologies/DUL.owl#Collection"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#KnowledgeDomain"/>
+        <NamedIndividual IRI="http://purl.org/spar/fabio/SubjectDiscipline"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Location"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Organization"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/org#Organization"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Person"/>
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#hasResultingOrganization"/>
-        <NamedIndividual IRI="http://www.w3.org/ns/org#resultingOrganization"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#hasOriginalOrganization"/>
-        <NamedIndividual IRI="http://www.w3.org/ns/org#originalOrganization"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#hasFoundedOrganization"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P95_has_formed"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#isBranchOf"/>
-        <NamedIndividual IRI="http://www.w3.org/ns/org#hasUnit"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#hasRole"/>
-        <NamedIndividual IRI="http://www.w3.org/ns/org#role"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Role"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/org#Role"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#Seat"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/org#Site"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#fallsWithin"/>
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P89_falls_within"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#hasClosedOrganization"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P99_dissolved"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#hasFoundedOrganization"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P95_has_formed"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#hasOriginalOrganization"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/org#originalOrganization"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#hasResultingOrganization"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/org#resultingOrganization"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#hasRole"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/org#role"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#hasSeat"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/org#hasSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#isBranchOf"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/org#hasUnit"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#isCollaboratorIn"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/org#hasMember"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#closeMatch"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#isLocatedIn"/>
         <NamedIndividual IRI="http://www.w3.org/ns/org#siteAddress"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#isSecundaryActivityOf"/>
         <NamedIndividual IRI="http://www.w3.org/ns/org#subOrganizationOf"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#hasSeat"/>
-        <NamedIndividual IRI="http://www.w3.org/ns/org#hasSite"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#hasClosedOrganization"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P99_dissolved"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/agents#isCollaboratorIn"/>
-        <NamedIndividual IRI="http://www.w3.org/ns/org#hasMember"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#Price"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broaderMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#Transaction"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E10_Transfer_of_Custody"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broaderMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#Transaction"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E8_Acquisition"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#Purchase"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E96_Purchase"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+        <NamedIndividual IRI="isReconstructedBy"/>
+        <NamedIndividual IRI="http://www.w3.org/ns/prov#wasGeneratedBy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#AttributeAssignment"/>
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E13_Attribute_Assignment"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#ConditionAssessment"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#LegalNotice"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#AttributeType"/>
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#ConditionAssessment"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#ConditionState"/>
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E3_Condition_State"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#Currency"/>
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E98_Currency"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#Event"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#LegalNotice"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#Price"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E97_Monetary_Amount"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#Purchase"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E96_Purchase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broaderMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#Transaction"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E10_Transfer_of_Custody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broaderMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#Transaction"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E8_Acquisition"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#ValueProposition"/>
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E16_Measurement"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasCurrency"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P180_has_currency"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#assignsAttributeTo"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P140_assigned_attribute_to"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#transfersCustodyOf"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P30_transferred_custody_of"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#disputes"/>
-        <NamedIndividual IRI="http://purl.org/spar/cito/disputes"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broaderMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasSurrender"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P23_transferred_title_from"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broaderMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasSurrender"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P28_custody_surrendered_by"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#takesPlaceIn"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#participatesIn"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#isPerformedBy"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broaderMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasReceiver"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P22_transferred_title_to"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broaderMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasReceiver"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P29_custody_received_by"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasPrice"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P179_had_sales_price"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#isConstrainedBy"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasProposedPrice"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broaderMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#transfersPropertyOf"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P24_transferred_title_of"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#assignsAgentAsAttribute"/>
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P141_assigned"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#consistsOf"/>
-        <NamedIndividual IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasPart"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#assignsAttributeTo"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P140_assigned_attribute_to"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#cites"/>
         <NamedIndividual IRI="http://purl.org/spar/cito/cites"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasPurpose"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P20_had_specific_purpose"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#reliesOn"/>
-        <NamedIndividual IRI="http://purl.org/spar/cito/isSupportedBy"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#recognizesConservationStatusAs"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P35_has_identified"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasParticipant"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#consistsOf"/>
+        <NamedIndividual IRI="http://www.loa-cnr.it/ontologies/DUL.owl#hasPart"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#disputes"/>
+        <NamedIndividual IRI="http://purl.org/spar/cito/disputes"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasAttributeType"/>
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P177_assigned_property_of_type"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#HistoricalReconstruction"/>
-        <NamedIndividual IRI="http://purl.org/emmedi/hico/InterpretationAct"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#HistoricalReconstruction"/>
-        <NamedIndividual IRI="https://w3id.org/arco/ontology/context-description/Interpretation"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#Thing"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasCurrency"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P180_has_currency"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#CuratedHolding"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasParticipant"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P11_had_participant"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasPrice"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P179_had_sales_price"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasProposedPrice"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P40_observed_dimension"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasPurpose"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P20_had_specific_purpose"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broaderMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasReceiver"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P22_transferred_title_to"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broaderMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasReceiver"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P29_custody_received_by"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broaderMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasSurrender"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P23_transferred_title_from"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broaderMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#hasSurrender"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P28_custody_surrendered_by"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#isConstrainedBy"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#isPerformedBy"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#participatesIn"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P11i_participated_in"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#recognizesConservationStatusAs"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P35_has_identified"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#reliesOn"/>
+        <NamedIndividual IRI="http://purl.org/spar/cito/isSupportedBy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#takesPlaceIn"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P7_took_place_at"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#transfersCustodyOf"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P30_transferred_custody_of"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broaderMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/events#transfersPropertyOf"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P24_transferred_title_of"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#ArchivalItem"/>
         <NamedIndividual IRI="https://w3id.org/arco/ontology/archive/ArchivalResource"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#Letter"/>
-        <NamedIndividual IRI="http://purl.org/spar/fabio/Letter"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#Object"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#Artwork"/>
-        <NamedIndividual IRI="http://purl.org/spar/fabio/ArtisticWork"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#Photo"/>
-        <NamedIndividual IRI="http://www.essepuntato.it/2014/03/fentry/Photograph"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#Archive"/>
         <NamedIndividual IRI="https://w3id.org/arco/ontology/archive/ArchivalCollection"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#PhotoArchive"/>
-        <NamedIndividual IRI="https://w3id.org/arco/ontology/context-description/PhotographicFonds"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#Artwork"/>
+        <NamedIndividual IRI="http://purl.org/spar/fabio/ArtisticWork"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#BibliographicItem"/>
         <NamedIndividual IRI="http://purl.org/spar/fabio/Item"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#Catalog"/>
         <NamedIndividual IRI="http://purl.org/spar/fabio/Catalog"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#CuratedHolding"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E78_Curated_Holding"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#isContainedIn"/>
-        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#HistoricalReconstruction"/>
+        <NamedIndividual IRI="http://purl.org/emmedi/hico/InterpretationAct"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#Letter"/>
+        <NamedIndividual IRI="http://purl.org/spar/fabio/Letter"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#Object"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E22_Human-Made_Object"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#Photo"/>
+        <NamedIndividual IRI="http://www.essepuntato.it/2014/03/fentry/Photograph"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#isSourceFor"/>
-        <NamedIndividual IRI="http://purl.org/spar/cito/isDocumentedBy"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#PhotoArchive"/>
+        <NamedIndividual IRI="https://w3id.org/arco/ontology/context-description/PhotographicFonds"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#Thing"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/E18_Physical_Thing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#hasCurrentOwner"/>
         <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P52_has_current_owner"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
-        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#reconstructs"/>
-        <NamedIndividual IRI="https://w3id.org/arco/ontology/context-description/hasInterpretationSubject"/>
-</ObjectPropertyAssertion>
-
-
-<ObjectPropertyAssertion>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#exactMatch"/>
         <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#hasExtent"/>
         <NamedIndividual IRI="https://w3id.org/arco/ontology/archive/extent"/>
-</ObjectPropertyAssertion>
-
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#isContainedIn"/>
+        <NamedIndividual IRI="http://www.cidoc-crm.org/cidoc-crm/P46i_forms_part_of"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+        <NamedIndividual IRI="https://w3id.org/zeri/ontology/zamo/sources#isSourceFor"/>
+        <NamedIndividual IRI="http://purl.org/spar/cito/isDocumentedBy"/>
+    </ObjectPropertyAssertion>
 </Ontology>
 
 

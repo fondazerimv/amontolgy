@@ -336,7 +336,7 @@
     <node id="n29">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="43.0" width="146.96822102864598" x="1956.767204742023" y="342.35447445719274"/>
+          <y:Geometry height="43.0" width="146.96822102864598" x="2940.58879653864" y="222.01238590264143"/>
           <y:Fill color="#CCFFCC" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="82.3203125" x="32.32395426432299" xml:space="preserve" y="10.078125">xsd:string</y:NodeLabel>
@@ -347,7 +347,7 @@
     <node id="n30">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="44.0" width="492.4345121685942" x="1220.6973530692778" y="335.38418757194654"/>
+          <y:Geometry height="44.0" width="492.4345121685942" x="2204.518944865895" y="215.04209901739523"/>
           <y:Fill color="#FFFF99" transparent="false"/>
           <y:BorderStyle color="#000000" type="dotted" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="380.0" x="56.217256084297105" xml:space="preserve" y="10.578125">agents:Agent or agents:Initiative or events:Event</y:NodeLabel>
@@ -957,24 +957,13 @@ ObjectProperty:  sources:isSecondarySourceFor
         </y:ShapeNode>
       </data>
     </node>
-    <node id="n81">
-      <data key="d6">
-        <y:ShapeNode>
-          <y:Geometry height="44.0" width="259.46915784228077" x="2983.2852983004786" y="1356.7361088204223"/>
-          <y:Fill color="#FFFF99" transparent="false"/>
-          <y:BorderStyle color="#000000" type="dotted" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="230.2265625" x="14.621297671140383" xml:space="preserve" y="10.578125">agents:Agent or events:Event</y:NodeLabel>
-          <y:Shape type="roundrectangle"/>
-        </y:ShapeNode>
-      </data>
-    </node>
-    <node id="n82" yfiles.foldertype="group">
+    <node id="n81" yfiles.foldertype="group">
       <data key="d4" xml:space="preserve"/>
       <data key="d6">
         <y:ProxyAutoBoundsNode>
           <y:Realizers active="0">
             <y:GroupNode>
-              <y:Geometry height="152.79851555529393" width="503.0608661452007" x="2327.65309292719" y="220.7314406378116"/>
+              <y:Geometry height="152.798515555294" width="503.0608661452007" x="2261.037072446232" y="464.5954772748157"/>
               <y:Fill color="#FFFFFF" transparent="false"/>
               <y:BorderStyle color="#000000" type="line" width="1.0"/>
               <y:NodeLabel alignment="right" autoSizePolicy="node_width" backgroundColor="#B7B69E" borderDistance="0.0" fontFamily="Dialog" fontSize="15" fontStyle="bold" hasLineColor="false" height="21.666015625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="503.0608661452007" x="0.0" xml:space="preserve" y="0.0">Prefixes   </y:NodeLabel>
@@ -998,11 +987,11 @@ ObjectProperty:  sources:isSecondarySourceFor
           </y:Realizers>
         </y:ProxyAutoBoundsNode>
       </data>
-      <graph edgedefault="directed" id="n82:">
-        <node id="n82::n0">
+      <graph edgedefault="directed" id="n81:">
+        <node id="n81::n0">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="22.2421875" width="207.83128065395096" x="2522.638162495415" y="305.3693440701886"/>
+              <y:Geometry height="22.2421875" width="207.83128065395096" x="2456.022142014457" y="549.2333807071927"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle hasColor="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="98.21875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="378.3203125" x="-89.60401598529052" xml:space="preserve" y="-45.058137877083084">https://w3id.org/zeri/ontology/zamo/agents#
@@ -1014,10 +1003,10 @@ http://www.w3.org/2000/01/rdf-schema#<y:LabelModel><y:SmartNodeLabelModel distan
             </y:ShapeNode>
           </data>
         </node>
-        <node id="n82::n1">
+        <node id="n81::n1">
           <data key="d6">
             <y:ShapeNode>
-              <y:Geometry height="22.2421875" width="31.4345703125" x="2362.90455777094" y="295.3857375128116"/>
+              <y:Geometry height="22.2421875" width="31.4345703125" x="2296.288537289982" y="539.2497741498157"/>
               <y:Fill hasColor="false" transparent="false"/>
               <y:BorderStyle hasColor="false" type="line" width="1.0"/>
               <y:NodeLabel alignment="left" autoSizePolicy="content" borderDistance="0.0" fontFamily="Dialog" fontSize="16" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="98.21875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="71.9375" x="-20.25146484375" xml:space="preserve" y="-37.98828125">agents:
@@ -1030,6 +1019,17 @@ rdfs:</y:NodeLabel>
           </data>
         </node>
       </graph>
+    </node>
+    <node id="n82">
+      <data key="d6">
+        <y:ShapeNode>
+          <y:Geometry height="44.0" width="266.7787838989007" x="2923.989063156592" y="1129.6733413608827"/>
+          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="171.7265625" x="47.52611069945033" xml:space="preserve" y="10.578125">sources:AgentActivity</y:NodeLabel>
+          <y:Shape type="roundrectangle"/>
+        </y:ShapeNode>
+      </data>
     </node>
     <edge id="e0" source="n2" target="n0">
       <data key="d10">
@@ -1553,12 +1553,12 @@ rdfs:</y:NodeLabel>
     <edge id="e42" source="n27" target="n10">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="23.20136868009513" sy="14.773377465509157" tx="129.1514495444967" ty="-0.6671751108308399">
-            <y:Point x="2516.9467278293223" y="1151.0061662500518"/>
+          <y:Path sx="23.20136868009513" sy="14.773377465509157" tx="140.69915447057292" ty="-30.765549940590972">
+            <y:Point x="2516.9467278293223" y="1120.9077914202917"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="127.03125" x="-63.5156745144277" xml:space="preserve" y="62.70152431356428">rdfs:subClassOf<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="127.03125" x="-63.5156745144277" xml:space="preserve" y="47.667412582278075">rdfs:subClassOf<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
@@ -1593,7 +1593,7 @@ rdfs:</y:NodeLabel>
           <y:Path sx="0.0" sy="6.470286885246196" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#008000" type="line" width="1.0"/>
           <y:Arrows source="transparent_circle" target="white_delta"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#008000" verticalTextPosition="bottom" visible="true" width="132.2890625" x="55.67121467744755" xml:space="preserve" y="-11.421862212729138">agents:hasName<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#008000" verticalTextPosition="bottom" visible="true" width="132.2890625" x="55.67127327093931" xml:space="preserve" y="-11.421879234077323">agents:hasName<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
@@ -2297,24 +2297,49 @@ events:reliesOn<y:LabelModel><y:SmartEdgeLabelModel autoRotationEnabled="false" 
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e102" source="n80" target="n81">
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="-57.3183618194048" sy="0.0" tx="0.0" ty="0.0"/>
-          <y:LineStyle color="#000080" type="line" width="1.0"/>
-          <y:Arrows source="circle" target="delta"/>
-          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000080" verticalTextPosition="bottom" visible="true" width="165.15625" x="-82.57802316900597" xml:space="preserve" y="-61.73361533314937">sources:reconstructs<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e103" source="n24" target="n2">
+    <edge id="e102" source="n24" target="n2">
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="56.33457065968014" sy="0.0" tx="-49.12152797215458" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="127.03125" x="-63.5156728027855" xml:space="preserve" y="131.48846850121095">rdfs:subClassOf<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e103" source="n10" target="n82">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000080" type="line" width="1.0"/>
+          <y:Arrows source="circle" target="delta"/>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000080" verticalTextPosition="bottom" visible="true" width="130.09375" x="182.6659950038802" xml:space="preserve" y="-11.42187348286734">sources:isPartOf<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e104" source="n82" target="n80">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="112.36039056184472" sy="8.783039251454284" tx="-0.6321589223130104" ty="-12.548660389271618"/>
+          <y:LineStyle color="#000080" type="line" width="1.0"/>
+          <y:Arrows source="circle" target="delta"/>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000080" verticalTextPosition="bottom" visible="true" width="209.8984375" x="-104.96448077139576" xml:space="preserve" y="152.4192050386432">sources:isReconstructedBy<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e105" source="n82" target="n0">
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="-114.8043772409842" sy="0.0" tx="319.77199715984887" ty="-31.10172899258862">
+            <y:Point x="2942.574077865058" y="363.92674258878606"/>
+            <y:Point x="882.2472348176289" y="363.9267425887861"/>
+          </y:Path>
+          <y:LineStyle color="#000080" type="line" width="1.0"/>
+          <y:Arrows source="circle" target="delta"/>
+          <y:EdgeLabel alignment="center" backgroundColor="#FFFFFF" distance="2.0" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasLineColor="false" height="22.84375" horizontalTextPosition="center" iconTextGap="4" modelName="centered" modelPosition="center" preferredPlacement="anywhere" ratio="0.5" textColor="#000080" verticalTextPosition="bottom" visible="true" width="133.6953125" x="-1097.0109745180316" xml:space="preserve" y="-777.195816004964">sources:refersTo<y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/></y:EdgeLabel>
           <y:BendStyle smoothed="false"/>
         </y:PolyLineEdge>
       </data>
