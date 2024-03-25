@@ -1,0 +1,39 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="zamo_files/owl.css" rel="stylesheet" type="text/css"><link href="zamo_files/Primer.css" rel="stylesheet" type="text/css"><link href="zamo_files/rec.css" rel="stylesheet" type="text/css"><link href="zamo_files/extra.css" rel="stylesheet" type="text/css"><link rel="shortcut icon" href="http://150.146.207.114/lode/favicon.ico"><script src="zamo_files/jquery.js"></script><script src="zamo_files/jquery.scrollTo.js"></script><script src="zamo_files/marked.min.js"></script><script>
+			$(document).ready(
+			function () {
+			jQuery(".markdown").each(function(el){
+			jQuery(this).after(marked(jQuery(this).text())).remove()});
+			var list =
+			$('a[name="
+			https://w3id.org/zeri/ontology/zamo
+			"]');
+			if (list.size() != 0) {
+			var element = list.first();
+			$.scrollTo(element);
+			}
+			});
+		</script></head><body cz-shortcut-listen="true"><div class="head"><dl><dt>IRI:</dt><dd>https://w3id.org/zeri/ontology/zamo</dd></dl><dl><dt>Imported Ontologies
+					:
+				</dt><dd><a href="https://w3id.org/zeri/ontology/zamo/agents#">https://w3id.org/zeri/ontology/zamo/agents#</a> (<a href="agents/agents.html">visualise it with
+				LODE
+			</a>)</dd><dd><a href="https://w3id.org/zeri/ontology/zamo/events#">https://w3id.org/zeri/ontology/zamo/events#</a> (<a href="events/events.html">visualise it with
+				LODE
+			</a>)</dd><dd><a href="https://w3id.org/zeri/ontology/zamo/sources#">https://w3id.org/zeri/ontology/zamo/sources#</a> (<a href="sources/sources.html">visualise it with
+				LODE
+			</a>)</dd></dl><dl><dt>Other visualisation
+						:
+					</dt><dd><a href="http://150.146.207.114/lode/source?url=https://w3id.org/zeri/ontology/zamo">Ontology source</a>
+						-
+						<a href="https://service.tib.eu/webvowl/#iri=https://w3id.org/zeri/ontology/zamo">WebVowl</a></dd></dl><div class="copyright"><span class="markdown">This work is distributed under a Creative Commons Attribution License (https://creativecommons.org/licenses/by/4.0/)</span></div></div><hr><h2>Abstract</h2><span class="markdown">The
+ ontology ZAMO (Zeri Art Market Ontology) models art market domain, stating its most relevant classes and properties. It is articulated into three main modules, which respectivelt describes the agent, the event, and the historical sources which characterizes this domain.
+
+<ul>
+<li><b>URL</b>: <a href="https://w3id.org/zeri/ontology/zamo/">https://w3id.org/zeri/ontology/zamo/</a>
+<li><b>Creators</b>: <a href="http://orcid.org/0000-0002-5958-2100">Manuele Veggi</a>
+<li><b>License</b>: <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International</a>
+</ul>
+</span><div id="toc"><h2>Table of Content</h2><ol><li><a href="#namespacedeclarations">Namespace Declarations</a></li></ol></div><div id="namespacedeclarations"><h2>Namespace Declarations <span class="backlink"> back to <a href="#toc">ToC</a></span></h2><dl><dt><em>default namespace</em></dt><dd>https://w3id.org/zeri/ontology/zamo#</dd><dt>dc</dt><dd>http://purl.org/dc/elements/1.1/</dd><dt>ontology</dt><dd>https://w3id.org/zeri/ontology/</dd><dt>owl</dt><dd>http://www.w3.org/2002/07/owl#</dd><dt>rdf</dt><dd>http://www.w3.org/1999/02/22-rdf-syntax-ns#</dd><dt>rdfs</dt><dd>http://www.w3.org/2000/01/rdf-schema#</dd><dt>xsd</dt><dd>http://www.w3.org/2001/XMLSchema#</dd></dl></div><p class="endnote">This HTML document was obtained by processing the OWL ontology source code through <a href="http://www.essepuntato.it/lode">LODE</a>, <em>Live OWL Documentation Environment</em>, developed by <a href="http://www.essepuntato.it/">Silvio Peroni</a>
+				.
+			</p>
+</body></html>
